@@ -1,76 +1,102 @@
 <!doctype html>
 <html>
-    <head>
-        <!-- Title Banner Stuff -->
-        <title>Jacob Bryant</title>
-        <!--[Not set up yet]<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />-->
 
-        <!-- Meta Info -->
-        <meta
-            charset="utf-8"
-            name="viewport"
-            content="width=device-width, Height=device-height initial-scale=1"
-        />
+<head>
+    <!-- Title Banner Stuff -->
+    <title>Jacob Bryant</title>
+    <!--[Not set up yet]<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />-->
 
-        <!--Google API font stuff - currently redundant as they are downloaded in folders but may switch back to this -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Meta Info -->
+    <meta charset="utf-8" name="viewport" content="width=device-width, Height=device-height initial-scale=1" />
 
-        <!--My CSS document -->
-        <link rel="stylesheet" href="style.css" />
+    <!--Google API font stuff - currently redundant as they are downloaded in folders but may switch back to this -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
-        <!--Animate CSS document -
+    <!--My CSS document -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Animate CSS document -
             basic animations - potentially create my own/ learn how to do -->
-        <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="animate.css" />
 
-        <!-- <My Logic script -->
-        <script src="script.js"></script>
-    </head>
+    <!-- <My Logic script -->
+    <script src="script.js"></script>
+</head>
 
-    <body>
-        <div class="menuSection">
-            <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"-->
+<body>
+    <div class="homeSection">
+        <h1>
+            <!--class="animate__animated animate__fadeIn animate__delay-1s" -->
+            Jacob Bryant
+        </h1>
+        <h2>
+            <!--animations turned off: class="animate__animated animate__fadeIn animate__delay-2s" -->
+            Creative & Designer
+        </h2>
 
-            <!--Does havig the omlauts mess with the meaning/saying of the word? -->
-            <button class="button1">Home</button>
-            <a href="#portfolio">
-                <button class="button1">Portfolio</button>
-            </a>
-            <button class="button1">About</button>
-        </div>
+        <!-- I think i need to put each element in a container/ work out how to do a title bar element -->
+        <!--<p>Test Test Test Test 123 123 123</p>-->
+    </div>
 
-        <div class="homeSection">
-            <h1>
-                <!--class="animate__animated animate__fadeIn animate__delay-1s" -->
-                Jacob Bryant
-            </h1>
-            <h2>
-                <!--animations turned off: class="animate__animated animate__fadeIn animate__delay-2s" -->
-                Creative & Designer
-            </h2>
+    <div class="menuSection">
+        <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"-->
 
-            <!-- I think i need to put each element in a container/ work out how to do a title bar element -->
-            <!--<p>Test Test Test Test 123 123 123</p>-->
-        </div>
-        <div class="portfolioSection">
-            <h1 id="portfolio">Portfolio</h1>
-            <h2>a selection of my work</h2>
-        </div>
+        <!--Does havig the omlauts mess with the meaning/saying of the word? -->
+        <button class="button1">Home</button>
+        <a href="#portfolio">
+            <button class="button1">Portfolio</button>
+        </a>
+        <button class="button1">About</button>
+    </div>
 
-        <!--
+    <div class="portfolioSection">
+        <h1 id="portfolio">Portfolio</h1>
+        <h2>a selection of my work</h2>
+        <img src="assets/Analogue type.png" alt="Analogue type image 1" width="500" height="600" class="portfolioGrid">
+    </div>
+    <a href="google.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <a href="duckduckgo.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <h2></h2>
+    <a href="bing.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <a href="google.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <a href="duckduckgo.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <h2></h2>
+    <a href="bing.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <a href="google.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    <a href="duckduckgo.com">
+        <div class="square portfolioGrid"></div>
+    </a>
+    </div>
+
+    <!--
         Test for how to put an image in a html doc - now redundant
         <img src=" pic_trulli.jpg" alt="Italian Trulli" />
         -->
 
-        <!--Test for spotify API - Now redundant - remove
+    <!--Test for spotify API - Now redundant - remove
         <iframe style="border-radius: 12px"
             src="https://open.spotify.com/embed/track/4IHc6SzGPnzSPuHVEPzpJc?utm_source=generator" width="600"
             height="352" frameborder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         -->
-    </body>
+</body>
+
 </html>
