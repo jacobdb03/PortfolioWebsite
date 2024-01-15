@@ -39,6 +39,8 @@ body {
 
 .portfolioSection {
     text-align: center;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
 .portfolioGrid {
@@ -49,6 +51,15 @@ body {
 }
 
 .square {
+    width: calc(350px + 1vw);
+    height: calc(250px + 1vh);
+    background-color: #3b7cd8;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
     width: calc(350px + 1vw);
     height: calc(250px + 1vh);
     background-color: #3b7cd8;
