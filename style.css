@@ -12,44 +12,11 @@ VARIABLES - Fonts
 Outfit: 100-900
 poppins: 100-900 plus italic
 */
-body {
-    background-color: #f1f6fa;
-    /*overflow-y: scroll;*./
-    /*cursor:none - for custom cursor*/
-    /* Would want to make this cursor glidy and be centred and much smaller
-    cursor: url("assets/MouseCursor.png"), auto; */
-}
-
-.menuSection {
-    border: none;
-    color: white;
-    margin: 2vh;
-    text-align: center;
-    font-size: font-size: calc(30px + 1vw);
-    cursor: circle;
-    text-align: center;
-}
-
-.homeSection {
-    text-align: center;
 
 
-    /* Combine the h1 and h2 and p into this and make it this*/
-}
+/*Other tag elements*/
 
-.portfolioSection {
-    text-align: center;
-    margin-right: 5vw;
-    margin-left: 5vw;
-}
-
-.portfolioGrid {
-    display: inline-block;
-    flex-direction: row;
-    transition-duration: 0.6s;
-    animation-duration: 0.6s;
-}
-
+/* Currently not being used
 .square {
     width: calc(350px + 1vw);
     height: calc(250px + 1vh);
@@ -58,14 +25,22 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+*/
 
-img {
+.portfolioGrid {
+    display: inline-block;
+    flex-direction: row;
+    transition-duration: 0.6s;
+    animation-duration: 0.6s;
     width: calc(350px + 1vw);
-    height: calc(250px + 1vh);
     background-color: #3b7cd8;
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.portfolioGrid:hover {
+    /* place holder now but elemts should react to being hovered over*/
 }
 
 .button1 {
@@ -87,6 +62,69 @@ img {
     background-color: #3b7cd8;
     color: #f1f6fa;
     animation-delay: 1s;
+}
+
+.socialIcons {
+    display: inline-block;
+    flex-direction: row;
+    width: calc(20px + 1vw);
+    margin-bottom: 20px;
+    border-radius: 0px;
+    padding: 5px;
+    background-color: #77c3ff;
+    border-radius: 20px;
+    transition-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+
+/*Section tag elements*/
+
+
+.menuSection {
+    border: none;
+    color: white;
+    margin: 2vh;
+    text-align: center;
+    font-size: font-size: calc(30px + 1vw);
+    cursor: circle;
+    text-align: center;
+}
+
+.homeSection {
+    text-align: center;
+    /* Combine the h1 and h2 and p into this and make it this*/
+}
+
+.portfolioSection {
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.aboutSection {
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 1px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    text-decoration: none;
+
+}
+
+
+/*Default tag elements*/
+
+
+body {
+    background-color: #f1f6fa;
+    /*overflow-y: scroll;*./
+    /*cursor:none - for custom cursor*/
+    /* Would want to make this cursor glidy and be centred and much smaller
+    cursor: url("assets/MouseCursor.png"), auto; */
 }
 
 h1 {
@@ -129,3 +167,5 @@ p {
 a {
     text-decoration: none;
 }
+
+img {}
