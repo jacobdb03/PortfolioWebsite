@@ -69,10 +69,9 @@ poppins: 100-900 plus italic
     flex-direction: row;
     width: calc(20px + 1vw);
     margin-bottom: 20px;
-    border-radius: 0px;
     padding: 5px;
     background-color: #77c3ff;
-    border-radius: 20px;
+    border-radius: min(20px);
     transition-delay: 0.6s;
     animation-delay: 0.6s;
 }
