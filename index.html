@@ -16,12 +16,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
 
-        <!--My CSS document -->
-        <link rel="stylesheet" href="style.css" />
+        <!--My CSS documentS -->
+        <link rel="stylesheet" href="styleAnimations.css" />
+        <link rel="stylesheet" href="styleDefault.css" />
+        <link rel="stylesheet" href="styleElements.css" />
+        <link rel="stylesheet" href="styleSections.css" />
 
         <!--Animate CSS document -
             basic animations - potentially create my own/ learn how to do -->
@@ -32,24 +35,10 @@
     </head>
 
     <body>
-        <div class="homeSection">
-            <h1 id="home">
-                <!--class="animate__animated animate__fadeIn animate__delay-1s" -->
-                Jacob Bryant
-            </h1>
-            <h2>
-                <!--animations turned off: class="animate__animated animate__fadeIn animate__delay-2s" -->
-                Creative & Designer
-            </h2>
+        <!--<div class="menuSection">
+            <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"--
 
-            <!-- I think i need to put each element in a container/ work out how to do a title bar element -->
-            <!--<p>Test Test Test Test 123 123 123</p>-->
-        </div>
-
-        <div class="menuSection">
-            <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"-->
-
-            <!--Does havig the omlauts mess with the meaning/saying of the word? -->
+            <!--Does havig the omlauts mess with the meaning/saying of the word? --
             <a href="#home">
                 <button class="button1">Home</button>
             </a>
@@ -64,10 +53,44 @@
             <a href="#contact">
                 <button class="button1">Contact</button>
             </a>
+        </div>-->
+
+        <div class="menuSection2">
+            <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"-->
+
+            <!--Does havig the omlauts mess with the meaning/saying of the word? -->
+            <a href="#home">
+                <button class="button2">Home</button>
+            </a>
+
+            <a href="#portfolio">
+                <button class="button2">Portfolio</button>
+            </a>
+
+            <a href="#about">
+                <button class="button2">About</button>
+            </a>
+            <a href="#contact">
+                <button class="button2">Contact</button>
+            </a>
         </div>
 
-        <div class="portfolioSection">
-            <h1 id="portfolio">Portfolio</h1>
+        <div class="homeSection" id="home">
+            <h1>
+                <!--class="animate__animated animate__fadeIn animate__delay-1s" -->
+                Jacob Bryant
+            </h1>
+            <h2>
+                <!--animations turned off: class="animate__animated animate__fadeIn animate__delay-2s" -->
+                Creative & Designer
+            </h2>
+
+            <!-- I think i need to put each element in a container/ work out how to do a title bar element -->
+            <!--<p>Test Test Test Test 123 123 123</p>-->
+        </div>
+
+        <div class="portfolioSection" id="portfolio">
+            <h1>Portfolio</h1>
             <h2>a selection of my work</h2>
             <a href="portfolioHTML/project1.html">
                 <img
@@ -103,9 +126,14 @@
             />
         </div>
 
-        <div class="aboutSection">
-            <h1 id="about">About</h1>
+        <div class="aboutSection" id="about">
+            <h1>About</h1>
             <h2>Who is Jacob Bryant?</h2>
+        </div>
+
+        <div class="contactSection" id="contact">
+            <h1>Contact</h1>
+            <h2>talk to me</h2>
         </div>
 
         <div class="footer">
@@ -123,11 +151,6 @@
                     class="socialIcons"
                 />
             </a>
-        </div>
-
-        <div class="contactSection">
-            <h1 id="contact">Contact</h1>
-            <h2>talk to me</h2>
         </div>
     </body>
 </html>

@@ -1,0 +1,65 @@
+/*
+COLOURS
+Gunmetal: #1C2C39
+Lapis Lazuli: #45619A
+Steel Blue: #527FA1
+Verdigras: #63A7A5
+Platinum: #E3DFDB
+
+FONTS
+Outfit: 100-900
+Nunito Sans 200-1000 + italic
+*/
+
+body {
+    background-color: #e3dfdb;
+    /*overflow-y: scroll;*./
+    /*cursor:none - for custom cursor*/
+    /* Would want to make this cursor glidy and be centred and much smaller
+    cursor: url("assets/MouseCursor.png"), auto; */
+}
+
+h1 {
+    /* CURRENT POSITION - somehow the outfit font is showing up without ever putting it in code?*/
+    color: #45619a;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 10vh;
+    transition-duration: 0.6s;
+    animation-duration: 0.6s;
+}
+
+h2 {
+    color: #527fa1;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-size: calc(2.5vw);
+    transition-duration: 0.6s;
+    animation-duration: 0.6s;
+    margin-top: 0%;
+}
+
+h3 {
+    color: #63a7a5;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: calc(2vw);
+    transition-duration: 0.6s;
+    animation-duration: 0.6s;
+}
+
+p {
+    color: #1c2c39;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: calc(1vw);
+    transition-duration: 0.6s;
+    animation-duration: 0.6s;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+}

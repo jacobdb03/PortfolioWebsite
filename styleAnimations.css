@@ -1,0 +1,20 @@
+/*
+COLOURS
+Gunmetal: #1C2C39
+Lapis Lazuli: #45619A
+Steel Blue: #527FA1
+Verdigras: #63A7A5
+Platinum: #E3DFDB
+
+FONTS
+Outfit: 100-900
+Nunito Sans 200-1000 + italic
+*/
+
+/* rotating animation command*/
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
