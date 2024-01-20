@@ -1,18 +1,5 @@
-/*
-COLOURS
-Gunmetal: #1C2C39
-Lapis Lazuli: #45619A
-Steel Blue: #527FA1
-Verdigras: #63A7A5
-Platinum: #E3DFDB
-
-FONTS
-Outfit: 100-900
-Nunito Sans 200-1000 + italic
-*/
-
 body {
-    background-color: #e3dfdb;
+    background-color: #e4e6ea;
     /*overflow-y: scroll;*./
     /*cursor:none - for custom cursor*/
     /* Would want to make this cursor glidy and be centred and much smaller
@@ -30,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #527fa1;
+    color: #45619a;
     font-family: "Outfit", sans-serif;
     font-weight: 200;
     font-size: calc(2.5vw);
@@ -40,7 +27,7 @@ h2 {
 }
 
 h3 {
-    color: #63a7a5;
+    color: #45619a;
     font-family: "Outfit", sans-serif;
     font-weight: 900;
     font-size: calc(2vw);
