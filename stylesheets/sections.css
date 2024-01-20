@@ -1,0 +1,40 @@
+.Menu {
+    position: relative;
+    top: 1vw;
+
+    background-color: grey;
+    border-radius: 5vw;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 0vw;
+}
+
+.Home {
+    /*
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50%;
+    */
+    margin-bottom: 50%;
+}
+
+.Portfolio {
+    margin-bottom: 50%;
+}
+
+.About {
+    margin-bottom: 50%;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 1px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}

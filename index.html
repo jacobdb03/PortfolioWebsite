@@ -21,108 +21,97 @@
         />
 
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="styles/styleAnimations.css" />
-        <link rel="stylesheet" href="styles/styleDefault.css" />
-        <link rel="stylesheet" href="styles/styleElements.css" />
-        <link rel="stylesheet" href="styles/styleSections.css" />
-
-        <!--Animate CSS document -
-            basic animations - potentially create my own/ learn how to do -->
-        <link rel="stylesheet" href="animate.css" />
+        <link rel="stylesheet" href="stylesheets/defaults.css" />
+        <link rel="stylesheet" href="stylesheets/sections.css" />
+        <link rel="stylesheet" href="stylesheets/attributes.css" />
+        <link rel="stylesheet" href="stylesheets/animations.css" />
 
         <!-- <My Logic script -->
-        <script src="script.js"></script>
+        <script src="javascript/scroll.js"></script>
     </head>
 
     <body>
-        <div class="menuSection">
-            <!-- animations turned off: class="menuSection animate__animated animate__fadeIn animate__delay-3s"-->
-
-            <!--Does havig the omlauts mess with the meaning/saying of the word? -->
-            <a href="#home">
-                <button class="button1">Home</button>
-            </a>
-
-            <a href="#portfolio">
-                <button class="button1">Portfolio</button>
-            </a>
-
-            <a href="#about">
-                <button class="button1">About</button>
-            </a>
+        <div class="Menu" id="Menu">
+            <a href="#Home"><button>Home</button></a>
+            <a href="#Portfolio"><button>Portfolio</button></a>
+            <a href="#About"><button>About</button></a>
         </div>
 
-        <div class="homeSection" id="home">
-            <h1>
-                <!--class="animate__animated animate__fadeIn animate__delay-1s" -->
-                Jacob Bryant
-            </h1>
-            <h2>
-                <!--animations turned off: class="animate__animated animate__fadeIn animate__delay-2s" -->
-                Creative & Designer
-            </h2>
-
-            <!-- I think i need to put each element in a container/ work out how to do a title bar element -->
-            <!--<p>Test Test Test Test 123 123 123</p>-->
+        <div class="Home" id="Home">
+            <h1>Jacob Bryant</h1>
+            <h2>Creative & Designer</h2>
         </div>
 
-        <div class="portfolioSection" id="portfolio">
+        <div class="Portfolio" id="Portfolio">
             <h1>Portfolio</h1>
-            <h2>a selection of my work</h2>
-            <a href="portfolioHTML/project1.html">
-                <img
-                    src="assets/analogueType1.png"
-                    alt="Analogue type image 1"
-                    class="portfolioGrid"
-                />
-            </a>
-            <img
-                src="assets/analogueType2.png"
-                alt="Analogue type image 2"
-                class="portfolioGrid"
-            />
-            <img
-                src="assets/analogueType3.png"
-                alt="Analogue type image 3"
-                class="portfolioGrid"
-            />
-            <img
-                src="assets/analogueType1.png"
-                alt="Analogue type image 1"
-                class="portfolioGrid"
-            />
-            <img
-                src="assets/analogueType2.png"
-                alt="Analogue type image 2"
-                class="portfolioGrid"
-            />
-            <img
-                src="assets/analogueType3.png"
-                alt="Analogue type image 3"
-                class="portfolioGrid"
-            />
+            <h2>my work</h2>
+            <p>
+                <a href="portfolioHTML/project1.html">
+                    <img
+                        src="assets/analogueTypeThumbnail.png"
+                        alt="analogueTypeThumbnail"
+                    />
+                </a>
+            </p>
         </div>
 
-        <div class="aboutSection" id="about">
+        <div class="About" id="About">
             <h1>About</h1>
-            <h2>Who is Jacob Bryant?</h2>
+            <h2>who is</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas pretium enim eget elit vulputate, quis pretium odio
+                ultrices. Quisque a blandit magna. Donec egestas erat quis nisi
+                vehicula, at aliquet augue ultrices. Nulla urna nisi, rutrum
+                vitae urna eu, pellentesque molestie sapien. Morbi a odio et
+                nulla tristique euismod eu et quam. Curabitur magna elit,
+                tincidunt quis ligula ac, molestie sollicitudin ipsum. Fusce
+                pulvinar elit eu mauris venenatis commodo. Nulla eleifend metus
+                a sem elementum convallis. Proin eu lacus in nibh scelerisque
+                accumsan ac nec metus. Aliquam dui eros, sollicitudin a tortor
+                quis, consectetur dictum nibh. Mauris imperdiet iaculis elit a
+                tempus. Phasellus aliquam sit amet lorem in gravida. Nulla ut
+                interdum nisl. Fusce commodo luctus felis, in sollicitudin velit
+                posuere nec. Etiam sed mi sit amet lacus euismod euismod.
+                Maecenas quis ex massa. Maecenas pellentesque maximus tincidunt.
+                Nulla porttitor turpis eu tincidunt dapibus. Etiam sit amet
+                pharetra enim, in scelerisque nisi. Vivamus egestas, erat
+                ullamcorper viverra lobortis, dolor orci mattis sapien, eget
+                facilisis quam lectus ac orci. Aliquam bibendum, mi nec commodo
+                scelerisque, mauris nisi bibendum orci, eget viverra augue nunc
+                vitae tellus. Sed non metus efficitur, consectetur sem at,
+                volutpat sapien. Vestibulum at laoreet urna, nec volutpat diam.
+                Pellentesque non urna nec quam convallis tristique at vitae
+                tellus. Duis euismod quam id fermentum tristique. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae; Suspendisse potenti. Nam tempus felis a turpis
+                sollicitudin, vitae mollis enim aliquet. Pellentesque lacinia
+                ante sed fermentum laoreet. Quisque euismod orci sit amet justo
+                porta placerat. Sed tincidunt lorem ut dapibus faucibus. Morbi
+                egestas pharetra efficitur. Phasellus sodales lobortis egestas.
+                Donec venenatis condimentum nisl non blandit. Maecenas tincidunt
+                dui sit amet ullamcorper faucibus. Nulla eu finibus urna. Etiam
+                consectetur, neque id aliquam aliquet, dui sapien viverra leo, a
+                tincidunt velit ex quis dui. Phasellus fringilla euismod lectus,
+                non aliquam leo ornare eget. Quisque dapibus malesuada nunc id
+                tristique.
+            </p>
         </div>
 
-        <div class="footer">
+        <div class="Footer" id="Footer">
             <a href="accessibility.html">
                 <img
                     src="assets/accessibilityIconSmall.png"
                     alt="accessibility Icon"
-                    class="socialIcons"
+                    class="icons"
                 />
             </a>
-            <a href="https://www.instagram.com/jacobdb03/">
-                <img
+            <a href="https://www.instagram.com/jacobdb03/"
+                ><img
                     src="assets/instagramIconSmall.png"
                     alt="Instagram Icon"
-                    class="socialIcons"
-                />
-            </a>
+                    class="icons"
+            /></a>
         </div>
     </body>
 </html>

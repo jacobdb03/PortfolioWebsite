@@ -1,0 +1,13 @@
+.icons {
+    display: inline-block;
+    width: 2.5vw;
+    padding: 0.5vw;
+}
+
+.icons:hover {
+    width: 2.5vw;
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}

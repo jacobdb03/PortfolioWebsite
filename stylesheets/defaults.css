@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: 10vw;
+
+    height: 50%;
+    line-height: 50%;
+
+    padding-bottom: 5%;
+
+    margin-top: 20%;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+h3 {
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+}
+
+img {
+}
+
+button {
+    background-color: grey;
+    color: white;
+
+    border: none;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    border-radius: 0vw;
+
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 100;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    border-radius: 10vw;
+    border: none;
+
+    transition-duration: 0.5s;
+}
