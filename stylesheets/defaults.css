@@ -1,6 +1,12 @@
+/*
+Gunmetal: #152229
+Blue: #0F89FA
+White: #EFF1F3
+*/
+
 body {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #eff1f3;
     border: none;
     padding: 0px;
     overflow-x: hidden;
@@ -10,6 +16,8 @@ h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     font-size: 10vw;
+
+    color: #0f89fa;
 
     height: 50%;
     line-height: 50%;
@@ -24,6 +32,8 @@ h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-size: 3vw;
+
+    color: #0f89fa;
 
     padding-top: 0%;
     margin-top: 0%;
@@ -40,9 +50,13 @@ p {
 img {
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
-    background-color: grey;
-    color: white;
+    background-color: #0f89fa;
+    color: #eff1f3;
 
     border: none;
 
@@ -54,14 +68,14 @@ button {
     border-radius: 0vw;
 
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: "Nunito Sans", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 button:hover {
-    background-color: white;
-    color: black;
+    background-color: #eff1f3;
+    color: #0f89fa;
 
     padding-left: 3vw;
     padding-right: 3vw;
