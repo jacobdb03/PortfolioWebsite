@@ -1,9 +1,13 @@
-var size = document.querySelector(":root");
-let winYPos = 0;
-let scroll = 0;
-
-window.addEventListener("scroll", () => {
-  winYPos = window.scrollY;
-  console.log(winYPos);
-  size.style.setProperty("--sizeH1", "winYPos");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classlist.add("small");
+    } else {
+      entry.target.classlist.remove("small");
+    }
+  });
 });
+
+const scrollElements = document.querySelectorAll(".big");
+scrollElements.forEach((el) => observer.observe(el));

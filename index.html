@@ -27,50 +27,45 @@
         <link rel="stylesheet" href="stylesheets/animations.css" />
 
         <!-- <My Logic script -->
-        <script src="javascript/scroll.js"></script>
+        <script defer src="javascript/scroll.js"></script>
     </head>
 
     <body>
-        <div class="Menu" id="Menu">
+        <!--<section class="Menu" id="Menu">
             <a href="#Home"><button>Home</button></a>
             <a href="#Portfolio"><button>Portfolio</button></a>
             <a href="#About"><button>About</button></a>
-        </div>
+        </section>-->
 
-        <div class="Home" id="Home">
+        <section class="Home big" id="Home">
             <h1>Jacob Bryant</h1>
             <h2>Creative & Designer</h2>
-        </div>
+            <h2>Portfolio & About</h2>
+        </section>
 
-        <div class="Portfolio" id="Portfolio">
-            <h1>Portfolio</h1>
-            <h2>my work</h2>
-            <p>
+        <section class="Portfolio big" id="Portfolio About">
+            <section class="PortfolioGrid">
                 <a href="portfolioHTML/project1.html">
                     <img
                         src="assets/analogueType/analogueTypeThumbnail1.png"
                         alt="analogueTypeThumbnail"
                     />
                 </a>
-            </p>
-        </div>
 
-        <div class="About" id="About">
-            <h1>About</h1>
-            <h2>who is I?</h2>
-            <p>
-                Donec venenatis condimentum nisl non blandit. Maecenas tincidunt
-                dui sit amet ullamcorper faucibus. Nulla eu finibus urna. Etiam
-                consectetur, neque id aliquam aliquet, dui sapien viverra leo, a
-                tincidunt velit ex quis dui. Phasellus fringilla euismod lectus,
-                non aliquam leo ornare eget. Quisque dapibus malesuada nunc id
-                tristique.
-            </p>
+                <a href="portfolioHTML/project1.html">
+                    <img
+                        src="assets/analogueType/analogueTypeThumbnail1.png"
+                        alt="analogueTypeThumbnail"
+                    />
+                </a>
+            </section>
+        </section>
 
-            <h2>Want to have a babble?</h2>
-        </div>
+        <section class="About big" id="About">
+            <h2>Babble with me</h2>
+        </section>
 
-        <div class="Footer" id="Footer">
+        <section class="Footer" id="Footer">
             <a href="accessibility.html">
                 <img
                     src="assets/icons/accessibilityIconSmall.png"
@@ -84,6 +79,6 @@
                     alt="Instagram Icon"
                     class="icons"
             /></a>
-        </div>
+        </section>
     </body>
 </html>

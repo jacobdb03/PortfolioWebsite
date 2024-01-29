@@ -1,6 +1,6 @@
 .Menu {
-    position: relative;
-    top: 1vw;
+    position: fixed;
+    top: 100px;
 
     background-color: #0f89fa;
     border-radius: 5vw;
@@ -10,26 +10,26 @@
     padding-top: 1vw;
     padding-bottom: 1vw;
 
-    margin-left: 20vw;
+    margin-left: 60vw;
     margin-right: 20vw;
     margin-top: 0vw;
 }
 
 .Home {
-    /*
-    position: sticky;
-    position: -webkit-sticky;
-    top: 50%;
-    */
-    margin-bottom: 50%;
+    grid-area: title;
 }
 
 .Portfolio {
-    margin-bottom: 50%;
+    grid-area: content;
+}
+
+.PortfolioGrid {
+    grid-template-areas: "column1 column2";
+    grid-area: column1;
 }
 
 .About {
-    margin-bottom: 50%;
+    grid-area: about;
 }
 
 .Footer {

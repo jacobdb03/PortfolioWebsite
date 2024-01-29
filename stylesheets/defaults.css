@@ -5,41 +5,51 @@ White: #EFF1F3
 */
 
 body {
-    text-align: center;
+    text-align: left;
     background-color: #eff1f3;
-    border: none;
-    padding: 0px;
-    overflow-x: hidden;
+    display: grid;
+
+    grid-template-areas:
+        "title title title"
+        "about content content";
+
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 h1 {
     font-family: "Outfit", sans-serif;
-    font-weight: 700;
-    font-size: 10vw;
+    font-weight: 500;
 
+    font-size: 80px;
     color: #0f89fa;
 
-    height: 50%;
-    line-height: 50%;
-
-    padding-bottom: 5%;
-
-    margin-top: 20%;
-    margin-bottom: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 
 h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
-    font-size: 3vw;
 
+    font-size: 30px;
     color: #0f89fa;
 
-    padding-top: 0%;
-    margin-top: 0%;
+    padding: 0px;
+    margin: 0px;
 }
 
 h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+
+    font-size: 15px;
+    color: #0f89fa;
+
+    padding: 0px;
+    margin: 0px;
 }
 
 p {
@@ -48,6 +58,7 @@ p {
 }
 
 img {
+    width: calc(20vw);
 }
 
 a {
