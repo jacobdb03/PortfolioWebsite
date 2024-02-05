@@ -1,40 +1,35 @@
 .Menu {
-    position: fixed;
-    top: 100px;
-
-    background-color: #0f89fa;
-    border-radius: 5vw;
-
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-
-    margin-left: 60vw;
-    margin-right: 20vw;
-    margin-top: 0vw;
+    position: sticky;
+    top: 5%;
 }
 
 .Home {
-    grid-area: title;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+
+    position: sticky;
+    top: 5%;
 }
 
 .Portfolio {
-    grid-area: content;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 0%;
 }
 
-.PortfolioGrid {
-    grid-template-areas: "column1 column2";
-    grid-area: column1;
+.PortfolioImg {
+    margin-left: 40%;
+    margin-right: 5%;
 }
 
 .About {
-    grid-area: about;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 0%;
 }
 
 .Footer {
-    position: fixed;
-    bottom: 1px;
-    margin-left: 10px;
-    margin-bottom: 0px;
+    margin-left: 10%;
+    margin-right: 5%;
 }

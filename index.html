@@ -12,11 +12,21 @@
             content="width=device-width, Height=device-height initial-scale=1"
         />
 
+        <!--Mouse follower stuff -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+        />
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
         <!--Google API font stuff - currently redundant as they are downloaded in folders but may switch back to this -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
 
@@ -28,6 +38,7 @@
 
         <!-- <My Logic script -->
         <script defer src="javascript/scroll.js"></script>
+        <!--<script defer src="javascript/mouse.js"></script>-->
     </head>
 
     <body>
@@ -35,34 +46,54 @@
             <a href="#Home"><button>Home</button></a>
             <a href="#Portfolio"><button>Portfolio</button></a>
             <a href="#About"><button>About</button></a>
-        </section>-->
+            </section>-->
 
-        <section class="Home big" id="Home">
+        <!-- make this a bit nicer -->
+        <script src="javascript/mouse.js"></script>
+
+        <section class="Home" id="Home">
             <h1>Jacob Bryant</h1>
             <h2>Creative & Designer</h2>
-            <h2>Portfolio & About</h2>
         </section>
 
-        <section class="Portfolio big" id="Portfolio About">
-            <section class="PortfolioGrid">
-                <a href="portfolioHTML/project1.html">
+        <section class="Portfolio" id="Portfolio">
+            <h1>Portfolio</h1>
+            <h2>My work</h2>
+            <div class="PortfolioImg">
+                <a href=" portfolioHTML/project1.html">
                     <img
                         src="assets/analogueType/analogueTypeThumbnail1.png"
                         alt="analogueTypeThumbnail"
                     />
                 </a>
-
-                <a href="portfolioHTML/project1.html">
+                <a href=" portfolioHTML/project1.html">
                     <img
                         src="assets/analogueType/analogueTypeThumbnail1.png"
                         alt="analogueTypeThumbnail"
                     />
                 </a>
-            </section>
+                <a href=" portfolioHTML/project1.html">
+                    <img
+                        src="assets/analogueType/analogueTypeThumbnail1.png"
+                        alt="analogueTypeThumbnail"
+                    />
+                </a>
+                <a href=" portfolioHTML/project1.html">
+                    <img
+                        src="assets/analogueType/analogueTypeThumbnail1.png"
+                        alt="analogueTypeThumbnail"
+                    />
+                </a>
+            </div>
         </section>
 
-        <section class="About big" id="About">
-            <h2>Babble with me</h2>
+        <section class="About" id="About">
+            <h1>About me</h1>
+            <h2>Who is Jacob Bryant?</h2>
+            <p>
+                A mult-fascited designer, good at many things. I have done meany
+                things in my time dun dun dun
+            </p>
         </section>
 
         <section class="Footer" id="Footer">
