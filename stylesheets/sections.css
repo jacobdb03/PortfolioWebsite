@@ -1,15 +1,10 @@
 .Menu {
-    position: sticky;
-    top: 5%;
 }
 
 .Home {
     margin-top: 15%;
     margin-left: 5%;
     margin-bottom: 0%;
-
-    position: sticky;
-    top: 5%;
 }
 
 .Portfolio {
@@ -32,4 +27,11 @@
 .Footer {
     margin-left: 10%;
     margin-right: 5%;
+}
+
+.Container {
+    height: 100svh;
+    height: 100vh;
+    position: sticky;
+    top: 5%;
 }
