@@ -3,10 +3,12 @@ Gunmetal: #152229
 Blue: #0F89FA
 White: #EFF1F3
 */
+
 body {
     text-align: left;
     background-color: #eff1f3;
     cursor: default;
+    margin: 0;
 }
 
 h1 {
@@ -30,6 +32,7 @@ h2 {
     padding: 0%;
     margin: 0%;
     margin-left: 5%;
+    margin-right: 10%;
 }
 
 h3 {
@@ -63,26 +66,11 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: #0f89fa;
-    color: #eff1f3;
+section {
+    padding-bottom: 0%;
 
-    border: none;
-
-    border-radius: 0vw;
-
-    cursor: pointer;
-    font-size: 1.5vw;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 300;
-}
-
-button:hover {
-    background-color: #eff1f3;
-    color: #0f89fa;
-
-    border-radius: 10vw;
-    border: none;
-
-    transition-duration: 0.5s;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+    margin-right: 5%;
 }
