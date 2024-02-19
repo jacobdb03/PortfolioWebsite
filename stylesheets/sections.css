@@ -1,4 +1,8 @@
-.Menu {
+#Menu {
+    padding-top: 15%;
+    padding-left: 60%;
+    position: sticky;
+    top: 5%;
 }
 
 #Home {
@@ -7,17 +11,19 @@
 #Portfolio {
 }
 
-.PortfolioTEST {
-    margin-top: 15%;
-}
-
 .PortfolioImg {
-    margin-left: 5%;
+    display: inline-block;
+    overflow: auto;
+    white-space: nowrap;
+
+    margin-left: 40%;
     margin-right: 0%;
 }
 
 .pImgStyle {
     border-radius: 20px;
+
+    margin-top: 5%;
 }
 
 #About {

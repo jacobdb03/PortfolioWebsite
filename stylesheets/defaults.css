@@ -73,7 +73,8 @@ li {
 }
 
 img {
-    width: 50%;
+    min-width: 50%;
+    max-width: 100%;
 }
 
 a {
