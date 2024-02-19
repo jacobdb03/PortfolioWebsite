@@ -11,3 +11,8 @@ const observer = new IntersectionObserver((entries) => {
 
 const scrollElements = document.querySelectorAll(".big");
 scrollElements.forEach((el) => observer.observe(el));
+
+//Scroll Reset to top on reload
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
