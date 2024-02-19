@@ -20,13 +20,8 @@
     margin-right: 0%;
 }
 
-.pImgStyle {
-    border-radius: 20px;
-
-    margin-top: 5%;
-}
-
 #About {
+    display: inline-block;
 }
 
 .Footer {
@@ -34,10 +29,4 @@
     margin-right: 5%;
     position: fixed;
     bottom: 2.5%;
-}
-
-.rect {
-    width: 100px;
-    height: 100px;
-    background-color: #0f89fa;
 }

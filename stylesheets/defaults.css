@@ -18,10 +18,11 @@ h1 {
     font-size: 600%;
     color: #0f89fa;
 
+    margin: 0%;
+    padding: 0%;
+
     padding: 0%;
     padding-top: 15%;
-
-    margin: 0%;
 }
 
 h2 {
@@ -45,10 +46,11 @@ h3 {
     font-size: 100%;
     color: #0f89fa;
 
+    margin: 0%;
     padding: 0%;
 
-    margin-left: 5%;
-    margin-right: 60%;
+    margin-left: 0%;
+    margin-right: 65%;
 }
 
 p {
@@ -56,9 +58,11 @@ p {
     font-weight: 300;
     font-size: 90%;
 
+    margin: 0%;
     padding: 0%;
-    margin-left: 5%;
-    margin-right: 60%;
+
+    margin-left: 0%;
+    margin-right: 65%;
 }
 
 li {
@@ -67,14 +71,16 @@ li {
     font-weight: 300;
     font-size: 90%;
 
+    margin: 0%;
     padding: 0%;
-    margin-left: 3%;
-    margin-right: 60%;
+
+    margin-left: 0%;
+    margin-right: 65%;
 }
 
 img {
-    min-width: 50%;
-    max-width: 100%;
+    max-width: 60%;
+    margin-right: 2.5%;
 }
 
 a {
@@ -86,8 +92,6 @@ a {
 section {
     padding-bottom: 0%;
 
-    margin-top: 15%;
     margin-left: 5%;
-    margin-bottom: 20%;
     margin-right: 5%;
 }
