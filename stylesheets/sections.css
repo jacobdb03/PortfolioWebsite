@@ -7,9 +7,13 @@
 #Portfolio {
 }
 
+.PortfolioTEST {
+    margin-top: 15%;
+}
+
 .PortfolioImg {
-    margin-left: 40%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 0%;
 }
 
 .pImgStyle {
@@ -28,6 +32,6 @@
 
 .rect {
     width: 100px;
-    height: 100vh;
+    height: 100px;
     background-color: #0f89fa;
 }

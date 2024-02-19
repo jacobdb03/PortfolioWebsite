@@ -12,6 +12,7 @@
     transition-duration: 0.5s;
 }
 
+/*Stuff to do with scroll animations but currrrently out of op*/
 .big {
     opacity: 1;
     transition: all 1s;

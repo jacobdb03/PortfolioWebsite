@@ -1,3 +1,4 @@
+// Scrolling observing system BROKEN/ NOT ACTIVE - for scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
