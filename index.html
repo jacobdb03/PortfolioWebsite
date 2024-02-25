@@ -7,10 +7,12 @@
 
         <!-- Meta Info -->
         <meta charset="utf-8" />
+
         <meta
             name="viewport"
-            content="width=device-width, Height=device-height initial-scale=1"
+            content="width=device-width, height=device-height, initial-scale=1"
         />
+
         <meta name="author" content="Jacob Bryant" />
 
         <!--Mouse follower stuff -->
@@ -43,47 +45,14 @@
     </head>
 
     <body>
-        <!--!! I want the first hting to be the loading animation-->
-        <!--!! Work on breakpoints-->
+        <div class="flexGrid>">
+            <div style="flex: 1; background-color: pink"></div>
 
-        <div style="background-color: #152229; padding-bottom: 2.5%">
-            <h1 style="padding-top: 2.5%; padding-left: 5%">
-                Welcome to my website
-            </h1>
-            <p style="color: #eff1f3; padding-left: 5%; margin-right: 0%">
-                This site is currently under construction. I am coding and
-                designing this website from the ground up, so please ignore any
-                oversites or unifinished elements at this stage.
-            </p>
-        </div>
-
-        <!--!! Menu disabled for now as its in shambles - needs to be designed -->
-        <!--<div id="Menu">
-            <a href="#Home"><button>Home</button></a>
-            <a href="#Portfolio"><button>Portfolio</button></a>
-            <a href="#About"><button>About</button></a>
-        </div>-->
-
-        <!-- !! make this a bit nicer -->
-        <script src="javascript/mouse.js"></script>
-
-        <!--!! Home disbaled for now - needs to load onto a navigational section or have my showreel ready-->
-        <!--<section id="Home">
-            <h1>Jacob Bryant</h1>
-            <h2>Creative & Designer</h2>
-        </section>-->
-
-        <!-- Would love for the ball hover to react to this and make the images draggable accross. also need to implement an arrow to make it clear to scrol them -->
-        <section id="Portfolio">
-            <h1>Portfolio</h1>
-            <h2>Myself and my work</h2>
-
-            <!--About section moved into the portfolio section for now - remember to change it back from inline -block if needed-->
-            <section id="About">
+            <div class="about">
                 <!--<h1>About me</h1>
                 <h2>Who is Jacob Bryant?</h2>-->
 
-                <h3>How would I describe myself?</h3>
+                <h3 style="margin-top: 0%">How would I describe myself?</h3>
                 <p>I have a buoyant, happy and bubbly personality.</p>
                 <p>
                     Observant, creative and detail oriented in all things
@@ -112,17 +81,15 @@
                 </p>
 
                 <h3>What are my skills?</h3>
-                <ul>
-                    <li>Motion design</li>
-                    <li>Brand world/ visual identities</li>
-                    <li>UI/UX design</li>
-                    <li>Coding</li>
-                    <li>3D design</li>
-                    <li>Illustration</li>
-                </ul>
-            </section>
+                <p>• &nbsp&nbsp&nbsp Motion design</p>
+                <p>• &nbsp&nbsp&nbsp Visual identities</p>
+                <p>• &nbsp&nbsp&nbsp UI/UX design</p>
+                <p>• &nbsp&nbsp&nbsp Coding</p>
+                <p>• &nbsp&nbsp&nbsp 3D design</p>
+                <p>• &nbsp&nbsp&nbsp Illustration</p>
+            </div>
 
-            <div class="PortfolioImg">
+            <div class="images">
                 <a href="work/analogueType/">
                     <img
                         src="work/analogueType/TypeThumb.png"
@@ -159,22 +126,6 @@
                     />
                 </a>
             </div>
-        </section>
-
-        <div id="Footer">
-            <!--<a href="accessibility.html">
-                <img
-                    src="assets/accessibilityIconSmall.png"
-                    alt="accessibility Icon"
-                    class="icons"
-                />
-                </a>-->
-            <a href="https://www.instagram.com/jacobdb03/"
-                ><img
-                    src="assets/instagramIconSmall.png"
-                    alt="Instagram Icon"
-                    class="icons"
-            /></a>
         </div>
     </body>
 </html>

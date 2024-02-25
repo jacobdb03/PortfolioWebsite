@@ -8,7 +8,12 @@ body {
     text-align: left;
     background-color: #eff1f3;
     cursor: default;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+
+    display: inline-block;
+    position: left;
+    overflow: hidden;
 }
 
 h1 {
@@ -18,10 +23,9 @@ h1 {
     font-size: 600%;
     color: #0f89fa;
 
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 
-    padding: 0%;
     padding-top: 15%;
 }
 
@@ -29,58 +33,44 @@ h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 
-    font-size: 200%;
+    font-size: 300%;
     color: #152229;
 
-    padding: 0%;
-    margin: 0%;
+    margin: 0px;
+    padding: 0px;
 
     margin-left: 5%;
     margin-right: 10%;
+    margin-bottom: 2.5%;
 }
 
 h3 {
     font-family: "Outfit", sans-serif;
     font-weight: 500;
 
-    font-size: 100%;
+    font-size: 130%;
     color: #0f89fa;
 
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 
-    margin-left: 0%;
-    margin-right: 65%;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
 }
 
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
-    font-size: 90%;
+    font-size: 100%;
 
-    margin: 0%;
-    padding: 0%;
-
-    margin-left: 0%;
-    margin-right: 65%;
-}
-
-li {
-    /*Same as above*/
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
-    font-size: 90%;
-
-    margin: 0%;
-    padding: 0%;
-
-    margin-left: 0%;
-    margin-right: 65%;
+    margin: 0px;
+    padding: 0px;
 }
 
 img {
-    max-width: 60%;
-    margin-right: 2.5%;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5%;
 }
 
 a {
@@ -90,8 +80,12 @@ a {
 /*menu and button stuff*/
 
 section {
-    padding-bottom: 0%;
-
     margin-left: 5%;
     margin-right: 5%;
+}
+
+div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
 }

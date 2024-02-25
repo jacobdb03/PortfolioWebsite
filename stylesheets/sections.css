@@ -9,22 +9,47 @@
 }
 
 #Portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: sticky;
+    align-self: flex-start;
+    top: 10%;
+
+    margin-left: 5%;
 }
 
-.PortfolioImg {
-    display: inline-block;
-    overflow: auto;
-    white-space: nowrap;
+.flexGrid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
-    margin-left: 40%;
+    width: 100vw;
+    height: 20vh;
+}
+
+.images {
+    flex: 2;
+    overflow-y: hidden;
+
     margin-right: 0%;
 }
 
-#About {
-    display: inline-block;
+.about {
+    position: sticky;
+    top: 40%;
+
+    min-width: 35%;
+
+    flex: 1;
+
+    padding: 0%;
+    margin: 0%;
+    margin-right: 5%;
 }
 
-.Footer {
+.footer {
     margin-left: 9%;
     margin-right: 5%;
     position: fixed;
