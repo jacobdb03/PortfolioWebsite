@@ -1,20 +1,15 @@
 #Menu {
-    padding-top: 15%;
-    padding-left: 60%;
-    position: fixed;
-    top: 5%;
 }
 
 #Home {
     display: flex;
     flex-flow: column wrap;
-
-    position: sticky;
-    align-self: flex-start;
-    top: 5vh;
 }
 
 #Portfolio {
+}
+
+.flexbox {
     display: flex;
     flex-flow: row wrap;
     margin-top: 5vh;
@@ -24,28 +19,17 @@
     padding: 0%;
     margin: 0%;
 
-    flex: 10vw;
-
-    position: sticky;
-    align-self: flex-start;
-    top: 22.5vh;
+    flex: 2;
 }
 
 .images {
-    padding: 0%;
-    margin: 0%;
     margin-left: 5vw;
-    margin-right: 5vw;
 
     height: 60vh;
     overflow: scroll;
 
-    flex: 20vw;
+    flex: 3;
 }
 
 .footer {
-    margin-left: 9%;
-    margin-right: 5%;
-    position: fixed;
-    bottom: 2.5%;
 }

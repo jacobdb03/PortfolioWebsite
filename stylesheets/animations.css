@@ -1,25 +1,21 @@
 /*DOT FOLLOWING CUSTOMISATION*/
 
-
 /*SCREEN SIZE BREAKPOINTS*/
 
 /*Horizontal phones Only */
 @media only screen and (max-width: 768px) {
-    .rect {
-        background-color: red;
+    .flexbox {
+        flex-flow: column wrap;
+    }
+
+    .about {
     }
 }
 
-
 /*Landscape phones, portrait tablets and half size browser windows*/
 @media only screen and (min-width: 768px) {
-    .rect {
-        background-color: blue;
-    }
 }
 
 /* Horizontal tablets and laptops */
 @media only screen and (min-width: 1200px) {
-    .rect {
-        background-color: pink;
-    }
+}

@@ -1,101 +1,119 @@
 <!doctype html>
 <html>
+    <head>
+        <!-- Title Banner Stuff -->
+        <title>Jacob Bryant's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
-<head>
-    <!-- Title Banner Stuff -->
-    <title>Jacob Bryant's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
+        <!-- Meta Info -->
+        <meta charset="utf-8" />
 
-    <!-- Meta Info -->
-    <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
 
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+        <meta name="author" content="Jacob Bryant" />
 
-    <meta name="author" content="Jacob Bryant" />
+        <!--Mouse follower stuff -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+        />
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
-    <!--Mouse follower stuff -->
-    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css" />
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <!--Google API font stuff -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!--Google API font stuff -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+        <!--My CSS documentS -->
+        <link rel="stylesheet" href="stylesheets/defaults.css" />
+        <link rel="stylesheet" href="stylesheets/sections.css" />
+        <link rel="stylesheet" href="stylesheets/attributes.css" />
+        <link rel="stylesheet" href="stylesheets/animations.css" />
 
-    <!--My CSS documentS -->
-    <link rel="stylesheet" href="stylesheets/defaults.css" />
-    <link rel="stylesheet" href="stylesheets/sections.css" />
-    <link rel="stylesheet" href="stylesheets/attributes.css" />
-    <link rel="stylesheet" href="stylesheets/animations.css" />
+        <!-- <My Logic script -->
+        <script defer src="javascript/scroll.js"></script>
+        <!--<script defer src="javascript/mouse.js"></script>-->
+    </head>
 
-    <!-- <My Logic script -->
-    <script defer src="javascript/scroll.js"></script>
-    <!--<script defer src="javascript/mouse.js"></script>-->
-</head>
-
-<body>
-    <div class=rect>
-
+    <body>
         <section id="Home">
             <h1>Jacob Bryant</h1>
             <h2>Creative & Designer</h2>
         </section>
 
         <section id="Portfolio">
-            <div class="about">
-                <h3 style="padding-top: 0vh">Who am I?</h3>
-                <p>
-                    Buoyant, happy and bubbly. I am observant, creative and
-                    detail oriented in my designs and adaptable, organised and a
-                    strong communicator in my design process.
-                </p>
-                <h3>What do I do?</h3>
-                <p>
-                    I like to explore motion and visual identities. I create
-                    animated and expressive dynamic brand identities.
-                </p>
-                <p>
-                    I code and design websites to express digital solutions to
-                    problems.
-                </p>
-                <p>
-                    I create 3D designs which allows me for the exploration of a
-                    brand in a new dimension.
-                </p>
-                <h3>What are my skills?</h3>
-                <p>• &nbsp&nbsp&nbsp Motion design</p>
-                <p>• &nbsp&nbsp&nbsp Visual identities</p>
-                <p>• &nbsp&nbsp&nbsp UI/UX design</p>
-                <p>• &nbsp&nbsp&nbsp Coding</p>
-                <p>• &nbsp&nbsp&nbsp 3D design</p>
-                <p>• &nbsp&nbsp&nbsp Illustration</p>
-            </div>
+            <div class="flexbox">
+                <div class="about">
+                    <h3 style="padding-top: 0vh">Who am I?</h3>
+                    <p>
+                        Buoyant, happy and bubbly. I am observant, creative and
+                        detail oriented in my designs and adaptable, organised
+                        and a strong communicator in my design process.
+                    </p>
+                    <h3>What do I do?</h3>
+                    <p>
+                        I like to explore motion and visual identities. I create
+                        animated and expressive dynamic brand identities.
+                    </p>
+                    <p>
+                        I code and design websites to express digital solutions
+                        to problems.
+                    </p>
+                    <p>
+                        I create 3D designs which allows me for the exploration
+                        of a brand in a new dimension.
+                    </p>
+                    <h3>What are my skills?</h3>
+                    <p>• &nbsp&nbsp&nbsp Motion design</p>
+                    <p>• &nbsp&nbsp&nbsp Visual identities</p>
+                    <p>• &nbsp&nbsp&nbsp UI/UX design</p>
+                    <p>• &nbsp&nbsp&nbsp Coding</p>
+                    <p>• &nbsp&nbsp&nbsp 3D design</p>
+                    <p>• &nbsp&nbsp&nbsp Illustration</p>
+                </div>
 
-            <div class="images">
-                <a href="work/analogueType/">
-                    <img src="work/analogueType/TypeThumb.png" alt="Analogue Type Thumbnail" class="pImgStyle" />
-                </a>
-                <a href="work/rediscoverYou/">
-                    <img src="work/rediscoverYou/RediscoverThumb.png" alt="Rediscover You Thumbnail"
-                        class="pImgStyle" />
-                </a>
-                <a href="work/colourfulIdentity/">
-                    <img src="work/colourfulIdentity/ColourThumb.png" alt="Colourful Identity Thumbnail"
-                        class="pImgStyle" />
-                </a>
-                <a href="work/titleSequence/">
-                    <img src="work/titleSequence/TitleThumb.png" alt="Title Sequence Thumbnail" class="pImgStyle" />
-                </a>
-                <a href="work/exhibitionIdentity/">
-                    <img src="work/exhibitionIdentity/exhibitionThumb.png" alt="Exhibition Thumbnail"
-                        class="pImgStyle" />
-                </a>
+                <div class="images">
+                    <a href="work/analogueType/">
+                        <img
+                            src="work/analogueType/TypeThumb.png"
+                            alt="Analogue Type Thumbnail"
+                        />
+                    </a>
+                    <a href="work/rediscoverYou/">
+                        <img
+                            src="work/rediscoverYou/RediscoverThumb.png"
+                            alt="Rediscover You Thumbnail"
+                        />
+                    </a>
+                    <a href="work/colourfulIdentity/">
+                        <img
+                            src="work/colourfulIdentity/ColourThumb.png"
+                            alt="Colourful Identity Thumbnail"
+                        />
+                    </a>
+                    <a href="work/titleSequence/">
+                        <img
+                            src="work/titleSequence/TitleThumb.png"
+                            alt="Title Sequence Thumbnail"
+                        />
+                    </a>
+                    <a href="work/exhibitionIdentity/">
+                        <img
+                            src="work/exhibitionIdentity/exhibitionThumb.png"
+                            alt="Exhibition Thumbnail"
+                        />
+                    </a>
+                </div>
             </div>
         </section>
-</body>
-
+    </body>
 </html>

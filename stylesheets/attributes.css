@@ -1,31 +1,5 @@
-.icons {
-    display: inline-block;
-    max-width: 3%;
-    min-width: 1%;
-    padding: 0.5%;
-}
-
-.icons:hover {
-    max-width: 2%;
-    min-width: 2%;
-    background-color: #0f89fa;
-    border-radius: 50px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-
 .rect {
     width: 80vw;
     height: 10vh;
     position: fixed;
-}
-
-/*Stuff to do with scroll animations but currrrently out of op*/
-.big {
-    opacity: 1;
-    transition: all 1s;
-}
-
-.small {
-    opacity: 0;
 }
