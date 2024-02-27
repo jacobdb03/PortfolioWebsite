@@ -1,9 +1,14 @@
-#Menu {
+.menu {
+    width: 20vw;
+    height: 5vw;
+    top: 12.5vw;
+    left: 75vw;
+    position: absolute;
+    border-radius: 10vw;
+    background-color: #0f89fa;
 }
 
 #Home {
-    display: flex;
-    flex-flow: column wrap;
 }
 
 #Portfolio {
@@ -12,7 +17,7 @@
 .flexbox {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 5vh;
+    margin-top: 5vw;
 }
 
 .about {
@@ -25,10 +30,11 @@
 .images {
     margin-left: 5vw;
 
-    height: 60vh;
+    height: 60vw;
     overflow: scroll;
 
     flex: 3;
+    overflow-x: hidden;
 }
 
 .footer {
