@@ -15,8 +15,9 @@
 }
 
 .rect {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
 }
 
 /*Stuff to do with scroll animations but currrrently out of op*/

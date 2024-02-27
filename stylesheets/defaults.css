@@ -8,67 +8,63 @@ body {
     text-align: left;
     background-color: #eff1f3;
     cursor: default;
-    margin: 0px;
-    padding: 0px;
+    margin: 5vw;
+    padding: 0vw;
 
-    display: inline-block;
-    position: left;
     overflow: hidden;
 }
 
 h1 {
     font-family: "Outfit", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 
-    font-size: 600%;
+    font-size: 8.4vw;
     color: #0f89fa;
 
     margin: 0px;
     padding: 0px;
-
-    padding-top: 15%;
 }
 
 h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 
-    font-size: 300%;
+    font-size: 2.5vw;
     color: #152229;
 
     margin: 0px;
     padding: 0px;
 
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-bottom: 2.5%;
+    margin-left: 5vw;
 }
 
 h3 {
     font-family: "Outfit", sans-serif;
     font-weight: 500;
 
-    font-size: 130%;
+    font-size: 1.5vw;
     color: #0f89fa;
 
     margin: 0px;
     padding: 0px;
-
-    margin-top: 5%;
-    margin-bottom: 1.5%;
+    margin-left: 5vw;
+    padding-top: 2vh;
 }
 
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
-    font-size: 100%;
+    font-size: 1vw;
 
     margin: 0px;
     padding: 0px;
+    margin-left: 5vw;
+    padding-top: 1vh;
 }
 
 img {
     max-width: 100%;
+    max-height: 100%;
     border-radius: 20px;
     margin-bottom: 5%;
 }
@@ -80,12 +76,7 @@ a {
 /*menu and button stuff*/
 
 section {
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 div {
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
 }

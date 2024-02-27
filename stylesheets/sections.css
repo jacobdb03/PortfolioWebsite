@@ -1,52 +1,46 @@
 #Menu {
     padding-top: 15%;
     padding-left: 60%;
-    position: sticky;
+    position: fixed;
     top: 5%;
 }
 
 #Home {
+    display: flex;
+    flex-flow: column wrap;
+
+    position: sticky;
+    align-self: flex-start;
+    top: 5vh;
 }
 
 #Portfolio {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    position: sticky;
-    align-self: flex-start;
-    top: 10%;
-
-    margin-left: 5%;
-}
-
-.flexGrid {
-    display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-
-    width: 100vw;
-    height: 20vh;
-}
-
-.images {
-    flex: 2;
-    overflow-y: hidden;
-
-    margin-right: 0%;
+    margin-top: 5vh;
 }
 
 .about {
-    position: sticky;
-    top: 40%;
-
-    min-width: 35%;
-
-    flex: 1;
-
     padding: 0%;
     margin: 0%;
-    margin-right: 5%;
+
+    flex: 10vw;
+
+    position: sticky;
+    align-self: flex-start;
+    top: 22.5vh;
+}
+
+.images {
+    padding: 0%;
+    margin: 0%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    height: 60vh;
+    overflow: scroll;
+
+    flex: 20vw;
 }
 
 .footer {
