@@ -1,11 +1,16 @@
 .menu {
     width: 20vw;
-    height: 5vw;
-    top: 12.5vw;
-    left: 75vw;
+    top: 11vw;
+
     position: absolute;
-    border-radius: 10vw;
+    right: 0;
+
     background-color: #0f89fa;
+    border-radius: 10vw;
+    padding: 1.5vw;
+    text-align: center;
+
+    margin-right: 5vw;
 }
 
 #Home {
@@ -15,26 +20,31 @@
 }
 
 .flexbox {
+    margin-top: 5vw;
+
     display: flex;
     flex-flow: row wrap;
-    margin-top: 5vw;
 }
 
 .about {
+    position: sticky;
+    align-self: flex-start;
+    top: 10vw;
+
     padding: 0%;
     margin: 0%;
 
-    flex: 2;
+    flex: 4;
 }
 
 .images {
     margin-left: 5vw;
 
-    height: 60vw;
     overflow: scroll;
 
-    flex: 3;
+    flex: 6;
     overflow-x: hidden;
+    overflow-y: clip;
 }
 
 .footer {

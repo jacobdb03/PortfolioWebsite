@@ -11,8 +11,6 @@ body {
 
     margin: 5vw;
     padding: 0vw;
-
-    overflow: hidden;
 }
 
 h1 {
@@ -68,7 +66,6 @@ p {
 
 img {
     max-width: 100%;
-    max-height: 100%;
     border-radius: 20px;
     margin-bottom: 5%;
 }
@@ -82,5 +79,10 @@ a {
 section {
 }
 
-div {
+.button {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+
+    font-size: 1.5vw;
+    color: #eff1f3;
 }
