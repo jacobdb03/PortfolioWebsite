@@ -81,10 +81,7 @@ a {
 section {
 }
 
-.button {
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-
-    font-size: 1.5vw;
-    color: #eff1f3;
+iframe {
+    border-radius: 20px;
+    border: none;
 }

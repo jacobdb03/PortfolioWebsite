@@ -2,15 +2,13 @@
     width: 20vw;
     top: 11vw;
 
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 10vw;
 
     background-color: #0f89fa;
     border-radius: 10vw;
     padding: 1.5vw;
     text-align: center;
-
-    margin-right: 5vw;
 }
 
 #Home {
@@ -29,7 +27,7 @@
 .about {
     position: sticky;
     align-self: flex-start;
-    top: 10vw;
+    top: 5vw;
 
     padding: 0%;
     margin: 0%;
@@ -41,6 +39,7 @@
     margin-left: 5vw;
 
     overflow: scroll;
+    scrollbar-width: 0;
 
     flex: 6;
     overflow-x: hidden;
