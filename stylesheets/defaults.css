@@ -11,6 +11,8 @@ body {
 
     margin: 5vw;
     padding: 0vw;
+
+    overflow: scroll;
 }
 
 h1 {
