@@ -4,12 +4,6 @@
 
 /*Horizontal phones Only */
 @media only screen and (max-width: 768px) {
-    .flexbox {
-        flex-flow: column wrap;
-    }
-
-    .about {
-    }
 }
 
 /*Landscape phones, portrait tablets and half size browser windows*/
@@ -18,8 +12,4 @@
 
 /* Horizontal tablets and laptops */
 @media only screen and (min-width: 1280px) {
-    body {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
 }

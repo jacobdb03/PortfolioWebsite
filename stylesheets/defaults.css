@@ -9,10 +9,12 @@ body {
     background-color: #eff1f3;
     cursor: default;
 
-    margin: 5vw;
+    margin: 5%;
     padding: 0vw;
 
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 h1 {
