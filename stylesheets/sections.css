@@ -7,8 +7,8 @@
     background-color: #eff1f3;
     margin-top: -5vw;
     margin-left: -5vw;
-    width: 100vw;
-    height: 30vw;
+    width: 120vw;
+    height: 25vw;
     position: fixed;
 }
 
@@ -37,20 +37,18 @@
     text-align: center;
 }
 
-#Home {
-}
-
 .pageContent {
     display: flex;
     flex-flow: row wrap;
 
-    margin-top: 10vw;
+    margin-right: 5%;
+    margin-top: 7vw;
 }
 
 .about {
     position: sticky;
     align-self: flex-start;
-    top: 28vw;
+    top: 20vw;
 
     padding: 0%;
     margin: 0%;
@@ -59,17 +57,6 @@
 }
 
 .images {
-    margin-left: 5vw;
-
-    overflow: scroll;
-    scrollbar-width: 0;
-
-    flex: 6;
-    overflow-x: hidden;
-    overflow-y: clip;
-}
-
-.movie {
     margin-left: 5vw;
 
     overflow: scroll;

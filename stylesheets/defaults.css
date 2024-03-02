@@ -9,12 +9,20 @@ body {
     background-color: #eff1f3;
     cursor: default;
 
-    margin: 5%;
     padding: 0vw;
 
     overflow-y: scroll;
     scrollbar-width: none;
     overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "title menu"
+        "subtitle menu"
+        "paragraph work";
+    gap: 2.5vw 5vw;
 }
 
 h1 {
@@ -39,6 +47,7 @@ h2 {
     margin: 0px;
     padding: 0px;
 
+    margin-top: -2vw;
     margin-left: 5vw;
 }
 
@@ -51,6 +60,7 @@ h3 {
 
     margin: 0px;
     padding: 0px;
+
     margin-left: 5vw;
     padding-top: 2vw;
 }
@@ -64,11 +74,14 @@ p {
 
     margin: 0px;
     padding: 0px;
+
     margin-left: 5vw;
     padding-top: 1vw;
 }
 
 img {
+    grid-area: work;
+
     max-width: 100%;
     border-radius: 20px;
     margin-bottom: 5%;
@@ -81,9 +94,4 @@ a {
 /*menu and button stuff*/
 
 section {
-}
-
-iframe {
-    border-radius: 20px;
-    border: none;
 }

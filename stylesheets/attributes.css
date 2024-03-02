@@ -1,4 +1,5 @@
 .rect {
+    grid-area: menu;
     width: 80vw;
     height: 10vw;
     position: fixed;

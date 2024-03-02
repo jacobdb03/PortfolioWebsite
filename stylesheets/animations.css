@@ -4,12 +4,67 @@
 
 /*Horizontal phones Only */
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 25vw;
+        margin-left: 2.5vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    .about {
+        position: static;
+        flex: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .images {
+        flex: 100%;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .headerBg {
+        height: 0vw;
+    }
 }
 
 /*Landscape phones, portrait tablets and half size browser windows*/
 @media only screen and (min-width: 768px) {
+    body {
+        margin: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 /* Horizontal tablets and laptops */
 @media only screen and (min-width: 1280px) {
+    body {
+        margin: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .about {
+    }
 }
