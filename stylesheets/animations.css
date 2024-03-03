@@ -38,6 +38,10 @@
     .headerBg {
         height: 0vw;
     }
+
+    .navigation {
+        font-size: 2vw;
+    }
 }
 
 /*Landscape phones, portrait tablets and half size browser windows*/
@@ -63,8 +67,5 @@
 
     p {
         font-size: 0.8rem;
-    }
-
-    .about {
     }
 }

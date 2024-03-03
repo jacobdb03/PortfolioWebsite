@@ -9,11 +9,22 @@ body {
     background-color: #eff1f3;
     cursor: default;
 
+    margin: 0vw;
+
     padding: 0vw;
+
+    margin-bottom: 5vw;
 
     overflow-y: scroll;
     scrollbar-width: none;
     overflow-x: hidden;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+
+    font-size: 1vw;
+    color: #152229;
+
 }
 
 main {
@@ -47,7 +58,7 @@ h2 {
     margin: 0px;
     padding: 0px;
 
-    margin-top: -2vw;
+    margin-top: 0vw;
     margin-left: 5vw;
 }
 
@@ -69,7 +80,7 @@ p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 
-    font-size: 1vw;
+    font-size: 1.2vw;
     color: #152229;
 
     margin: 0px;
@@ -80,9 +91,19 @@ p {
 }
 
 img {
-    grid-area: work;
 
     max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+video {
+
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+    style: margin-right: 0%;
+
     border-radius: 20px;
     margin-bottom: 5%;
 }
@@ -93,5 +114,4 @@ a {
 
 /*menu and button stuff*/
 
-section {
-}
+section {}

@@ -3,18 +3,12 @@
     top: 5vw;
 }
 
-.headerBg {
-    background-color: #eff1f3;
-    margin-top: -5vw;
-    margin-left: -5vw;
-    width: 120vw;
-    height: 25vw;
-    position: fixed;
-}
-
 .navigation {
-    position: sticky;
-    top: -10vw;
+    position: absolute;
+    top: 5vw;
+    left: 60vw;
+
+    text-align: right;
 
     font-family: "Outfit", sans-serif;
     font-weight: 500;
@@ -41,14 +35,23 @@
     display: flex;
     flex-flow: row wrap;
 
+    position: absolute;
+    align-self: flex-start;
+    top: 10vw;
+
     margin-right: 5%;
     margin-top: 7vw;
+
+    height: 80%;
+
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .about {
     position: sticky;
     align-self: flex-start;
-    top: 20vw;
+    top: 0px;
 
     padding: 0%;
     margin: 0%;
@@ -57,14 +60,15 @@
 }
 
 .images {
+    position: sticky;
+    align-self: flex-start;
+
+    padding: 0%;
+    margin: 0%;
+
     margin-left: 5vw;
 
-    overflow: scroll;
-    scrollbar-width: 0;
-
     flex: 6;
-    overflow-x: hidden;
-    overflow-y: clip;
 }
 
 .footer {
