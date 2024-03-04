@@ -39,10 +39,10 @@
     align-self: flex-start;
     top: 10vw;
 
-    margin-right: 5%;
+    margin-right: 10%;
     margin-top: 7vw;
 
-    height: 80%;
+    height: 70%;
 
     overflow: scroll;
     scrollbar-width: none;

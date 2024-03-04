@@ -21,9 +21,14 @@
         font-size: 2vw;
     }
 
+    .pageContent {
+        margin-top: 70vw;
+    }
+
     .about {
         position: static;
         flex: 100%;
+
         margin-bottom: 5vw;
     }
 
@@ -41,6 +46,8 @@
 
     .navigation {
         font-size: 2vw;
+        text-align: left;
+        left: 0vw;
     }
 }
 
