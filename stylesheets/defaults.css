@@ -101,7 +101,7 @@ video {
 
     display: inline-block;
     float: left;
-    max-width: 50%;
+    max-width: 100%;
     style: margin-right: 0%;
 
     border-radius: 20px;
