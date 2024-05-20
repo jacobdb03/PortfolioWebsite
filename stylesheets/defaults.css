@@ -1,117 +1,158 @@
 /*
+COLOURS
+
 Gunmetal: #152229
 Blue: #0F89FA
 White: #EFF1F3
 */
 
 body {
-    text-align: left;
     background-color: #eff1f3;
-    cursor: default;
 
-    margin: 0vw;
-
-    padding: 0vw;
-
-    margin-bottom: 5vw;
-
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: none;
     overflow-x: hidden;
 
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
+    max-width: 1280px;
 
-    font-size: 1vw;
-    color: #152229;
-
+    margin: min(5vw + 5vh) auto;
+    padding: 0%;
 }
 
-main {
+.pageContent {
     display: grid;
-    grid-template-areas:
-        "title menu"
-        "subtitle menu"
-        "paragraph work";
-    gap: 2.5vw 5vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.5%;
+    margin: 5rem;
 }
 
 h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
+    line-height: 80%;
 
-    font-size: 8.4vw;
+    /* Work out how to do a max font size*/
+    font-size: 10rem;
     color: #0f89fa;
 
-    margin: 0px;
-    margin-top: 2.5vw;
-    padding: 0px;
+    grid-column: 1 / span 3;
 }
 
 h2 {
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
-
-    font-size: 2.5vw;
-    color: #152229;
-
-    margin: 0px;
-    padding: 0px;
-
-    margin-top: 0vw;
-    margin-left: 5vw;
 }
 
 h3 {
     font-family: "Outfit", sans-serif;
     font-weight: 500;
+    color: #0f89fa;
 
-    font-size: 1.5vw;
-    color: #152229;
-
-    margin: 0px;
-    padding: 0px;
-
-    margin-left: 5vw;
-    padding-top: 2vw;
+    font-size: 2 rem;
+    line-height: 100%;
+    text-align: left;
+    align-self: flex-end;
+    grid-column: 1;
 }
 
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 
-    font-size: 1.2vw;
+    font-size: 1rem;
+    line-height: 180%;
     color: #152229;
 
-    margin: 0px;
-    padding: 0px;
-
-    margin-left: 5vw;
-    padding-top: 0.5vw;
-}
-
-img {
-
-    max-width: 100%;
-    border-radius: 20px;
-    margin-bottom: 5%;
+    grid-column: 1 / span 2;
 }
 
 video {
-
-    display: inline-block;
-    float: left;
-    max-width: 100%;
-    style: margin-right: 0%;
-
     border-radius: 20px;
+    margin-bottom: 5%;
+    grid-column: 1 / span 3;
+}
+
+img {
+    max-width: 100%;
+    border-radius: calc(1vw + 10px);
+
     margin-bottom: 5%;
 }
 
 a {
     text-decoration: none;
+    margin: 1%;
+    grid-column: 1 / span 3;
 }
 
-/*menu and button stuff*/
+.menuButton {
+    height: 75px;
+    width: 75px;
+    background-color: #0f89fa;
+    border-radius: 50%;
 
-section {}
+    position: sticky;
+    top: 50px;
+
+    border: none;
+}
+
+.menuButton img {
+    position: sticky;
+    top: 50px;
+    left: 1%;
+    max-width: 100%;
+    border-radius: 0%;
+}
+
+.menu {
+    height: 50px;
+    background-color: #0f89fa;
+    border-radius: 50px;
+
+    position: sticky;
+    top: 50px;
+
+    border: none;
+    justify-content: center;
+}
+
+.menuDesign {
+    text-align: center;
+    align-content: center;
+
+    height: max(5rem);
+    border-radius: 100vw;
+    background-color: #0f89fa;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    list-style-type: none;
+
+    position: sticky;
+    top: 5lvh;
+}
+
+.menuElement {
+    display: inline-block;
+    float: right;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.menuLink {
+    font-size: 1rem;
+    font-family: "outfit", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #eff1f3;
+}
+
+.menuLink:hover {
+    transition-duration: 0.2s;
+
+    font-weight: 700;
+    text-decoration: none;
+}

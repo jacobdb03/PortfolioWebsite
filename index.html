@@ -1,119 +1,129 @@
 <!doctype html>
 <html>
+    <head>
+        <!-- Title Banner Stuff -->
+        <title>Jacob Bryant</title>
+        <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
-<head>
-    <!-- Title Banner Stuff -->
-    <title>Jacob Bryant's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
+        <!-- Meta Info -->
+        <meta charset="utf-8" />
 
-    <!-- Meta Info -->
-    <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
 
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+        <meta name="author" content="Jacob Bryant" />
 
-    <meta name="author" content="Jacob Bryant" />
+        <!--Google API font stuff -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!--Mouse follower stuff -->
-    <link rel="stylesheet" href="ht tps://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css" />
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
-    <!--Google API font stuff -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-
-    <!--My CSS documentS -->
-    <link rel="stylesheet" href="stylesheets/defaults.css" />
-    <link rel="stylesheet" href="stylesheets/sections.css" />
+        <!--My CSS documentS -->
+        <link rel="stylesheet" href="stylesheets/defaults.css" />
+        <link rel="stylesheet" href="stylesheets/animations.css" />
+        <!--<link rel="stylesheet" href="stylesheets/sections.css" />
     <link rel="stylesheet" href="stylesheets/attributes.css" />
-    <link rel="stylesheet" href="stylesheets/animations.css" />
+    <link rel="stylesheet" href="stylesheets/animations.css" />-->
 
-    <!-- <My Logic script -->
-    <script defer src="javascript/scroll.js"></script>
-    <!--<script defer src="javascript/mouse.js"></script>-->
-</head>
+        <!-- <My Logic script -->
+        <!--<script defer src="javascript/scroll.js"></script>-->
+        <!--<script defer src="javascript/mouse.js"></script>-->
+    </head>
 
-<body>
-    <section class="header">
-        <div class="navigation">
-            My full website is being developed and coming soon. <br> You can
-            find my portfolio of work below, thanks!
-        </div>
+    <body>
+        <button class="menuButton"></button>
+        <ul class="menuDesign">
+            <li class="menuElement" style="float: left">
+                <a class="menuLink" href="index.html">Jacob</a>
+            </li>
+            <li class="menuElement" style="padding-left: 2.5vw">
+                <a class="menuLink" href="work.html">Work</a>
+            </li>
+            <li class="menuElement" style="padding-right: 2.5vw">
+                <a class="menuLink" href="about.html">About</a>
+            </li>
+        </ul>
 
+        <section class="pageContent">
+            <!--heading and about -->
+            <h1>Jacob Bryant.</h1>
 
-        <h1>Jacob Bryant.</h1>
-        <h2>Creative & Designer</h2>
-    </section>
-
-    <section class="pageContent">
-        <div class="about">
-            <h3>Personality</h3>
             <p>
-                I am a positive designer with a high attention to detail. I develop creative, solution-oriented designs
-                with enthusiasm. Collaboratively or independently, I am self-motivated and hard-working.
+                Creating enthusiastically animated brand identities with
+                unrelenting positivity, unique creativity and persistent
+                eagerness. I bring clear communication and an optimistic
+                attitude to every project, ensuring a successful collaboration
+                and impactful outcome. Lets do some awesome work together!
             </p>
+            <h1 style="grid-column: 1"></h1>
 
-            <h3>Skills</h3>
-            <p>1. Communication<br> Efficiently speaking with colleagues and clients, exceeding their
-                expectations.</p>
-            <p>2. Optimism<br> Encouraging a friendly environment and a positive work ethic.</p>
-            <p>3. Responsive<br> Able to adapt to feedback quickly, improving designs according to
-                what the client needs.</p>
+            <!--thumbnails of work -->
+            <a href=" work/pluckedIdentity/">
+                <img
+                    src="thumbnails/Thumbnail6.jpg"
+                    alt="Words in Motion Thumbnail"
+                    width="100%"
+                />
+            </a>
 
-            <h3>Design</h3>
-            <p>My brand identities are animated and expressive, implementing a brand's themes and enforcing the stories
-                that come with an identity.</p>
+            <a href=" work/tastebudsIdentity/">
+                <img
+                    src="thumbnails/Thumbnail9.jpg"
+                    alt="Words in Motion Thumbnail"
+                    width="100%"
+                />
+            </a>
 
-            <p>I code and design websites to simplify complex problems and create a compelling digital experience that
-                users can interact with, helping to connect a brand with their audience.</p>
-
-            <!--<p>I create 3D designs, which allow me to explore new dimensions and create depth in my designs.-->
-
-            <h3>specialisms</h3>
-            <p>• &nbsp&nbsp&nbsp Motion design</p>
-            <p>• &nbsp&nbsp&nbsp Brand design</p>
-            <p>• &nbsp&nbsp&nbsp UI/UX design</p>
-            <!--<p>• &nbsp&nbsp&nbsp Wesbite development</p>-->
-            <!--<p>• &nbsp&nbsp&nbsp 3D design</p>-->
-            <!--<p>• &nbsp&nbsp&nbsp Illustration</p>-->
-        </div>
-
-        <div class="images">
             <a href="work/exhibitionIdentity/">
-                <img src="work/exhibitionIdentity/exhibitionThumb.png" alt="Exhibition Thumbnail" />
+                <img
+                    src="thumbnails/Thumbnail.jpg"
+                    alt="Exhibition Thumbnail"
+                    width="100%"
+                />
             </a>
             <a href="work/colourfulIdentity/">
-                <img src="work/colourfulIdentity/ColourThumb.jpeg" alt="Colourful Identity Thumbnail" />
+                <img
+                    src="thumbnails/Thumbnail4.jpg"
+                    alt="Colourful Identity Thumbnail"
+                    width="100%"
+                />
             </a>
             <a href="work/rediscoverYou/">
-                <img src="work/rediscoverYou/campaignThumb.jpg" alt="Rediscover You Thumbnail" />
+                <img
+                    src="thumbnails/Thumbnail3.jpg"
+                    alt="Rediscover You Thumbnail"
+                    width="100%"
+                />
             </a>
+
+            <a href=" work/constellationCards/">
+                <img
+                    src="thumbnails/Thumbnail7.jpg"
+                    alt="Words in Motion Thumbnail"
+                    width="100%"
+                />
+            </a>
+
             <a href="work/analogueType/">
-                <img src="work/analogueType/TypeThumb.jpeg" alt="Analogue Type Thumbnail" />
+                <img
+                    src="thumbnails/Thumbnail2.jpg"
+                    alt="Analogue Type Thumbnail"
+                    width="100%"
+                />
             </a>
 
-            <a href="work/titleSequence/">
-                <img src="work/titleSequence/TitleThumb.png" alt="Title Sequence Thumbnail"
-                    style="margin-bottom: 15vw" />
+            <a href=" work/motionProjects">
+                <img
+                    src="thumbnails/Thumbnail8.jpg"
+                    alt="motion Projects Thumbnail"
+                    width="100%"
+                />
             </a>
-
-            <!--<a href=" work/sproutIdentity/">
-                <img src="work/motionWords/sproutThumb.jpg" alt="Sprout Brand Identity Thumbnail" />
-            </a>-->
-
-            <!--<a href=" work/motionWords/">
-                <img src="work/motionWords/motionThumb.jpg" alt="Words in Motion Thumbnail" />
-            </a>-->
-
-        </div>
-    </section>
-
-    <section class="footer"></section>
-    </section>
-</body>
-
+        </section>
+    </body>
 </html>
