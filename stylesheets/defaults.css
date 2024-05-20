@@ -21,7 +21,7 @@ body {
 
 .pageContent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 2.5%;
     margin: 5rem;
 }
@@ -31,11 +31,13 @@ h1 {
     font-weight: 700;
     line-height: 80%;
 
-    /* Work out how to do a max font size*/
+    /* Work out how to do a max font size or use breakpoints to make text start shrinking*/
     font-size: 10rem;
     color: #0f89fa;
 
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 6;
+
+    position: relative;
 }
 
 h2 {
@@ -46,7 +48,7 @@ h3 {
     font-weight: 500;
     color: #0f89fa;
 
-    font-size: 2 rem;
+    font-size: 2rem;
     line-height: 100%;
     text-align: left;
     align-self: flex-end;
@@ -61,13 +63,13 @@ p {
     line-height: 180%;
     color: #152229;
 
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 video {
     border-radius: 20px;
     margin-bottom: 5%;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 6;
 }
 
 img {
@@ -78,16 +80,32 @@ img {
 }
 
 a {
+    display: inline-block;
+    float: left;
+
     text-decoration: none;
     margin: 1%;
-    grid-column: 1 / span 3;
+    grid-column: span 3;
 }
 
+.homeImg {
+    display: inline-block;
+    float: left;
+
+    text-decoration: none;
+    margin: 1%;
+    grid-column: span 6;
+}
+
+/*
 .menuButton {
-    height: 75px;
-    width: 75px;
+    height: max(5rem);
+    height: max(5rem);
     background-color: #0f89fa;
     border-radius: 50%;
+
+    margin: 0px;
+    padding: 0px;
 
     position: sticky;
     top: 50px;
@@ -101,7 +119,7 @@ a {
     left: 1%;
     max-width: 100%;
     border-radius: 0%;
-}
+    }
 
 .menu {
     height: 50px;
@@ -113,26 +131,30 @@ a {
 
     border: none;
     justify-content: center;
-}
+    }*/
 
 .menuDesign {
     text-align: center;
     align-content: center;
 
-    height: max(5rem);
+    height: 5rem;
     border-radius: 100vw;
     background-color: #0f89fa;
 
     margin: 0px;
     padding: 0px;
 
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-    list-style-type: none;
-
     position: sticky;
     top: 5lvh;
+
+    z-index: 1;
+    list-style-type: none;
+    grid-column: 2 / span 4;
+
+    /* up for debate
+    margin-left: 10vw;
+    margin-right: 10vw;
+    */
 }
 
 .menuElement {
@@ -143,7 +165,7 @@ a {
 }
 
 .menuLink {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "outfit", sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -155,4 +177,34 @@ a {
 
     font-weight: 700;
     text-decoration: none;
+}
+
+.homeLink {
+    text-align: center;
+    align-content: center;
+
+    height: 8rem;
+    border-radius: 100vw;
+    background-color: #0f89fa;
+
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 1.25rem;
+    font-family: "outfit", sans-serif;
+    font-weight: 500;
+    color: #eff1f3;
+
+    grid-column: 2 / span 4;
+
+    /* up for debate
+    margin-left: 10vw;
+    margin-right: 10vw;
+    */
+}
+
+.homeLink:hover {
+    transition-duration: 0.2s;
+
+    font-weight: 700;
 }

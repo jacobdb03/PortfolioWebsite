@@ -24,17 +24,32 @@
 }
 
 h1 {
-    animation: titleSlideUp 2s 1s;
+    animation: titleSlideUp 1.5s 0.2s;
     animation-fill-mode: both;
 }
 
 p {
-    animation: fadeIn 2s 2s;
+    animation: fadeIn 1.5s 1.2s;
     animation-fill-mode: both;
 }
 
 h3 {
-    animation: fadeIn 2s 2s;
+    animation: fadeIn 1.5s 1.2s;
+    animation-fill-mode: both;
+}
+
+.menuDesign {
+    animation: fadeIn 1.5s 1.2s;
+    animation-fill-mode: both;
+}
+
+.homeImg {
+    animation: fadeIn 1.5s 1.2s;
+    animation-fill-mode: both;
+}
+
+a {
+    animation: fadeIn 1.5s 1.2s;
     animation-fill-mode: both;
 }
 
