@@ -25,6 +25,7 @@
 
         <!--My CSS documents -->
         <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <link rel="stylesheet" href="/stylesheets/animations.css" />
     </head>
 
     <body>
@@ -57,49 +58,55 @@
                 communication.
             </p>
 
-            <img src="Poster1.jpg" alt="Biophilia Exhibition Image 1" />
-
-            <img src="Poster2.jpg" alt="Biophilia Exhibition Poster 2" />
-            <img src="Poster3.jpg" alt="Biophilia Exhibition Poster 3" />
-            <img src="mockup3.jpg" alt="Biophilia Poster Mockup" />
-
-            <div style="grid-column: 1 / span 3">
-                <video
-                    controls
-                    style="max-width: 47.5%; margin-right: 4.6%"
-                    poster="animationPoster2.jpg"
-                >
-                    <source src="Digital Poster 1.mp4" type="video/mp4" />
-
-                    Digital Poster 1 - Your browser does not support video
-                </video>
-
-                <video
-                    controls
-                    style="max-width: 47.5%"
-                    poster="animationPoster3.jpg"
-                >
-                    <source src="Digital Poster 2.mp4" type="video/mp4" />
-                    Digital Poster 2 - Your browser does not support video
-                </video>
-            </div>
-
-            <img src="wall1.jpg" alt="Exhibition wall Art image" />
-
             <video
                 controls
                 style="max-width: 100%"
-                poster="animationPoster1.jpg"
+                poster="assets/animationPoster1.jpg"
+                preload="none"
             >
-                <source src=" Promotional Animation.mp4" type="video/mp4" />
+                <source
+                    src="assets/Promotional Animation.mp4"
+                    type="video/mp4"
+                />
                 Your browser does not support video
             </video>
 
-            <img src="mockup2.jpg" alt="Biophilia Billboard 1" />
-            <img src="mockup1.jpg" alt="Biophilia Billboard 2" />
-            <img src="mockup4.jpg" alt="Biophilia Billboard 3" />
+            <img src="assets/Poster1.jpg" alt="Biophilia Exhibition Image 1" />
 
-            <img src="leaflet1.jpg" alt="Leaflet Mockup" />
+            <img src="assets/Poster2.jpg" alt="Biophilia Exhibition Poster 2" />
+            <img src="assets/Poster3.jpg" alt="Biophilia Exhibition Poster 3" />
+            <img src="assets/mockup3.jpg" alt="Biophilia Poster Mockup" />
+
+            <video
+                style="max-width: 100%; grid-column: 1 / span 3"
+                poster="assets/animationPoster2.jpg"
+                autoplay
+                loop
+                preload="none"
+            >
+                <source src="assets/Digital Poster 1.mp4" type="video/mp4" />
+
+                Digital Poster 1 - Your browser does not support video
+            </video>
+
+            <video
+                style="max-width: 100%; grid-column: 4 / span 3"
+                poster="assets/animationPoster3.jpg"
+                autoplay
+                loop
+                preload="none"
+            >
+                <source src="assets/Digital Poster 2.mp4" type="video/mp4" />
+                Digital Poster 2 - Your browser does not support video
+            </video>
+
+            <img src="assets/wall1.jpg" alt="Exhibition wall Art image" />
+
+            <img src="assets/mockup2.jpg" alt="Biophilia Billboard 1" />
+            <img src="assets/mockup1.jpg" alt="Biophilia Billboard 2" />
+            <img src="assets/mockup4.jpg" alt="Biophilia Billboard 3" />
+
+            <img src="assets/leaflet1.jpg" alt="Leaflet Mockup" />
 
             <!--<img src="seed1.jpg" alt="Seed mockup 1" />
                 <img src="seed2.jpg" alt="Seed mockup 2" />

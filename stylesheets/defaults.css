@@ -31,7 +31,7 @@ body {
 h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 700;
-    line-height: 80%;
+    line-height: 100%;
 
     /* Work out how to do a max font size or use breakpoints to make text start shrinking*/
     font-size: 10rem;
@@ -94,6 +94,7 @@ img {
     border-radius: calc(1vw + 10px);
 
     margin-bottom: 5%;
+    grid-column: 1 / span 6;
 }
 
 a {
