@@ -14,70 +14,89 @@ body {
     overflow-x: hidden;
 
     max-width: 1280px;
+    margin: calc(5vw + 5vh) auto;
 
-    margin: min(5vw + 5vh) auto;
     padding: 0%;
 }
 
-.pageContent {
+.bodyContent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 2.5%;
-    margin: 5rem;
-    justify-content: center;
-    align-items: center;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 h1 {
     font-family: "Outfit", sans-serif;
-    font-weight: 700;
-    line-height: 100%;
-
+    font-weight: 800;
     /* Work out how to do a max font size or use breakpoints to make text start shrinking*/
-    font-size: 10rem;
+    font-size: clamp(10vw, 50vh, 20vw);
+    letter-spacing: -0.5vw;
+    line-height: 15vh;
+    text-align: center;
     color: #0f89fa;
 
     grid-column: 1 / span 6;
 
-    margin-bottom: 0%;
-
-    position: relative;
-}
-
-h1:hover {
-    transform: translateY(-10%);
+    margin-top: 20vh;
+    margin-bottom: -5vh;
 }
 
 h2 {
     font-family: "Outfit", sans-serif;
-    font-weight: 400;
-    line-height: 100%;
-
-    /* Work out how to do a max font size or use breakpoints to make text start shrinking*/
-    font-size: 5rem;
+    font-weight: 800;
+    line-height: 15vh;
+    letter-spacing: 0vw;
+    font-size: clamp(10vw, 15vh, 20vw);
     color: #0f89fa;
 
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     grid-column: 1 / span 6;
+    text-align: left;
 }
 
 h3 {
     font-family: "Outfit", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     color: #0f89fa;
 
-    font-size: 2rem;
-    line-height: 100%;
+    font-size: 4rem;
+    line-height: 130%;
     text-align: left;
-    align-self: flex-end;
-    grid-column: 1;
+
+    margin-top: 2vh;
+    margin-bottom: 5vw;
+
+    grid-column: 1 / span 5;
+}
+
+h4 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #0f89fa;
+
+    font-size: 1.5rem;
+    line-height: 130%;
+    text-align: left;
+
+    margin-top: 0px;
+    margin-bottom: 5vw;
+
+    grid-column: 1 / span 3;
 }
 
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 180%;
+
+    margin: -0.5vh;
+
     color: #152229;
 
     grid-column: 1 / span 3;
@@ -85,10 +104,86 @@ p {
 
 video {
     border-radius: 20px;
-    margin-bottom: 5%;
-    grid-column: 1 / span 6;
+    display: block;
 }
 
+img {
+    border-radius: 20px;
+    display: block;
+}
+
+.thumbnail {
+    border: 10px solid #eff1f3;
+    margin-bottom: 5%;
+
+    grid-column: span 3;
+}
+
+.thumbnail:hover {
+    border: 10px solid #0f89fa;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+
+.homeLink {
+    text-align: center;
+    align-content: center;
+
+    height: 5rem;
+
+    border-radius: 100vw;
+    background-color: #0f89fa;
+    border: 8px solid #eff1f3;
+
+    margin: 0px;
+
+    margin-bottom: 2vh;
+
+    padding: 0px;
+
+    text-align: center;
+
+    grid-column: 2 / span 2;
+    font-size: 1.25rem;
+    font-family: "outfit", sans-serif;
+    font-weight: 500;
+    color: #eff1f3;
+}
+
+.homeLink:hover {
+    font-weight: 700;
+
+    border: 8px solid #0f89fa;
+
+    margin-bottom: 2vh;
+}
+
+a {
+    grid-column: span 3;
+    text-decoration: none;
+}
+
+.data {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: #0f89fa;
+
+    font-size: 1rem;
+    line-height: 180%;
+}
+
+#hoverNonFloat {
+}
+
+#hoverFloat {
+    transform: translateY(0%);
+}
+
+#hoverFloat:hover {
+    transform: translateY(-10%);
+}
+
+/*
 img {
     max-width: 100%;
     border-radius: calc(1vw + 10px);
@@ -149,9 +244,9 @@ a {
 
     border: none;
     justify-content: center;
-    }*/
-
-.menuDesign {
+    }
+*/
+/*.menuDesign {
     text-align: center;
     align-content: center;
     line-height: 100%;
@@ -174,9 +269,10 @@ a {
     /* up for debate
     margin-left: 10vw;
     margin-right: 10vw;
-    */
-}
 
+}
+*/
+/*
 .menuElement {
     display: inline-block;
     float: center;
@@ -263,4 +359,5 @@ a {
 
 .imgNoLink:hover {
     filter: saturate(125%);
-}
+    }
+    */

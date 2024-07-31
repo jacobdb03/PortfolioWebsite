@@ -3,7 +3,7 @@
     <head>
         <!-- Title Banner Stuff -->
         <title>Jacob Bryant</title>
-        <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
+        <link rel="icon" type="image/x-icon" href="/assets/J Logo White.ico" />
 
         <!-- Meta Info -->
         <meta charset="utf-8" />
@@ -26,59 +26,90 @@
         <!--My CSS documentS -->
         <link rel="stylesheet" href="stylesheets/defaults.css" />
         <link rel="stylesheet" href="stylesheets/animations.css" />
+
+        <!--My JS documentS -->
+        <script src="javascript/animation.js"></script>
     </head>
 
     <body>
-        <section class="pageContent">
-            <!--<button class="menuButton"></button>-->
-            <ul class="menuDesign">
-                <li class="menuElement" style="padding-right: 20rem">
-                    <a class="menuLink" href="/">Home</a>
-                </li>
-                <li class="menuElement" style="margin-left: -1vw">
-                    <a class="menuLink" href="/work">Work</a>
-                </li>
-                <li class="menuElement" style="margin-right: -1vw">
-                    <a class="menuLink" href="/about">About</a>
-                </li>
-            </ul>
-
+        <section class="bodyContent">
             <!--heading and about -->
-            <h1>Jacob Bryant.</h1>
+            <h1 id="hoverNonFloat">Jacob</h1>
+            <h2
+                id="hoverNonFloat"
+                style="
+                    text-align: center;
+                    margin: 15vh;
+                    font-weight: 800;
+                    animation: titleSlideUp 3s 0.5s;
+                    animation-fill-mode: backwards;
+                    transition-duration: 0.5s;
+                "
+            >
+                Bryant.
+            </h2>
 
-            <p style="margin-top: 5">
-                Creating enthusiastically animated brand identities with
-                unrelenting positivity, unique creativity and persistent
-                eagerness. I bring clear communication and an optimistic
-                attitude to every project, ensuring successful collaborations
-                and impactful outcomes.
-            </p>
+            <h3></h3>
+            <h3></h3>
 
-            <!--thumbnails of work -->
-            <a href=" work/pluckedIdentity/" class="homeImg">
-                <img
-                    src="thumbnails/Thumbnail6.jpg"
-                    alt="Words in Motion Thumbnail"
-                    width="100%"
-                    class="imgNoLink"
-                />
-            </a>
+            <h3 style="grid-column: span 6">&nbsp;Featured work</h3>
 
-            <a href="work/rediscoverYou/" class="homeImg">
-                <img
-                    src="thumbnails/Thumbnail3.jpg"
-                    alt="Rediscover You Thumbnail"
-                    width="100%"
-                    class="imgNoLink"
-                />
-            </a>
+            <!-- Tastebuds Animated Thumbnail -->
+            <div class="thumbnail">
+                <a href="work/tastebudsIdentity/">
+                    <video style="width: 100%" muted preload autoplay loop>
+                        <source
+                            src="thumbnails/Tastebuds_Thumb_Animated.mp4"
+                            type="video/mp4"
+                        />
+                        Animated thumbnail for the tastebuds Page
+                    </video>
+                </a>
+            </div>
 
-            <div class="rectangle"></div>
+            <div class="thumbnail">
+                <a href="work/pluckedIdentity/">
+                    <video style="max-width: 100%" muted preload autoplay loop>
+                        <source
+                            src="thumbnails/Plucked_Thumb_Animated.mp4"
+                            type="video/mp4"
+                        />
+                        Animated thumbnail for the Plucked Identity Page
+                    </video>
+                </a>
+            </div>
+
+            <!-- Sports Factory Static Thumbnail -->
+            <div class="thumbnail">
+                <a href="work/sportsFactory/">
+                    <img
+                        src="thumbnails/SportsFactory_Thumb.png"
+                        alt="Static Thumbnail for Sports Factory Page"
+                        width="100%"
+                    />
+                </a>
+            </div>
+
+            <!-- Biophilia Exhibition Static Thumbnail -->
+
+            <div class="thumbnail">
+                <a href="work/exhibitionIdentity/">
+                    <img
+                        src="thumbnails/Thumbnail.jpg"
+                        alt="Static Thumbnail for Biophilia Exhibition Page"
+                        width="100%"
+                    />
+                </a>
+            </div>
+
+            <!-- Plucked Animated Thumbnail -->
+
+            <h3></h3>
 
             <a href="work/" class="homeLink"> the portfolio </a>
-            <a href="about/" class="homeLink homeLinkAlt"> the designer </a>
-
-            <h1></h1>
+            <a href="about/" class="homeLink" style="grid-column: 4 / span 2">
+                the designer
+            </a>
         </section>
     </body>
 </html>

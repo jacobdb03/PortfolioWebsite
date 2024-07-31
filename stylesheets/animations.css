@@ -22,15 +22,20 @@
     }
 }
 
-h1 {
-    animation: titleSlideUp 1.5s 0.2s;
-    transition-duration: 0.5s;
-
+#hoverNonFloat {
+    animation: titleSlideUp 2.5s 0.25s;
+    animation-fill-mode: backwards;
 }
 
-h2 {
-    animation: fadeIn 1.5s 0.8s;
-    animation-fill-mode: both;
+#hoverFloat {
+    transition-duration: 0.8s;
+}
+
+
+
+.thumbnail {
+    animation: titleSlideUp 3.5s 0.25s;
+    animation-fill-mode: backwards;
 }
 
 p {
@@ -38,25 +43,24 @@ p {
     animation-fill-mode: both;
 }
 
-h3 {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-}
+
 
 .menuDesign {
     animation: fadeIn 1.5s 1.2s;
     animation-fill-mode: both;
 }
 
-.homeImg {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-}
 
-a {
+
+/*.homeImg {
     animation: fadeIn 1.5s 1.2s;
     animation-fill-mode: both;
-}
+    }*/
+
+/*a {
+    animation: fadeIn 1.5s 1.2s;
+    animation-fill-mode: both;
+    }*/
 
 @media (prefers-reduced-motion) {
     .hidden {
