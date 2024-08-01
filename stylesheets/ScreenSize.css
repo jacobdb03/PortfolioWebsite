@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+    .bodyContent {
+        display: block;
+}
