@@ -1,9 +1,12 @@
-
 @media only screen and (max-width: 768px) {
     body {
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
+        max-width: 400px;
+        margin: calc(1vw + 1vh) auto;
     }
     .bodyContent {
-        display: block;
+        display: inline-block;
+
+        margin-right: 0vh;
+        margin-left: 0vh;
+    }
 }
