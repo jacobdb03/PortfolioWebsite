@@ -105,12 +105,26 @@ p {
 video {
     border-radius: 20px;
     display: block;
-    margin-top: 1vh;
+    /*border: 3px solid #0f89fa;*/
+    margin: 0px;
+    margin-top: 5vh;
+
+    grid-column: span 6;
 }
 
 img {
     border-radius: 20px;
     display: block;
+    /*border: 3px solid #0f89fa;*/
+    margin: 0px;
+    padding: 0px;
+    grid-column: 1 / span 6;
+    max-width: 100%;
+    margin-top: 5vh;
+}
+
+div {
+    margin: 0px;
 }
 
 .thumbnail {

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
     body {
-        max-width: 400px;
+        max-width: 480px;
         margin: calc(1vw + 1vh) auto;
     }
     .bodyContent {

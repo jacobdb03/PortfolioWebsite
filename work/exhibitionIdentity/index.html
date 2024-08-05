@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Jacob Bryant</title>
+        <title>Biophilia.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -23,16 +23,36 @@
             rel="stylesheet"
         />
 
-        <!--My CSS documents -->
+        <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/defaults.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
+
+        <!--My JS documentS -->
+        <script src="/javascript/animation.js"></script>
     </head>
 
     <body>
-        <section class="pageContent">
-            <h1>Exhibition Identity</h1>
+        <section class="bodyContent">
+            <h2>Biophilia.</h2>
 
-            <p>
+            <p style="grid-column: 1 / span 2">
+                This project explored the creation of a full identity for an
+                exhibition called Biophillia, which explored the connection
+                between plants and people and the human need for nature in their
+                daily lives. Creating a full identity allowed me to explore a
+                response across multiple touchpoints, which encouraged the
+                design to continue growing through more applications.
+            </p>
+
+            <p style="grid-column: 3 / span 2; align-self: flex-start">
+                Being a longer project, it allowed me to learn about the process
+                and lifecycle of a bigger project. Finally, it allowed me to
+                continue developing new technologies and abstract methods of
+                communication.
+            </p>
+
+            <p style="grid-column: 5 / span 2; align-self: flex-start">
                 • &nbsp&nbsp&nbsp 1x promotional animation<br />
                 • &nbsp&nbsp&nbsp 2x digital posters<br />
                 • &nbsp&nbsp&nbsp 10x physical poster set<br />
@@ -43,26 +63,15 @@
                 • &nbsp&nbsp&nbsp 10x physical poster set
             </p>
 
-            <p>
-                This project explored the creation of a full identity for an
-                exhibition called Biophillia, which explored the connection
-                between plants and people and the human need for nature in their
-                daily lives. Creating a full identity allowed me to explore a
-                response across multiple touchpoints, which encouraged the
-                design to continue growing through more applications.
-            </p>
-            <p>
-                Being a longer project, it allowed me to learn about the process
-                and lifecycle of a bigger project. Finally, it allowed me to
-                continue developing new technologies and abstract methods of
-                communication.
-            </p>
+            <h4></h4>
 
             <video
-                controls
-                style="max-width: 100%"
-                poster="assets/animationPoster1.jpg"
-                preload="none"
+                style="width: 100%; grid-column: span 6"
+                muted
+                autoplay
+                loop
+                preload
+                playsinline
             >
                 <source
                     src="assets/Promotional Animation.mp4"
@@ -110,7 +119,8 @@
 
             <!--<img src="seed1.jpg" alt="Seed mockup 1" />
                 <img src="seed2.jpg" alt="Seed mockup 2" />
-                <img src="seed3.jpg" alt="Seed mockup 2" />-->
+                <img src="seed3.jpg" alt="Seed mockup 2" />
+                -->
         </section>
     </body>
 </html>

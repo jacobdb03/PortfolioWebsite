@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Jacob Bryant</title>
+        <title>Rediscover You.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -23,15 +23,26 @@
             rel="stylesheet"
         />
 
-        <!--My CSS documents -->
+        <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/defaults.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
+
+        <!--My JS documentS -->
+        <script src="/javascript/animation.js"></script>
     </head>
 
     <body>
-        <section class="pageContent">
-            <h1>Campaign Identity</h1>
-            <p>
+        <section class="bodyContent">
+            <h2>Rediscover You.</h2>
+
+            <p style="grid-column: 1 / span 2; align-self: flex-start">
+                Working on a team with two others, we created the following
+                campaign using miniature figures and AI generated art to conquer
+                loneliness using John Lewis' tone of voice.
+            </p>
+
+            <p style="grid-column: 5 / span 2; align-self: flex-start">
                 • &nbsp&nbsp&nbsp 10s+ social animation<br />
                 • &nbsp&nbsp&nbsp 3x Printed posters<br />
                 • &nbsp&nbsp&nbsp 3x billboard posters<br />
@@ -40,16 +51,15 @@
                 • &nbsp&nbsp&nbsp 3x Website Pages
             </p>
 
-            <p>
-                Working on a team with two others, we created the following
-                campaign using miniature figures and AI generated art to conquer
-                loneliness using John Lewis' tone of voice.
-            </p>
-
             <video
-                controls
-                style="max-width: 100%"
-                poster="assets/animationThumb.jpg"
+                <video
+                    style="width: 100%;"
+                    muted
+                    autoplay
+                    loop
+                    preload
+                    controls
+                    playsinline
             >
                 <source src="assets/campaignAnimation.mp4" type="video/mp4" />
                 Digital Poster 1 - Your browser does not support video
@@ -75,9 +85,13 @@
             <img src="assets/mockup2.jpg" alt="Vertical Poster mockup 2" />
 
             <video
+                style="width: 100%;"
+                muted
+                autoplay
+                loop
+                preload
                 controls
-                style="max-width: 100%"
-                poster="assets/websiteThumb.jpg"
+                playsinline
             >
                 <source src="assets/websiteRecording.mp4" type="video/mp4" />
                 Website Recording - Your browser does not support video
