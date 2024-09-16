@@ -120,6 +120,10 @@ canvas {
     margin-bottom: 0.2em;
 }
 
+a.data:hover {
+    color: var(--orange);
+}
+
 .dataTitle {
     /* Any title information */
 
