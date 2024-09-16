@@ -192,7 +192,7 @@ nav {
         /* nested a tag that declares what happens when you hover over the text in the navbar */
         font-weight: 700;
 
-        color: var(--altOrange);
+        color: var(--orange);
         background-color: var(--clickBlue);
 
         padding: 1.2em;
