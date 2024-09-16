@@ -15,6 +15,18 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="In response to a brief by Public London, my team and I created this
+                brand identity for an imaginary brand called plucked; promoting
+                better lives for chickens through a chicken rental program."
+        />
+
+        <meta
+            name="keywords"
+            content="Brand Identity, Chicken Rental, Public London, Chickens, "
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,361 +36,289 @@
         />
 
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
-        <link rel="stylesheet" href="/stylesheets/animations.css" />
-        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/pageContent.css" />
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/animation.js"></script>
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/mainBlurhash.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <h2>Plucked.</h2>
+        <!-- page decoration -->
 
-            <h4>
-                In response to Public London's brief, a brand identity promoting
-                better lives for chickens through a chicken rental program.
-            </h4>
+        <!--<div class="background1"></div>
+        <script>
+            setBackground1("#b2e3ff", "124em", "230em");
+        </script>-->
 
-            <!-- Data Section -->
-
-            <!-- The team -->
-            <div style="grid-column: 5 / span 2">
-                <p
-                    class="data"
-                    style="color: #152229; font-weight: 500; font-size: 1.1rem"
-                >
-                    The Plucked team
-                </p>
-
-                <p class="data">Jacob Bryant (Hello!)</p>
-
-                <a href="https://glued.studio/">
-                    <p class="data">Reiss Badhasha</p>
-                </a>
-
-                <a href="https://readymag.website/u1611653122/ElliotHuckett/">
-                    <p class="data">Elliot Huckett</p>
-                </a>
-
-                <a href="https://readymag.website/u1449826079/4604802/">
-                    <p class="data">Cassie Muskett</p>
-                </a>
+        <!--<div class="background2"></div>
+        <script>
+            setBackground2("#ffc7aa", "342em", "200em");
+        </script>-->
+        <!--<div class="pageBg"></div>-->
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Jacob.</a>
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+                <a class="navbar" href="/settings">Settings.</a>
             </div>
+        </nav>
 
-            <!-- Main Page Content -->
+        <div class="gap5 fullWidth">
+            <script id="imgPlace" src="/javascript/newBlurhashCall.js"></script>
+            <script>
+                getHash("UBGuwJ0000^*0*4nF2-;_2Mw~qSjtn9aMcxa", 1920, 1080);
+                getImgString("assets/van.jpg");
+                drawHashImg();
+            </script>
+        </div>
 
-            <div style="grid-column: 1 / span 6">
-                <video
-                    style="width: 100%"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    playsinline
-                >
-                    <source src="assets/Brand Board.mp4" type="video/mp4" />
-                    Brand Board
-                </video>
-            </div>
+        <div class="navBarGap"></div>
 
-            <h4></h4>
+        <!-- Header Section -->
 
-            <p style="grid-column: 1 / span 2">
-                Welcome to plucked — a brand identity for a chicken rental
-                company. This project was a live competition for university, set
-                by the design agency Public London. We created the identify to
-                be powerful, using vengeful chickens as the route for the
-                design. <br /><br />
-                This ideology created an unapologetically bold but fun
-                personality for the brand that would both attract our target
-                audience of families, while standing up for the mistreatment of
-                chickens in the poultry industry — or as we like to put it —
-                plucking chickens from their life sentence in poultry prison to
-                go to happier homes.
-            </p>
+        <h1 class="title gap1">Plucked.</h1>
 
-            <div style="grid-column: 3 / span 4">
-                <video
-                    style="max-width: 100%"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    playsinline
-                >
-                    <source src="assets/Plucked Logo.mp4" type="video/mp4" />
-                    Plucked Logo
-                </video>
-            </div>
+        <h3 class="gap3 tripleCol">
+            In response to a brief by Public London, my team and I created this
+            brand identity for an imaginary brand called plucked; promoting
+            better lives for chickens through a chicken rental program.
+        </h3>
 
-            <h4></h4>
+        <div class="gap3 metaInfo">
+            <p class="dataTitle">The Plucked team</p>
 
-            <h3>Get ready to have your feathers ruffled...</h3>
+            <p class="data">Jacob Bryant</p>
 
-            <img
-                src="assets/Shapes and Colours.png"
-                alt="Shapes and Colours image"
-                width="100%"
-                style="grid-column: 1 / span 4"
-            />
+            <a class="data" href="https://glued.studio/"
+                >Reiss Badhasha<br
+            /></a>
 
-            <p style="grid-column: 5 / span 2">
-                When designing, we took inspiration from real chickens to create
-                the brand elements for Plucked. The brand uses playful cartoon
-                shapes designed from parts of a chicken, while the colours
-                reflect the neutral pallete of a chicken.
-            </p>
-
-            <h4></h4>
-
-            <div style="grid-column: 1 / span 4">
-                <video
-                    style="max-width: 100%"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    playsinline
-                >
-                    <source
-                        src="assets/Typeface Animation.mp4"
-                        type="video/mp4"
-                    />
-                    Typeface Animation
-                </video>
-            </div>
-
-            <p style="grid-column: 5 / span 2">
-                We created a custom, working typeface, by starting with a bold
-                impactful typeface and plucking the corners, to keep the impact
-                of the font while becoming more playful. "Plucking" became the
-                primary part of our design language.
-            </p>
-
-            <h4></h4>
-
-            <h3>We're really something to cluck about</h3>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 1.mp4" type="video/mp4" />
-                Instagram Animation 1
-            </video>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 2.mp4" type="video/mp4" />
-                Instagram Animation 2
-            </video>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 3.mp4" type="video/mp4" />
-                Instagram Animation 3
-            </video>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 4.mp4" type="video/mp4" />
-                Instagram Animation 4
-            </video>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 5.mp4" type="video/mp4" />
-                Instagram Animation 5
-            </video>
-
-            <video
-                style="max-width: 100%; grid-column: span 1"
-                muted
-                autoplay
-                loop
-                preload
-                playsinline
-            >
-                <source src="assets/Story 6.mp4" type="video/mp4" />
-                Instagram Animation 6
-            </video>
-
-            <h4></h4>
-
-            <p style="grid-column: 1 / span 2">
-                Instagram became our main way to interact<br />with a younger,
-                family-centred audience, which simultaneously allowed for the
-                hypothetical brand to raise awareness for the mistreatment of
-                <br />chickens in the poultry industry.
-            </p>
-
-            <p style="grid-column: 3 / span 2">
-                We created stories and instagram posts that communicated our
-                brand's energy, purpose and mission, using our fun Plucked
-                shapes and colour palette to make a visually unique and
-                captivating instagram page.
-            </p>
-
-            <p style="grid-column: 5 / span 2">
-                On top of the social media content, we created digestable
-                infographics in the brand's style that communicated some of the
-                horrific facts we found about the poultry industry while
-                researching for the project.
-            </p>
-
-            <h4></h4>
-
-            <img
-                src="assets/Social Media 1.png"
-                alt="Social Media Imag 1"
-                width="99.5%"
-                style="grid-column: 1 / span 4; background-color: #fff5e6"
-            />
-
-            <div style="grid-column: 5 / span 2">
-                <video
-                    style="max-width: 100%"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    playsinline
-                >
-                    <source src="assets/Infographic.mp4" type="video/mp4" />
-                    Infographic Animation
-                </video>
-            </div>
-
-            <h4></h4>
-
-            <h3>Plucked from mistreatment. Plucked with Love.</h3>
-
-            <p
-                style="
-                    grid-column: 1 / span 2;
-                    align-self: flex-end;
-                    margin-top: 5vh;
-                "
-            >
-                However, an online presence only one way of reaching a potential
-                audience. We realised that the sort of people that owned
-                chickens, would also be the ones getting out on adventures, so
-                we created various out-of-home advertisements that we were sure
-                would get people clucking.
-            </p>
-
-            <div style="grid-column: 4 / span 3">
-                <img src="assets/Bus.jpg" alt="Bus OOH image 1" width="100%" />
-                <video
-                    style="max-width: 100%; margin-top: 2vh"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    playsinline
-                >
-                    <source
-                        src="assets/Billboard Animation in Mockup.mp4"
-                        type="video/mp4"
-                    />
-                    Billboard Mockup video
-                </video>
-            </div>
-
-            <div style="grid-column: 1 / span 3; margin-top: 5vh">
-                <img
-                    src="assets/Business Card.jpg"
-                    alt="Business Card"
-                    width="100%"
-                    style="margin-top: 5vh"
-                />
-
-                <img
-                    src="assets/Van.jpg"
-                    alt="Van mockup image"
-                    width="100%"
-                    style="margin-top: 2vh"
-                />
-            </div>
-
-            <p
-                style="
-                    grid-column: 5 / span 2;
-                    align-self: flex-end;
-                    margin-top: 5vh;
-                "
-            >
-                We also considered what may arrive with your chicken, and how
-                the brand may continue to interact with the custom after
-                delivery. This meant contact cards, thank you letters, and even
-                the vehicle it may be delivered in.
-            </p>
-
-            <p style="grid-column: 1 / span 2; align-self: flex-end">
-                When it came to presenting our work to the client — in this case
-                the design agency, Public London — we made sure to consider all
-                the small things in our brand that really made us stood out
-                among our piers. This included custom T-shirts with our logos, a
-                3D printed chicken in a nest that we gave as a gift, and a
-                presentation that left them without any feedback to give us.
-            </p>
-
-            <div style="grid-column: 4 / span 3; margin-top: 5vh">
-                <img
-                    src="assets/tshirts.jpg"
-                    alt="Van mockup image"
-                    width="100%"
-                    style="grid-column: 4 / span 3; margin-top: 2vh"
-                />
-            </div>
-
-            <h4></h4>
-            <h4></h4>
-
-            <h3>The flock needs you!</h3>
-
-            <img
-                src="assets/ChickenTeam.png"
-                alt="Chicken Team image"
-                width="100%"
-                style="grid-column: 1 / span 6; margin-top: 2vh"
-            />
-            <p
+            <a
                 class="data"
-                style="grid-column: 6; text-align: right; margin-top: 1.5vh"
+                href="https://readymag.website/u1611653122/ElliotHuckett/"
+                >Elliot Huckett<br />
+            </a>
+
+            <a class="data" href="https://readymag.website/u1449826079/4604802/"
+                >Cassie Muskett<br />
+            </a>
+        </div>
+
+        <!-- Main Page Content -->
+
+        <video class="gap4 fullWidth" muted autoplay loop preload playsinline>
+            <source src="assets/Brand Board.mp4" type="video/mp4" />
+            Brand Board
+        </video>
+
+        <p class="gap3 rSub">
+            Welcome to plucked — a brand identity for a chicken rental company.
+            This project was a live competition for university, set by the
+            design agency Public London. We created the identify to be powerful,
+            using vengeful chickens as the route for the design. <br /><br />
+            This ideology created an unapologetically bold but fun personality
+            for the brand that would both attract our target audience of
+            families, while standing up for the mistreatment of chickens in the
+            poultry industry — or as we like to put it — plucking chickens from
+            their life sentence in poultry prison to go to happier homes.
+        </p>
+
+        <video class="gap3 rFocus" muted autoplay loop preload playsinline>
+            <source src="assets/Plucked Logo.mp4" type="video/mp4" />
+            Plucked Logo
+        </video>
+
+        <h2 class="gap4 fullWidth">
+            Get ready to have your feathers ruffled...
+        </h2>
+
+        <img
+            class="gap5 lFocus"
+            src="assets/Shapes and Colours.png"
+            alt="Shapes and Colours image"
+        />
+
+        <p class="lSub">
+            When designing, we took inspiration from real chickens to create the
+            brand elements for Plucked. The brand uses playful cartoon shapes
+            designed from parts of a chicken, while the colours reflect the
+            neutral pallete of a chicken.
+        </p>
+
+        <p class="gap4 rSub" style="align-self: flex-start">
+            We created a custom, working typeface, by starting with a bold
+            impactful typeface, but plucking the corners of each letter, to keep
+            the impact of the font while becoming more playful. "Plucking"
+            became the primary part of our design language and we used the
+            effect in our animation.
+        </p>
+
+        <div class="gap4 rFocus">
+            <video muted autoplay loop preload playsinline>
+                <source src="assets/Typeface Animation.mp4" type="video/mp4" />
+                Typeface Animation
+            </video>
+        </div>
+
+        <h2 class="gap4 fullWidth">We're really something to cluck about</h2>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 1.mp4" type="video/mp4" />
+            Instagram Animation 1
+        </video>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 2.mp4" type="video/mp4" />
+            Instagram Animation 2
+        </video>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 3.mp4" type="video/mp4" />
+            Instagram Animation 3
+        </video>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 4.mp4" type="video/mp4" />
+            Instagram Animation 4
+        </video>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 5.mp4" type="video/mp4" />
+            Instagram Animation 5
+        </video>
+
+        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+            <source src="assets/Story 6.mp4" type="video/mp4" />
+            Instagram Animation 6
+        </video>
+
+        <p class="gap3 doubleCol">
+            Instagram became our main way to interact with a younger,
+            family-centred audience, which simultaneously allowed for the
+            hypothetical brand to raise awareness for the mistreatment of
+            chickens in the poultry industry.
+        </p>
+
+        <p class="gap3 doubleCol">
+            We created stories and instagram posts that communicated our brand's
+            energy, purpose and mission, using our fun Plucked shapes and colour
+            palette to make a visually unique and captivating instagram page.
+        </p>
+
+        <p class="gap3 doubleCol">
+            On top of the social media content, we created digestable
+            infographics in the brand's style that communicated some of the
+            horrific facts we found about the poultry industry while researching
+            for the project.
+        </p>
+
+        <img
+            class="gap4 lFocus"
+            src="assets/Social Media 1.png"
+            alt="Social Media Imag 1"
+        />
+
+        <video class="gap5 lSub" muted autoplay loop preload playsinline>
+            <source src="assets/Infographic.mp4" type="video/mp4" />
+            Infographic Animation
+        </video>
+
+        <h2 class="gap4 fullWidth">
+            Plucked from mistreatment. Plucked with Love.
+        </h2>
+
+        <img
+            class="gap5 tripleCol"
+            src="assets/Bus.jpg"
+            alt="Bus OOH image 1"
+        />
+        <video class="gap5 tripleCol" muted autoplay loop preload playsinline>
+            <source
+                src="assets/Billboard Animation in Mockup.mp4"
+                type="video/mp4"
+            />
+            Billboard Mockup video
+        </video>
+
+        <p class="gap3 tripleCol">
+            However, an online presence is only one way of reaching a potential
+            audience. We realised that the chicken owners would also love
+            getting out on adventures, so we created various out-of-home
+            advertisements that we were sure would get people clucking.
+        </p>
+        <p class="gap3 tripleCol">
+            We also considered what may arrive with your chicken, and how the
+            brand may continue to interact with the custom after delivery. This
+            meant contact cards, thank you letters, and even the vehicle it may
+            be delivered in.
+        </p>
+
+        <div class="gap5 rSub imgDiv">
+            <img class="rSub" src="assets/tshirts.png" alt="tshirts" />
+            <img class="rSub" src="assets/BusiCard.jpg" alt="Business Card" />
+        </div>
+
+        <img class="gap5 rFocus" src="assets/Van.jpg" alt="Van mockup image" />
+
+        <!--<img class="rSub" src="assets/3DChicken.jpg" alt="3D Chicken" />-->
+
+        <p class="gap3 rFocus">
+            When it came to presenting our work to the client — in this case the
+            design agency, Public London — we made sure to consider all the
+            small things in our brand that really made us stood out among our
+            piers. This included custom T-shirts with our logos, a 3D printed
+            chicken in a nest that we gave as a gift, and a presentation that
+            left them without any feedback to give us.
+        </p>
+
+        <h2 class="gap4 fullWidth">The flock needs you!</h2>
+
+        <img
+            class="gap5 fullWidth"
+            src="assets/ChickenTeam.png"
+            alt="Chicken Team image"
+        />
+        <div>
+            <p class="gap1 dataTitle">The plucked team</p>
+        </div>
+
+        <!-- Project Navigation Panel  -->
+
+        <!-- Page Footer -->
+        <div class="footerGap"></div>
+        <div class="footerBg"></div>
+        <a class="footerName lFocus" href="/">
+            Jacob<br />
+            Bryant.
+        </a>
+        <div class="footerLinks"></div>
+        <div class="footerLinks">
+            <p class="footerTextTitle">Socials</p>
+            <a class="footerText">‎ </a>
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
             >
-                The plucked team
-            </p>
-        </section>
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <div class="footerLinks">
+            <p class="footerTextTitle">Page links</p>
+
+            <a class="footerText" href="/about/">About</a>
+            <a class="footerText" href="/contact">Contact</a>
+            <a class="footerText" href="/work/">Portfolio</a>
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

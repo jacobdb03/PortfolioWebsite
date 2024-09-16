@@ -1,0 +1,85 @@
+/* ---- The tags that help to speed up and consistancise the page layout ---- */
+:root {
+    /* the global variables for the project*/
+    --black: #152229;
+    --white: #eff1f3;
+    --grey: #687a8d;
+    --blue: #0f89fa;
+    --altBlue: #b2e3ff;
+    --orange: #ff817b;
+    --altOrange: #ffc7aa;
+    --clickBlue: #2c50c8;
+    --borderWidth: 0.5em;
+
+    --gap1: 0.5em;
+    --gap2: 1em;
+    --gap3: 2em;
+    --gap4: 5em;
+    --gap5: 10em;
+}
+
+/* ---- Gaps: used to declare how much space should be left between grid row ---- */
+.gap1 {
+    margin-top: var(--gap1);
+}
+
+.gap2 {
+    margin-top: var(--gap2);
+}
+
+.gap3 {
+    margin-top: var(--gap3);
+}
+
+.gap4 {
+    margin-top: var(--gap4);
+}
+
+.gap5 {
+    margin-top: var(--gap5);
+}
+
+/* ---- Specifcs: Used specifically in the header of the page as unique elements ---- */
+.title {
+    grid-column: 1 / span 5;
+}
+
+.metaInfo {
+    grid-column: 6;
+    text-align: right;
+}
+
+/* ---- Layout options: A variety of options to layout the pages ---- */
+.fullWidth {
+    grid-column: 1 / span 6;
+    text-align: center;
+    max-width: 100%;
+}
+
+.lFocus {
+    grid-column: 1 / span 4;
+}
+
+.lSub {
+    grid-column: 5 / span 2;
+}
+
+.rFocus {
+    grid-column: 3 / span 4;
+}
+
+.rSub {
+    grid-column: 1 / span 2;
+}
+
+.singleCol {
+    grid-column: span 1;
+}
+
+.doubleCol {
+    grid-column: span 2;
+}
+
+.tripleCol {
+    grid-column: span 3;
+}

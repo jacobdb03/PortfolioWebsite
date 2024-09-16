@@ -1,0 +1,123 @@
+/* ---- File that controls decorative elements of the page ---- */
+:root {
+    /* Default variables for the backgrounds. adjustable with the function in backgroundSet */
+    --backgroundCol1: #ffffff;
+    --backgroundPos1: 0em;
+    --backgroundHeight1: 10em;
+
+    --backgroundCol2: #ffffff;
+    --backgroundPos2: 0em;
+    --backgroundHeight2: 10em;
+
+    --backgroundCol3: #ffffff;
+    --backgroundPos3: 0em;
+    --backgroundHeight3: 10em;
+
+    --backgroundCol4: #ffffff;
+    --backgroundPos4: 0em;
+    --backgroundHeight4: 10em;
+
+    --backgroundCo5: #ffffff;
+    --backgroundPo5: 0em;
+    --backgroundHeigh5: 10em;
+}
+
+.navBarGap {
+    font-size: 15em;
+
+    height: 0.5em;
+
+    margin: 0em;
+
+    transition-duration: 0.2s;
+}
+
+.pageBg {
+    position: absolute;
+    z-index: -2;
+
+    left: -5em;
+    bottom: -1em;
+
+    width: calc(100% + 10em);
+    height: 100%;
+
+    background-color: var(--white);
+
+    margin-top: 0em;
+}
+
+.footerBg {
+    /* Got this working by making the width start at -100 and then expand 1000 ems */
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    bottom: -1em;
+
+    width: 500em;
+    height: 26em;
+
+    background-color: var(--black);
+}
+
+/* ---- Backgrounds: 5 different backgrounds per page. Add more if needed ---- */
+.background1 {
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    top: var(--backgroundPos1);
+    width: 500em;
+    height: var(--backgroundHeight1);
+
+    background-color: var(--backgroundCol1);
+}
+
+.background2 {
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    top: var(--backgroundPos2);
+    width: 500em;
+    height: var(--backgroundHeight2);
+
+    background-color: var(--backgroundCol2);
+}
+
+.background3 {
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    top: var(--backgroundPos3);
+    width: 500em;
+    height: var(--backgroundHeight3);
+
+    background-color: var(--backgroundCol3);
+}
+
+.background4 {
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    top: var(--backgroundPos4);
+    width: 500em;
+    height: var(--backgroundHeight4);
+
+    background-color: var(--backgroundCol4);
+}
+
+.background5 {
+    position: absolute;
+    z-index: -1;
+
+    left: -200em;
+    top: var(--backgroundPos5);
+    width: 500em;
+    height: var(--backgroundHeight5);
+
+    background-color: var(--backgroundCol5);
+}
