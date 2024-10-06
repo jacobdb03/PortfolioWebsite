@@ -1,66 +1,23 @@
-@keyframes titleSlideUp {
-    0% {
-        transform: scale(100%);
-        opacity: 0;
-    }
+:root {
+    --staggerDelay: 1;
+}
 
-    20% {
+@keyframes imgAnimation {
+    0% {
         transform: translateY(-20%);
-        opacity: 1;
-    }
-
-}
-}
-
-@keyframes fadeIn {
-    0% {
         opacity: 0;
     }
 
     100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-#hoverNonFloat {
-    animation: titleSlideUp 2.5s 0.25s;
-    animation-fill-mode: backwards;
+.animateIn:not(.titleImg) {
+    animation: imgAnimation 300ms ease-in-out calc(var(--staggerDelay) * 200ms)
+        1 normal forwards;
 }
-
-#hoverFloat {
-    transition-duration: 0.8s;
-}
-
-
-
-.thumbnail {
-    animation: titleSlideUp 3.5s 0.25s;
-    animation-fill-mode: backwards;
-}
-
-p {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-}
-
-
-
-.menuDesign {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-}
-
-
-
-/*.homeImg {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-    }*/
-
-/*a {
-    animation: fadeIn 1.5s 1.2s;
-    animation-fill-mode: both;
-    }*/
 
 @media (prefers-reduced-motion) {
     .hidden {

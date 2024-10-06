@@ -1,0 +1,159 @@
+/* ---- The normal page content html tags to design the content ---- */
+
+body {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2.5%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: var(--white);
+    max-width: 1280px;
+    margin: auto;
+
+    font-family: "Outfit", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(100px, 25em, 250px);
+    color: var(--blue);
+
+    display: flex;
+    align-items: flex-end;
+
+    height: 90vh;
+
+    grid-column: span 5;
+
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--blue);
+
+    font-size: 3em;
+
+    line-height: 130%;
+    text-align: center;
+
+    transition-duration: 0.2s;
+}
+
+h3 {
+    font-weight: 500;
+
+    font-size: 2em;
+    line-height: 130%;
+
+    margin-bottom: 0.2em;
+
+    align-self: flex-end;
+}
+
+p {
+    font-weight: 300;
+    font-size: clamp(2px, 1.6em, 20px);
+    line-height: 150%;
+
+    color: var(--black);
+}
+
+a {
+    color: var(--black);
+
+    text-decoration: none;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.titleDiv {
+    display: flex;
+    align-items: flex-end;
+
+    height: 100vh;
+
+    grid-column: span 5;
+}
+
+.titleImg {
+    max-width: 1280px;
+
+    margin: 5vh;
+}
+
+/* ---- Thumbnail section ---- */
+
+.thumbnail {
+    border-radius: 20px;
+    border: var(--borderWidth) solid var(--white);
+    box-sizing: border-box;
+    object-fit: cover;
+
+    max-width: 100%;
+    width: clamp(1000px, 100%, 1280px);
+    height: clamp(400px, 25vh, 600px);
+
+    opacity: 0;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+
+    box-shadow: 0vw 0vw 20px 0.5vw #d6e1eb;
+}
+
+.thumbnail:hover {
+    border: var(--borderWidth) solid var(--blue);
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+}
+
+.thumbnailText {
+    grid-column: span 2;
+    align-self: flex-end;
+}
+
+.homeButton {
+    background-color: var(--blue);
+    border: 0.3em solid var(--blue);
+
+    border-radius: 5em;
+
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+
+    padding: 1.2em;
+
+    margin-top: 2em;
+
+    grid-column: 3 / span 2;
+
+    transition-duration: 0.2s;
+}
+
+.homeButton:hover {
+    /* What happens on hovering over navbar */
+
+    background-color: var(--white);
+    border: 0.3em solid var(--blue);
+
+    color: var(--blue);
+
+    padding: 1.2em;
+
+    transition-duration: 0.2s;
+}
+
+.aboutPage {
+    line-height: 200%;
+}
+
+.workH3 {
+    align-self: flex-start;
+}

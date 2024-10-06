@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Rediscover You.</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -15,6 +15,18 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
+        <meta
+            name="keywords"
+            content="Brand Identity, John Lewis, John Lewis AI, AI"
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,88 +34,242 @@
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
-
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/animation.js"></script>
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <h2>Rediscover You.</h2>
+        <!-- page decoration -->
 
-            <p style="grid-column: 1 / span 2; align-self: flex-start">
-                Working on a team with two others, we created the following
-                campaign using miniature figures and AI generated art to conquer
-                loneliness using John Lewis' tone of voice.
-            </p>
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Jacob.</a>
+            </div>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+            </div>
+        </nav>
+        <div class="navBarGap"></div>
 
-            <p style="grid-column: 5 / span 2; align-self: flex-start">
-                • &nbsp&nbsp&nbsp 10s+ social animation<br />
-                • &nbsp&nbsp&nbsp 3x Printed posters<br />
-                • &nbsp&nbsp&nbsp 3x billboard posters<br />
-                • &nbsp&nbsp&nbsp 2x Staff uniform badges<br />
-                • &nbsp&nbsp&nbsp 2x social media mockups<br />
-                • &nbsp&nbsp&nbsp 3x Website Pages
-            </p>
+        <!-- Header Section -->
 
-            <video
-                <video
-                    style="width: 100%;"
-                    muted
-                    autoplay
-                    loop
-                    preload
-                    controls
-                    playsinline
-            >
-                <source src="assets/campaignAnimation.mp4" type="video/mp4" />
-                Digital Poster 1 - Your browser does not support video
-            </video>
+        <h1 class="title gap1">Rediscover You.</h1>
 
+        <div class="gap3 metaInfo">
+            <p class="dataTitle">The Team</p>
+            <p class="data">Jacob Bryant</p>
+
+            <a class="data" href="https://readymag.website/u1449826079/4604802/"
+                >Cassie Muskett<br />
+            </a>
+            <p class="data">Emma Hopkin</p>
+
+            <p class="dataTitle">Date</p>
+            <p class="data">January 2024</p>
+
+            <p class="dataTitle">Tags</p>
+            <p class="data tag">Campaign</p>
+        </div>
+
+        <h3 class="gap3 subTitle">
+            Working on a team with two others, we created the following campaign
+            using miniature figures and AI generated art to conquer loneliness
+            using John Lewis' tone of voice.
+        </h3>
+
+        <p class="singleCol"></p>
+        <p class="gap3 rSub">
+            Requirements<br />
+            • &nbsp&nbsp&nbsp 10s+ social animation<br />
+            • &nbsp&nbsp&nbsp 3x Printed posters<br />
+            • &nbsp&nbsp&nbsp 3x billboard posters<br />
+            • &nbsp&nbsp&nbsp 2x Staff uniform badges<br />
+            • &nbsp&nbsp&nbsp 2x social media mockups<br />
+            • &nbsp&nbsp&nbsp 3x Website Pages
+        </p>
+
+        <video class="gap3 rFocus" muted autoplay loop preload playsinline>
+            <source src="assets/campaignAnimation.mp4" type="video/mp4" />
+            Campaign Animation
+        </video>
+
+        <h2 class="gap4 fullWidth">Billboards</h2>
+
+        <img
+            class="gap5 lFocus"
+            style="--staggerDelay: 0"
+            src="assets/horizontal1.jpg"
+            alt="Horizontal Billboard image 1"
+        />
+
+        <div class="gap5 lSub imgDiv">
             <img
-                src="assets/horizontal1.jpg"
-                alt="Horizontal Billboard image 1"
-            />
-            <img
+                class="lSub"
+                style="--staggerDelay: 1"
                 src="assets/horizontal2.jpg"
                 alt="Horizontal Billboard image 2"
             />
             <img
+                class="lSub"
+                style="--staggerDelay: 2"
                 src="assets/horizontal3.jpg"
                 alt="Horizontal Billboard image 3"
             />
-            <img src="assets/mockup3.jpg" alt="Horizontal Billboard mockup 1" />
-            <img src="assets/mockup4.jpg" alt="Horizontal Billboard mockup 2" />
+        </div>
 
-            <img src="assets/vertical4.jpg" alt="Vertical Poster all image" />
-            <img src="assets/mockup1.jpg" alt="Vertical Poster mockup 1" />
-            <img src="assets/mockup2.jpg" alt="Vertical Poster mockup 2" />
+        <img
+            class="gap3 tripleCol"
+            style="--staggerDelay: 0"
+            src="assets/mockup3.jpg"
+            alt="Horizontal Billboard mockup 1"
+        />
+        <img
+            class="gap3 tripleCol"
+            style="--staggerDelay: 1"
+            src="assets/mockup4.jpg"
+            alt="Horizontal Billboard mockup 2"
+        />
 
-            <video
-                style="width: 100%;"
-                muted
-                autoplay
-                loop
-                preload
-                controls
-                playsinline
+        <h2 class="gap3 fullWidth">Posters</h2>
+
+        <img
+            class="gap5 fullWidth"
+            src="assets/vertical4.jpg"
+            alt="Vertical Poster all image"
+        />
+
+        <img
+            class="gap4 tripleCol"
+            src="assets/mockup1.jpg"
+            alt="Vertical Poster mockup 1"
+        />
+
+        <img
+            class="gap4 tripleCol"
+            src="assets/mockup2.jpg"
+            alt="Vertical Poster mockup 2"
+        />
+
+        <h2 class="gap3 fullWidth">Website</h2>
+
+        <div class="gap5 rSub imgDiv">
+            <img
+                class="rFocus"
+                style="--staggerDelay: 1"
+                src="assets/mockup7.jpg"
+                alt="website mockup"
+            />
+            <p class="rSub">
+                The John Lewis website was redesigned to promote the campaign,
+                with an explanation, stories and most importantly "little
+                meet-ups" — which was the campaigns solution to helping those
+                lost parents find something new to do in their lives.
+            </p>
+        </div>
+
+        <video
+            class="gap5 rFocus"
+            style="--staggerDelay: 0"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source src="assets/websiteRecording.mp4" type="video/mp4" />
+            Website Recording
+        </video>
+
+        <h2 class="gap3 fullWidth">Social Media</h2>
+
+        <div class="gap3 rSub imgDiv">
+            <img
+                class="rSub"
+                style="--staggerDelay: 0"
+                src="assets/mockup8.jpg"
+                alt="social media mockup 2"
+            />
+            <p>
+                The social media promoted stories and presented the visuals and
+                typography in a beautiful way that would help the campaign bring
+                in more attention.
+            </p>
+        </div>
+
+        <img
+            class="gap3 rFocus"
+            style="--staggerDelay: 1"
+            src="assets/mockup5.jpg"
+            alt="social media mockup 2"
+        />
+
+        <h2 class="gap3 fullWidth">Staff Uniform</h2>
+
+        <img
+            class="gap3 rSub"
+            style="--staggerDelay: 0"
+            src="assets/mockup6.jpg"
+            alt="nametag mockup"
+        />
+        <img
+            class="gap3 rFocus"
+            style="--staggerDelay: 1"
+            src="assets/nametags.jpg"
+            alt="nametag image"
+        />
+
+        <h2 class="gap4 fullWidth">Learning from the presentation</h2>
+
+        <p class="singleCol"></p>
+
+        <a class="gap4 doubleCol" href="assets/Submission PDF.pdf"
+            ><img
+                class="gap5 tripleCol"
+                src="assets/animationThumb.jpg"
+                alt="Final PDF"
+        /></a>
+
+        <p class="doubleCol">
+            If you want to see it as a PDF, have a click of the image!
+        </p>
+
+        <p class="singleCol"></p>
+
+        <!-- Project Navigation Panel  -->
+
+        <!-- Page Footer -->
+
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
             >
-                <source src="assets/websiteRecording.mp4" type="video/mp4" />
-                Website Recording - Your browser does not support video
-            </video>
-
-            <img src="assets/mockup7.jpg" alt="website mockup" />
-
-            <img src="assets/mockup6.jpg" alt="nametag mockup" />
-            <img src="assets/nametags.jpg" alt="nametag image" />
-
-            <img src="assets/mockup5.jpg" alt="social media mockup 2" />
-            <img src="assets/mockup8.jpg" alt="social media mockup 2" />
-        </section>
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

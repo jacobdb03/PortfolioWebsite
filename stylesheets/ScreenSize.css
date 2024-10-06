@@ -1,12 +1,13 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 0px) {
     body {
-        max-width: 480px;
-        margin: calc(1vw + 1vh) auto;
+        font-size: 0.5vw;
+        max-width: 280px;
     }
-    .bodyContent {
-        display: inline-block;
+}
 
-        margin-right: 0vh;
-        margin-left: 0vh;
+@media only screen and (min-width: 720px) {
+    body {
+        font-size: min(20px, 0.8vw);
+        max-width: 1280px;
     }
 }

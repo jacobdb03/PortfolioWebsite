@@ -1,0 +1,136 @@
+/* ---- Class for nav bar design ---- */
+nav {
+    /* Declaring a nav section and creating a flexbox for it */
+    grid-column: 1 / span 6;
+
+    position: sticky;
+    z-index: 1;
+    top: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 5em;
+}
+
+.navbar {
+    /* A div that contains the design for the two sepearted elements of the navbar */
+
+    background-color: var(--blue);
+    border: 0.3em solid var(--blue);
+
+    box-sizing: border-box;
+
+    border-radius: 5em;
+
+    color: var(--white);
+    text-align: center;
+
+    margin: 1em;
+    padding: 1.2em;
+
+    transition-duration: 0.2s;
+
+    a {
+        font-size: 1.5em;
+
+        background-color: transparent;
+        border: 0em solid var(--blue);
+
+        transition-duration: 0.2s;
+    }
+}
+
+.navbar:hover {
+    /* What happens on hovering over navbar */
+
+    background-color: var(--white);
+    border: 0.3em solid var(--blue);
+
+    padding: 1.2em;
+
+    transition-duration: 0.2s;
+
+    a {
+        /* nested a tag declares what happens specifically to text on hovering over navbar */
+        color: var(--blue);
+        background-color: transparent;
+
+        transition-duration: 0.2s;
+    }
+    a:hover {
+        /* nested a tag that declares what happens when you hover over the text in the navbar */
+        font-weight: 700;
+
+        color: var(--orange);
+        background-color: transparent;
+        border: 0em solid var(--blue);
+
+        padding: 1.2em;
+
+        transition-duration: 0.2s;
+    }
+}
+
+/* ---- Footer design ---- */
+
+.footerName {
+    font-weight: 800;
+    line-height: 100%;
+    font-size: 4em;
+
+    margin-left: 1em;
+
+    color: var(--white);
+
+    grid-column: 1 / span 4;
+
+    align-self: center;
+}
+
+.footerName:hover {
+    font-weight: 900;
+}
+
+.footerTextTitle {
+    font-size: clamp(10px, 1.5em, 20px);
+    line-height: 150%;
+    font-weight: 100;
+    color: var(--black);
+
+    text-align: center;
+
+    margin-bottom: 1em;
+}
+
+.footerText {
+    font-weight: 400;
+    color: var(--white);
+
+    font-size: 1.4em;
+    line-height: 180%;
+
+    text-align: center;
+    align-self: center;
+}
+
+.footerText:hover {
+    font-weight: 500;
+}
+
+/* ---- Tag System  ---- */
+.tag {
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 0.5em;
+
+    text-align: center;
+    max-width: 100%;
+}
+
+p.tag {
+    color: var(--blue);
+}

@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Jacob Bryant</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -15,6 +15,13 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,42 +31,79 @@
         />
 
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/animation.js"></script>
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <!--heading and about -->
-            <h2>Jacob Bryant.</h2>
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Home.</a>
+            </div>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+            </div>
+        </nav>
 
-            <h3 style="text-align: left">Designer & Creative</h3>
+        <!--heading and about -->
+        <h1>About.</h1>
 
-            <p style="grid-column: 1 / span 3">
-                Hi, I’m Jacob, a 20 year old designer in London and Norwich. I
-                am passionate, energetic and creative, dedicated to my projects
-                and always wanting to learn. From time to time I still create
-                art pieces and still have a good knowledge of coding and
-                computers, having designed and developed this website from
-                scratch. I have a knowledgable understanding of a wide variety
-                of music, while I also stay active through running and
-                bouldering.
-            </p>
-            <p style="1 / span 6"></p>
+        <h2 class="fullWidth">Designer & Creative</h2>
 
-            <p style="margin-top: 5vh; grid-column: 1 / span 3">
-                My creative journey began at age 10 with an inital interest in
-                doodles and drawings, which evolved into creating comics by 13.
-                I expanded my hobbies into coding when I was 14, which quickly
-                evolved into game design when I was 15. I developed my
-                appreciation for fine arts untill I was 18, before exploring the
-                world of graphic design, which is the field I am in now.
-            </p>
-            <h1></h1>
-        </section>
+        <p class="tripleCol aboutPage gap3">
+            Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, dedicated to my projects and
+            always hoping to learn. From time to time I still create art pieces
+            and still have a good knowledge of coding and computers, having
+            designed and developed this website from scratch. I try to stay
+            active as much as I can and I enjoy running, swimming and
+            bouldering.
+        </p>
+        <p class="tripleCol"></p>
+
+        <p class="tripleCol aboutPage">
+            My creative journey began at age 10 with an inital interest in
+            doodles and drawings, which evolved into creating comics by 13. I
+            expanded my hobbies into coding when I was 14, which quickly evolved
+            into game design when I was 15. I developed my appreciation for fine
+            arts untill I was 18, before exploring the world of graphic design,
+            which is the field I am in now.
+        </p>
+
+        <a class="homeButton" href="/work/">Want to see my work?</a>
+
+        <!-- Page Footer -->
+
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
+            >
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

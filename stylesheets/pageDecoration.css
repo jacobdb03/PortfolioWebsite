@@ -22,14 +22,30 @@
     --backgroundHeigh5: 10em;
 }
 
-.navBarGap {
-    font-size: 15em;
+.footerBg {
+    /* Got this working by making the width start at -100 and then expand 1000 ems */
+    position: absolute;
+    z-index: 0;
 
-    height: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2.5%;
 
-    margin: 0em;
+    bottom: -1em;
+    left: -2em;
 
-    transition-duration: 0.2s;
+    width: calc(100% + 4em);
+    height: 10em;
+
+    border-radius: 20em;
+
+    background-color: var(--blue);
+
+    margin-bottom: 5em;
+
+    a {
+        display: inline-block;
+    }
 }
 
 .pageBg {
@@ -45,20 +61,6 @@
     background-color: var(--white);
 
     margin-top: 0em;
-}
-
-.footerBg {
-    /* Got this working by making the width start at -100 and then expand 1000 ems */
-    position: absolute;
-    z-index: -1;
-
-    left: -200em;
-    bottom: -1em;
-
-    width: 500em;
-    height: 26em;
-
-    background-color: var(--black);
 }
 
 /* ---- Backgrounds: 5 different backgrounds per page. Add more if needed ---- */

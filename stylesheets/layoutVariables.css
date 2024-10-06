@@ -3,22 +3,27 @@
     /* the global variables for the project*/
     --black: #152229;
     --white: #eff1f3;
-    --grey: #687a8d;
+    --grey: #d6e1eb;
     --blue: #0f89fa;
-    --altBlue: #b2e3ff;
+    --altBlue: #3068b1;
     --orange: #ff817b;
     --altOrange: #ffc7aa;
-    --clickBlue: #2c50c8;
     --borderWidth: 0.5em;
 
+    --gap0: 0em;
     --gap1: 0.5em;
     --gap2: 1em;
     --gap3: 2em;
     --gap4: 5em;
     --gap5: 10em;
+    --gap6: 20em;
 }
 
 /* ---- Gaps: used to declare how much space should be left between grid row ---- */
+.gap0 {
+    margin-top: var(--gap0);
+}
+
 .gap1 {
     margin-top: var(--gap1);
 }
@@ -39,19 +44,47 @@
     margin-top: var(--gap5);
 }
 
+.gap6 {
+    margin-top: var(--gap6);
+}
+
 /* ---- Specifcs: Used specifically in the header of the page as unique elements ---- */
 .title {
     grid-column: 1 / span 5;
+
+    align-self: flex-end;
+    margin: 0px;
 }
 
-.metaInfo {
-    grid-column: 6;
-    text-align: right;
+.subTitle {
+    grid-column: 1 / span 5;
+}
+
+.footerGap {
+    margin-top: 30em;
+}
+
+.navBarGap {
+    font-size: 15em;
+
+    height: 1em;
+
+    margin: 0em;
+}
+
+.thumbnailCol {
+    grid-column: span 3;
+}
+
+.middle {
+    grid-column: 2 / span 4;
+    text-align: center;
 }
 
 /* ---- Layout options: A variety of options to layout the pages ---- */
 .fullWidth {
     grid-column: 1 / span 6;
+
     text-align: center;
     max-width: 100%;
 }

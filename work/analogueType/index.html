@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Killing Eve Mag.</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -15,6 +15,13 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,44 +30,98 @@
             rel="stylesheet"
         />
 
-        <!--My CSS documents -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <!--My CSS documentS -->
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
+
+        <!--My JS documentS -->
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <h2>Killing Eve Mag.</h2>
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Jacob.</a>
+            </div>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+            </div>
+        </nav>
+        <div class="navBarGap"></div>
 
-            <p style="grid-column: 1 / span 2; align-self: flex-start">
-                The hero of the design, the analogue type, is created out of
-                ribbon to best express the style of the show, Killing Eve.
-                Visually, the colour red and ribbons are already used within the
-                show. Ribbons create a twisting, mesmerising path, and the way
-                it curves and flows through a scene is quite seductive. This are
-                all themes expressed through the show.
-            </p>
+        <!-- Header Section -->
+        <h1 class="title gap1">Magazine Design.</h1>
+        <div class="gap3 metaInfo">
+            <p class="dataTitle">Date</p>
+            <p class="data">DATE TO DATE</p>
+            <p class="dataTitle">Requirements</p>
+            <p class="data">3x Magazine spreads</p>
+            <p class="data">1x Analogue type</p>
+            <p class="dataTitle">Tags</p>
+            <p class="data tag">Publication</p>
+            <p class="data tag">Creative</p>
+        </div>
 
-            <p style="grid-column: 3 / span 2; align-self: flex-start">
-                The layout guides the reader around the page using the ribbon
-                and white space. By using lots of blank space around the design
-                the text is the main focus of the page, and brings the most
-                attention to the analogue type.
-            </p>
+        <h3 class="gap3 subTitle">
+            This section still needs a subtitle and the images are super blurry!
+        </h3>
 
-            <p style="grid-column: 5 / span 2; align-self: flex-start">
-                • &nbsp&nbsp&nbsp 3x Magazine spreads<br />• &nbsp&nbsp&nbsp 1x
-                Analogue type - Hero of design
-            </p>
+        <img class="gap1 fullWidth" src="assets/typepic1.jpg" alt="typepic1" />
 
-            <img src="assets/typepic1.jpg" alt="typepic1" />
-            <img src="assets/typepic2.jpg" alt="typepic2" />
-            <img src="assets/typepic3.jpg" alt="typepic2" />
+        <p class="gap3 doubleCol">
+            The hero of the design, the analogue type, is created out of ribbon
+            to best express the style of the show, Killing Eve.
+        </p>
 
-            <!--Make transparent images and crop in
-            layout text
-            write text
-            -->
-        </section>
+        <p class="gap3 doubleCol">
+            Ribbons create a twisting, mesmerising path, and the way it curves
+            and flows through a scene is quite seductive.
+        </p>
+
+        <p class="gap3 doubleCol">
+            Visually, the colour red and ribbons are already used as key themes
+            within the show.
+        </p>
+        <img class="gap1 fullWidth" src="assets/typepic2.jpg" alt="typepic2" />
+
+        <p class="gap3 doubleCol">
+            The layout guides the reader around the page using the ribbon and
+            white space. By using lots of blank space around the design the text
+            is the main focus of the page, and brings the most attention to the
+            analogue type.
+        </p>
+        <img class="gap1 fullWidth" src="assets/typepic3.jpg" alt="typepic2" />
+
+        <!-- Project Navigation Panel  -->
+
+        <!-- Page Footer -->
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
+            >
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

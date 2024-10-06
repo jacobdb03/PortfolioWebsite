@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Jacob Bryant</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -15,6 +15,13 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,39 +30,790 @@
             rel="stylesheet"
         />
 
-        <!--My CSS documents -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <!--My CSS documentS -->
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
+
+        <!--My JS documentS -->
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <h2>Tastebuds</h2>
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Jacob.</a>
+            </div>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+            </div>
+        </nav>
+        <div class="navBarGap"></div>
 
-            <a href="https://tastebudscollective.co.uk/" style="grid-column: 6">
-                <p class="data">tastebuds website (updating soon!)</p>
-            </a>
+        <!-- Header Section -->
 
-            <p style="grid-column: 1 / span 3">
-                Tastebuds is a personal project to me as I have seen it develop
-                from a corporate to playful identity, and I have been behind it
-                at every point. I believe I am in a rare situation at my age to
-                be able to be single-handedly completing the design work for a
-                startup, and I feel privileged to be able to see the brand
-                flourish as the design improves and their company grows.
-            </p>
+        <h1 class="title">Tastebuds.</h1>
 
-            <video
-                style="max-width: 100%; grid-column: 2 / span 4"
-                muted
-                preload
-                autoplay
+        <div class="metaInfo">
+            <p class="dataTitle">The Team</p>
+
+            <p class="data">Jacob Bryant<br /></p>
+            <a
+                class="data"
+                href="https://www.linkedin.com/in/charlotte-louise-beach-193b1b128/"
+                >Charlotte Beach<br
+            /></a>
+            <a class="data" href="https://www.linkedin.com/in/alexander-larter/"
+                >Alex Larter<br
+            /></a>
+            <p class="data">Martin Burchett<br /></p>
+
+            <p class="dataTitle">Date</p>
+            <p class="data">May — August 2024</p>
+
+            <p class="dataTitle">Socials</p>
+            <a class="data" href="https://tastebudscollective.co.uk/"
+                >Website<br
+            /></a>
+            <a
+                class="data"
+                href="https://www.instagram.com/tastebuds_collective/"
+                >Instagram<br
+            /></a>
+
+            <p class="dataTitle">Tags</p>
+            <p class="data tag">Brand Identity</p>
+            <p class="data tag">Illustration</p>
+            <p class="data tag">Creative Lead</p>
+        </div>
+
+        <h3 class="gap3 subTitle">
+            Tastebuds are a collective for the food & drink industry, currently
+            operating in Norfolk and Suffolk. They work by connecting suppliers,
+            buyers and all other services in the region to help them flourish.
+        </h3>
+
+        <h2 class="gap3 fullWidth">Welcome to...</h2>
+
+        <video class="gap4 fullWidth" muted preload autoplay>
+            <source src="assets/Logotype_Animation.mp4" type="video/mp4" />
+            Animated tastebuds logo
+        </video>
+
+        <h2 class="gap3 fullWidth">But first: where did it start?</h2>
+
+        <p class="gap3 rSub">
+            Tastebuds brand design began as corporate identity, known as the
+            Food & Drink Innovation Cluster, before they approached Norwich
+            university's students for assistance on a rebrand. Out of 5 students
+            competing to have their design be the new identity, I was chosen as
+            the winner and asked to continue with their rebranding. Moreover, as
+            a result of the time I put in, they came back to me to offer me a
+            full time internship position for the summer.
+        </p>
+
+        <img
+            class="gap5 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Sprout/Sprout_BusinessCard_1.png"
+            alt="Dark Business Cards"
+        />
+
+        <img
+            class="gap3 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Sprout/Sprout_BusinessCard_2.png"
+            alt="White Business Cards"
+        />
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Sprout/Sprout_Website_1.png"
+            alt="Sprout Website Mockup"
+        />
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Sprout/Sprout_Website_2.png"
+            alt="Sprout Website Mockup"
+        />
+
+        <p class="gap4 lSub">
+            Here, you can see my initial route for the company, where I
+            suggested the name sprout, which came from two of the businesses key
+            themes. Number one: Helping the businesses they support to grow.
+            Number two: the association with growing a green, healthy,
+            environmentall concious food industry of food I am proud of
+            regardless of it not being chosen as the direction
+        </p>
+
+        <h2 class="gap3 fullWidth">And what happens next?</h2>
+
+        <video
+            class="gap4 tripleCol"
+            style="
+                padding-left: 20%;
+                padding-right: 20%;
+                background-color: #047471;
+            "
+            muted
+            preload
+            autoplay
+        >
+            <source
+                src="assets/Brand/logomark animation green bg.mp4"
+                type="video/mp4"
+            />
+            Animated tastebuds logo
+        </video>
+
+        <p class="gap3 tripleCol">
+            This is Tastebuds, the collective for Food and Drink Innovators,
+            bringing the food and drink industry together, nourishing connection
+            and cultivating success. When partners work with them, they can
+            expect to collaborate, innovate and elevate their business
+            together<br /><br />
+            The logo is the letter b from buds crafted to look like a bud with
+            the stem and leaf beginning to break free of its seed, indicating
+            how tastebuds can help its members grow and flourish, especially in
+            their early beginnings.
+        </p>
+
+        <img
+            class="gap4 fullWidth"
+            style="padding: 0.5em; border: 0.2em solid #046865"
+            src="assets/Brand/wordmark diagram.png"
+            alt="tastebuds diagram"
+        />
+
+        <img
+            class="gap3 lFocus"
+            style="--staggerDelay: 0; background-color: #046865; padding: 11.8%"
+            src="assets/Brand/Logotype_fullName_beige.png"
+            alt="beige logotype"
+        />
+
+        <img
+            class="gap3 lSub"
+            style="padding: 0.5em; border: 0.2em solid #046865"
+            src="assets/Brand/logomark diagram.png"
+            alt="logomark diagram"
+        />
+
+        <p class="gap4 rSub">
+            The tastebuds brand comes from a the combination of two words —
+            taste, referring to the food and drink businesses they work with —
+            and buds, referring to the growth of the business they support.
+            Together, these two themes form tastebuds, supporting, innovating
+            and growing the food and drink industry. <br /><br />The design for
+            tastebuds incorporates organic and abstract circular shapes, along
+            with wave-y lines and fun illustrations. These can be utilised to
+            form designs used in presentations, social media, and anything else
+            tastebuds creates.
+        </p>
+
+        <img
+            class="gap4 rFocus"
+            src="assets/Brand/Logo sketches.png"
+            alt="logo sketches"
+        />
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon_green.png"
+            alt="green icon"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon_beige.png"
+            alt="beige icon"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon.png"
+            alt="green icon"
+        />
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon_beige.png"
+            alt="beige icon"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon_green.png"
+            alt="green icon"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Brand/Icon.png"
+            alt="beige icon"
+        />
+
+        <h2 class="gap4 fullWidth">Social Media.</h2>
+
+        <img
+            class="gap4 fullWidth"
+            style="--staggerDelay: 0"
+            src="assets/Social Media/mockup2.png"
+            alt="instagram post 1"
+        />
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Social Media/July 1.png"
+            alt="instagram post 1"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Social Media/July 2.png"
+            alt="instagram post 1"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Social Media/July 3.png"
+            alt="instagram post 1"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 3"
+            src="assets/Social Media/July 4.png"
+            alt="instagram post 1"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 4"
+            src="assets/Social Media/July 5.png"
+            alt="instagram post 1"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 5"
+            src="assets/Social Media/July 6.png"
+            alt="instagram post 1"
+        />
+
+        <p class="gap4 doubleCol">
+            Tastebuds has an active presence on social media, letting their
+            founders and their partners know what is new to tastebuds, events
+            coming up and slient stories. These are essential for the brand who
+            need to keep clear channels to communicate with the businesses they
+            support in order to provide them with the resources they are
+            offering.
+        </p>
+        <p class="singleCol"></p>
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Social Media/big news slide 1.png"
+            alt="instagram post 2"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Social Media/big news slide 2.png"
+            alt="instagram post 2"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Social Media/big news slide 3.png"
+            alt="instagram post 2"
+        />
+
+        <video
+            class="gap4 SingleCol"
+            style="--staggerDelay: 0"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Social Media/Upcoming event template.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+        <video
+            class="gap4 SingleCol"
+            style="--staggerDelay: 1"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Social Media/Upcoming event template 2.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+        <video
+            class="gap4 SingleCol"
+            style="--staggerDelay: 2"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Social Media/Upcoming event template 3.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+        <video
+            class="gap4 SingleCol"
+            style="--staggerDelay: 3"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Social Media/Upcoming event template 4.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+        <video
+            class="gap4 SingleCol"
+            style="--staggerDelay: 4"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Social Media/Upcoming event template 5.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+
+        <p class="gap5 singleCol">
+            Meanwhile, the stories use simple bits of motion that looks like a
+            growing vine, to give some visual flair and keep engagement up.
+        </p>
+
+        <h2 class="gap4 fullWidth">Presentation.</h2>
+        <video
+            class="gap5 fullWidth"
+            style="--staggerDelay: 0"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
+            <source
+                src="assets/Presentations/webinar opening.mp4"
+                type="video/mp4"
+            />
+            Instagram Story
+        </video>
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Presentations/slide1.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Presentations/slide2.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 2"
+            src="assets/Presentations/slide3.png"
+            alt="Businesss Card"
+        />
+
+        <img
+            class="gap4 lFocus"
+            style="--staggerDelay: 0"
+            src="assets/Presentations/eventbrite banner.png"
+            alt="Businesss Card"
+        />
+
+        <p class="gap4 doubleCol">
+            Tastebuds attends a lot of talks and events, and host a lot of
+            seminars. I used motion to create a beautiful opening transition for
+            their digital seminars. I also created a variety of templates for
+            use in presentations in-person. Finally, I designed a banner for
+            their listings oneventbrite to help their talks stand out
+        </p>
+
+        <h2 class="gap4 fullWidth">Email Signatures.</h2>
+
+        <p class="gap3 middle">
+            The email signatures for each member of the team continued to
+            demonstrate the brand's design language, and communicated the team's
+            essential information quickly and stylistically. The motion in
+        </p>
+
+        <img
+            class="gap4 fullWidth"
+            style="--staggerDelay: 0"
+            src="assets/Emails/Animated Jacob.gif"
+            alt="Email Signature"
+        />
+        <img
+            class="gap3 doubleCol"
+            style="--staggerDelay: 0; background-color: #ffffff"
+            src="assets/Emails/static Charlotte.png"
+            alt="Email Signature"
+        />
+        <img
+            class="gap3 doubleCol"
+            style="--staggerDelay: 0; background-color: #ffffff"
+            src="assets/Emails/static Alex.png"
+            alt="Email Signature"
+        />
+        <img
+            class="gap3 doubleCol"
+            style="--staggerDelay: 0; background-color: #ffffff"
+            src="assets/Emails/static Martin.png"
+            alt="Email Signature"
+        />
+
+        <h2 class="gap4 fullWidth">Illustrations.</h2>
+
+        <p class="gap3 middle" style="align-self: flex-end">
+            The illustrations use the character mascot — the buds — in various
+            silly situations. These illustrations are used in social media posts
+            and on the newsletters, and on the website. However, they are
+            primarily used to add some amusing visuals to otherwise text-heavy
+            areas of the website, with each illustration depicting something
+            that tastebuds can help their clients solve.
+        </p>
+        <p class="singleCol"></p>
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Illustration/i1.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Illustration/i2.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Illustration/i3.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 3"
+            src="assets/Illustration/i4.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 4"
+            src="assets/Illustration/i5.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 5"
+            src="assets/Illustration/i6.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Illustration/i7.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Illustration/i8.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Illustration/i9.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 3"
+            src="assets/Illustration/i10.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 4"
+            src="assets/Illustration/i11.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 5"
+            src="assets/Illustration/i12.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Illustration/i13.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Illustration/i14.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Illustration/i15.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 3"
+            src="assets/Illustration/i16.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 4"
+            src="assets/Illustration/i17.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 5"
+            src="assets/Illustration/i18.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Illustration/i19.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Illustration/i20.png"
+            alt="Illustration"
+        />
+        <img
+            class="gap3 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Illustration/i21.png"
+            alt="Illustration"
+        />
+
+        <p class="tripleCol"></p>
+
+        <h2 class="gap4 fullWidth">Website.</h2>
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Website/Splash Screens1.png"
+            alt="Website Mockup"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Website/Splash Screens2.png"
+            alt="Website Mockup"
+        />
+
+        <p class="gap4 doubleCol">
+            Their new website attempts to be friendlier and have a more fun
+            approach to how they talk with their partners.
+        </p>
+
+        <p class="gap4 doubleCol">
+            The website was developed by 101 websites, however I had an input on
+            visual direction and ideas.
+        </p>
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Website/Header1.png"
+            alt="Website Mockup"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Website/Footer1.png"
+            alt="Website Mockup"
+        />
+
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 0"
+            src="assets/Website/review1.png"
+            alt="Website Mockup"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Website/review2.png"
+            alt="Website Mockup"
+        />
+        <img
+            class="gap4 doubleCol"
+            style="--staggerDelay: 1"
+            src="assets/Website/review3.png"
+            alt="Website Mockup"
+        />
+
+        <p class="gap4 doubleCol">
+            I created a variety of mockups and layouts on how it could
+            encorporate the brand's style, which is seen here. The development
+            of these mockups helped to bring the brand elements together to be
+            able to visualise the brand better.
+        </p>
+
+        <img
+            class="gap4 rFocus"
+            style="--staggerDelay: 1"
+            src="assets/Website/Become a bud.png"
+            alt="Website Mockup"
+        />
+
+        <p class="doubleCol"></p>
+        <a class="doubleCol tag gap4" href="https://tastebudscollective.co.uk/"
+            >Take a look at what happened!</a
+        >
+
+        <h2 class="gap4 fullWidth">Business Cards.</h2>
+
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 0"
+            src="assets/Business cards/bcard-48.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 1"
+            src="assets/Business cards/bcard-49.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 2"
+            src="assets/Business cards/bcard-50.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 3"
+            src="assets/Business cards/bcard-51.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 4"
+            src="assets/Business cards/bcard-52.png"
+            alt="Businesss Card"
+        />
+        <img
+            class="gap4 singleCol"
+            style="--staggerDelay: 5"
+            src="assets/Business cards/bcard-53.png"
+            alt="Businesss Card"
+        />
+
+        <h2 class="gap4 fullWidth">Mockups.</h2>
+
+        <img
+            class="gap4 fullWidth"
+            style="--staggerDelay: 0"
+            src="assets/mockups/mockup.png"
+            alt="Businesss Card"
+        />
+
+        <h2 class="gap4 fullWidth">In the end...</h2>
+
+        <!--<p class="gap4 middle">The team left feedback on my time working with them, which can be seen here ADD TESTIMONIALS</p>-->
+        <p class="singleCol"></p>
+
+        <a class="doubleCol" href="assets/StyleSheet.pdf"
+            ><img
+                class="gap5 tripleCol"
+                src="assets/Tastebuds Thumbnail.png"
+                alt="PDF thumbnail"
+        /></a>
+
+        <p class="doubleCol">
+            After months of working with tastebuds, I left them with this
+            styleguide (as well as a variety of templates), that shows how to
+            use the brand elements as clearly as possible, in order for them to
+            continue using the design's effectively.
+        </p>
+
+        <p class="singleCol"></p>
+
+        <!-- Project Navigation Panel  -->
+
+        <!-- Page Footer -->
+
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
             >
-                <source src="assets/Logotype_Animation.mp4" type="video/mp4" />
-                Animated tastebuds logo
-            </video>
-
-            <p style="grid-column: 1 / span 3">More to come soon!</p>
-        </section>
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

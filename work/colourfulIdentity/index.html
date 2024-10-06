@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Society of Colour</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -15,6 +15,13 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,50 +31,114 @@
         />
 
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="/stylesheets/defaults.css" />
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/animation.js"></script>
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <h2>Colour Soc.</h2>
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Home.</a>
+            </div>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
+            </div>
+        </nav>
+        <div class="navBarGap"></div>
 
-            <p style="grid-column: 1 / span 2; align-self: flex-start">
-                Logos are arguably one of the most memorable parts of a brand's
-                identity, but in recent years there has been arguements stating
-                the logo as we know it is dead. So how can we create a memorable
-                brand without a logo?
-            </p>
+        <h1 class="title gap1">Society Design.</h1>
 
-            <p style="grid-column: 3 / span 2; align-self: flex-start">
-                This project used a technique called hydrodipping as inspiration
-                for the patterns and colours of the design. This technique was
-                able to create new patterns and designs for every instance and
-                used a colourful process to reflect the society's focus on
-                colour.
-            </p>
+        <div class="gap3 metaInfo">
+            <p class="dataTitle">Date</p>
+            <p class="data">January 2023</p>
 
-            <p style="grid-column: 5 / span 2; align-self: flex-start">
-                • &nbsp&nbsp&nbsp 1x Business card<br />
-                • &nbsp&nbsp&nbsp 1x Complimentary slip<br />
-                • &nbsp&nbsp&nbsp 1x Envelope<br />
-                • &nbsp&nbsp&nbsp 1x Letterhead<br />
-                • &nbsp&nbsp&nbsp 1x stationary designs
-            </p>
+            <p class="dataTitle">Tags</p>
+            <p class="data tag">Brand Identity</p>
+            <p class="data tag">Creative</p>
+        </div>
 
-            <img src="assets/ColourPic1.jpeg" alt="Colour identity picture 1" />
-            <img src="assets/ColourPic3.jpg" alt="Colour identity picture 2" />
-            <img src="assets/ColourPic5.jpg" alt="Colour identity picture 4" />
-            <img src="assets/ColourPic4.jpeg" alt="Colour identity picture 3" />
+        <h3 class="gap3 subTitle">
+            Creating an identity for an imaginary society that is all about
+            colours and dyes. This project
+        </h3>
 
-            <!-- make background of images match background of page
-            integrate text into the design of the page
-            write the text
-            mockups-->
-        </section>
+        <p class="gap3 doubleCol">
+            Logos are arguably one of the most memorable parts of a brand's
+            identity, but in recent years there has been arguements stating the
+            logo as we know it is dead. So how can we create a memorable brand
+            without a logo?
+        </p>
+
+        <p class="gap3 doubleCol">
+            This project used a technique called hydrodipping as inspiration for
+            the patterns and colours of the design. This technique was able to
+            create new patterns and designs for every instance and used a
+            colourful process to reflect the society's focus on colour.
+        </p>
+
+        <p class="gap3 doubleCol">
+            Requirements<br />
+            • &nbsp&nbsp&nbsp 1x Business card<br />
+            • &nbsp&nbsp&nbsp 1x Complimentary slip<br />
+            • &nbsp&nbsp&nbsp 1x Envelope<br />
+            • &nbsp&nbsp&nbsp 1x Letterhead<br />
+            • &nbsp&nbsp&nbsp 1x stationary designs
+        </p>
+
+        <img
+            class="gap5 fullWidth"
+            src="assets/ColourPic1.jpeg"
+            alt="Colour identity picture 1"
+        />
+        <img
+            class="gap3 doubleCol"
+            src="assets/ColourPic3.jpg"
+            alt="Colour identity picture 2"
+        />
+        <img
+            class="gap3 doubleCol"
+            src="assets/ColourPic5.jpg"
+            alt="Colour identity picture 4"
+        />
+        <img
+            class="gap3 doubleCol"
+            src="assets/ColourPic4.jpeg"
+            alt="Colour identity picture 3"
+        />
+
+        <!-- Project Navigation Panel  -->
+
+        <!-- Page Footer -->
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
+            >
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

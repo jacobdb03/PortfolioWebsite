@@ -15,6 +15,15 @@
 
         <meta name="author" content="Jacob Bryant" />
 
+        <meta
+            name="description"
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
+        />
+
+        <meta name="keywords" content="Portfolio, Student, Graphic Design" />
+
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,113 +33,143 @@
         />
 
         <!--My CSS documentS -->
-        <link rel="stylesheet" href="stylesheets/defaults.css" />
-        <link rel="stylesheet" href="stylesheets/animations.css" />
-        <link rel="stylesheet" href="stylesheets/ScreenSize.css" />
+        <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
+        <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
+        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
+        <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="javascript/animation.js"></script>
+        <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
+        <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
-        <section class="bodyContent">
-            <!--heading and about -->
-            <h1 id="hoverNonFloat">Jacob</h1>
-            <h2 id="hoverFloat" style="text-align: center; margin-top: 10vh">
-                Bryant.
-            </h2>
+        <!-- page decoration -->
 
-            <h3></h3>
-            <h3></h3>
+        <div class="background1"></div>
+        <script>
+            setBackground1("#0f89fa", "0", "100vh");
+        </script>
 
-            <h3 style="text-align: left; grid-column: span 6">
-                &nbsp;Featured work
-            </h3>
+        <script>
+            setBackground2("#152229", "190em", "90vh");
+        </script>
 
-            <div class="thumbnail">
-                <a href="work/pluckedIdentity/">
-                    <video
-                        style="max-width: 100%; margin-top: 0vh"
-                        muted
-                        preload
-                        autoplay
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="thumbnails/Plucked_Thumb_Animated.mp4"
-                            type="video/mp4"
-                        />
-                        Animated thumbnail for the Plucked Identity Page
-                    </video>
-                </a>
+        <!-- Home Section -->
+        <div class="titleDiv">
+            <img class="titleImg" src="assets/Jacob Bryant dot alt.svg" />
+        </div>
+
+        <p class="fullWidth"></p>
+
+        <!-- Nav Bar -->
+        <nav>
+            <div class="navbar">
+                <a class="navbar" href="/">Home.</a>
             </div>
-
-            <!-- Tastebuds Animated Thumbnail -->
-            <div class="thumbnail">
-                <a href="work/tastebudsIdentity/">
-                    <video
-                        style="width: 100%; margin-top: 0vh"
-                        muted
-                        preload
-                        autoplay
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="thumbnails/Tastebuds_Thumb_Animated.mp4"
-                            type="video/mp4"
-                        />
-                        Animated thumbnail for the tastebuds Page
-                    </video>
-                </a>
+            <div class="navbar">
+                <a class="navbar" href="/work">Portfolio.</a>
+                <a class="navbar" href="/about">About.</a>
+                <a class="navbar" href="/contact">Contact.</a>
             </div>
+        </nav>
 
-            <!-- Sports Factory Static Thumbnail -->
+        <!-- Thumbnail Section -->
 
-            <a href="work/sportsFactory/">
-                <img
-                    src="thumbnails/SportsFactory_Thumb.png"
-                    alt="Static Thumbnail for Sports Factory Page"
-                    width="100%"
-                    class="thumbnail"
-                />
-            </a>
+        <!--<h2 class="gap4 fullWidth">My Work</h2>-->
 
-            <!-- Biophilia Exhibition Static Thumbnail -->
+        <h2 class="gap4 fullWidth">My Projects</h2>
 
-            <a href="work/exhibitionIdentity/">
-                <img
-                    src="thumbnails/Thumbnail.jpg"
-                    alt="Static Thumbnail for Biophilia Exhibition Page"
-                    width="100%"
-                    class="thumbnail"
-                />
-            </a>
+        <p class="singleCol"></p>
+        <div class="thumbnailText">
+            <h3 style="text-align: right">Tastebuds.</h3>
 
-            <!-- Plucked Animated Thumbnail -->
-
-            <h4></h4>
-
-            <a href="work/" class="homeLink"> the portfolio </a>
-            <a href="about/" class="homeLink" style="grid-column: 4 / span 2">
-                the designer
-            </a>
-
-            <h4></h4>
-
-            <p
-                style="
-                    text-align: center;
-                    grid-column: 2 / span 4;
-                    font-size: 0.8rem;
-                "
-            >
-                My portfolio website is still under development — I am carefully
-                coding it from scratch to be designed to my liking — which means
-                some elements may not be completely finished. Thanks for
-                understanding!
+            <p style="text-align: right">
+                Tastebuds are a collective for the food & drink industry,
+                currently operating in Norfolk and Suffolk. They work by
+                connecting suppliers, buyers and all other services in the
+                region to help them grow.
             </p>
-        </section>
+        </div>
+
+        <a class="gap5 thumbnailCol" href="work/tastebudsIdentity/">
+            <video class="thumbnail" muted preload autoplay loop playsinline>
+                <source
+                    src="thumbnails/tastebuds_animated_thumb.mp4"
+                    type="video/mp4"
+                />
+                Animated thumbnail for the Tastebuds Identity Page
+            </video>
+        </a>
+
+        <a class="gap5 thumbnailCol" href="work/pluckedIdentity/">
+            <video class="thumbnail" muted preload autoplay loop playsinline>
+                <source
+                    src="thumbnails/Plucked_Thumb_Animated.mp4"
+                    type="video/mp4"
+                />
+                Animated thumbnail for the Plucked Identity Page
+            </video>
+        </a>
+
+        <div class="thumbnailText">
+            <h3>Plucked.</h3>
+
+            <p>
+                In response to a brief set by Public London,the brand identity
+                for an imaginary brand called plucked; promoting better lives
+                for chickens through a chicken rental program.
+            </p>
+        </div>
+
+        <p class="singleCol"></p>
+
+        <p class="singleCol"></p>
+        <div class="thumbnailText">
+            <h3 style="text-align: right">Sports Factory.</h3>
+
+            <p style="text-align: right">
+                A Christian charity that supports children through sport, while
+                sharing religious teachings in order to educate children on
+                moral and ethical issues.
+            </p>
+        </div>
+        <a class="gap5 thumbnailCol" href="work/sportsFactory/"
+            ><img class="thumbnail" src="thumbnails/SportsFactory_Thumb.png" />
+        </a>
+
+        <h2 class="gap4 fullWidth">My Babble</h2>
+
+        <p class="middle">
+            Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive
+            outlook on projects, people and the planet.
+        </p>
+
+        <a class="fullWidth homeButton" href="/about/">What else?</a>
+        <!-- Page Footer -->
+
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
+            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
+                >LinkedIn</a
+            >
+            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
+                >Instagram</a
+            >
+        </div>
+        <p class="footerTextTitle fullWidth">
+            © This website is coded and designed by myself. All work shown has
+            been worked on by myself unless stated otherwise. Thanks for
+            dropping by! :D
+        </p>
     </body>
 </html>

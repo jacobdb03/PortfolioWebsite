@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Title Banner Stuff -->
-        <title>Plucked.</title>
+        <title>Jacob Bryant.</title>
         <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
 
         <!-- Meta Info -->
@@ -17,14 +17,14 @@
 
         <meta
             name="description"
-            content="In response to a brief by Public London, my team and I created this
-                brand identity for an imaginary brand called plucked; promoting
-                better lives for chickens through a chicken rental program."
+            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
+            passionate, energetic and creative, and I always have a positive outlook.
+            Here is a link to my portfolio, have a look!"
         />
 
         <meta
             name="keywords"
-            content="Brand Identity, Chicken Rental, Public London, Chickens, "
+            content="Brand Identity, Chicken Rental, Public London, Chickens, Rent a chicken"
         />
 
         <!--Google API font stuff -->
@@ -37,12 +37,19 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageContent.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+
         <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
+        <link rel="stylesheet" href="/stylesheets/animations.css" />
+        <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
         <script src="/javascript/backgroundSet.js"></script>
+        <script src="/javascript/scroll.js" defer></script>
+
         <script src="/javascript/mainBlurhash.js"></script>
+        <script src="/javascript/blurLogic.js"></script>
     </head>
 
     <body>
@@ -58,40 +65,62 @@
             setBackground2("#ffc7aa", "342em", "200em");
         </script>-->
         <!--<div class="pageBg"></div>-->
+
         <!-- Nav Bar -->
         <nav>
             <div class="navbar">
                 <a class="navbar" href="/">Jacob.</a>
+            </div>
+            <div class="navbar">
                 <a class="navbar" href="/work">Portfolio.</a>
                 <a class="navbar" href="/about">About.</a>
                 <a class="navbar" href="/contact">Contact.</a>
-                <a class="navbar" href="/settings">Settings.</a>
             </div>
         </nav>
+        <div class="navBarGap"></div>
 
-        <div class="gap5 fullWidth">
-            <script id="imgPlace" src="/javascript/newBlurhashCall.js"></script>
+        <!--<div class="gap5 fullWidth">
+            <div id="Van"></div>
             <script>
-                getHash("UBGuwJ0000^*0*4nF2-;_2Mw~qSjtn9aMcxa", 1920, 1080);
-                getImgString("./assets/Van.jpg");
-                drawHashImg();
+                var VanImage = document.createElement("img");
+
+                getImgSrc("./assets/Van.jpg");
+                drawHashImg("UBGuwJ0000^*0*4nF2-;_2Mw~qSjtn9aMcxa", 1920, 1080);
+
+                VanImage.src = "./assets/Van.jpg";
+                console.log(VanImage.src);
+
+                VanImage.onload = () => {
+                    console.log(getContainerID(getContainerName()));
+                    getContainerID(getContainerName()).replaceWith(VanImage);
+                };
             </script>
         </div>
 
-        <div class="navBarGap"></div>
+        <div class="gap5 fullWidth">
+            <div id="Bus"></div>
+            <script>
+                var BusImage = document.createElement("img");
+
+                getImgSrc("./assets/Bus.jpg");
+                drawHashImg("U9GRSA-P6B-o9=$ys;S$3Z%N^iT1vdFzkX-9", 1920, 1080);
+
+                BusImage.src = "./assets/Bus.jpg";
+                console.log(BusImage.src);
+
+                BusImage.onload = () => {
+                    console.log(getContainerID(getContainerName()));
+                    getContainerID(getContainerName()).replaceWith(BusImage);
+                };
+            </script>
+        </div>-->
 
         <!-- Header Section -->
 
-        <h1 class="title gap1">Plucked.</h1>
+        <h1 class="title">Plucked.</h1>
 
-        <h3 class="gap3 tripleCol">
-            In response to a brief by Public London, my team and I created this
-            brand identity for an imaginary brand called plucked; promoting
-            better lives for chickens through a chicken rental program.
-        </h3>
-
-        <div class="gap3 metaInfo">
-            <p class="dataTitle">The Plucked team</p>
+        <div class="metaInfo">
+            <p class="dataTitle">Plucked Team</p>
 
             <p class="data">Jacob Bryant</p>
 
@@ -108,7 +137,20 @@
             <a class="data" href="https://readymag.website/u1449826079/4604802/"
                 >Cassie Muskett<br />
             </a>
+
+            <p class="dataTitle">Date</p>
+            <p class="data">March — June 2024</p>
+
+            <!--Come back to this!!! -->
+            <p class="dataTitle">Tags</p>
+            <p class="data tag">Brand Identity</p>
         </div>
+
+        <h3 class="gap3 subTitle">
+            In response to a brief set by Public London, my team and I created
+            this brand identity for an imaginary brand called plucked; promoting
+            better lives for chickens through a chicken rental program.
+        </h3>
 
         <!-- Main Page Content -->
 
@@ -140,7 +182,7 @@
 
         <img
             class="gap5 lFocus"
-            src="assets/Shapes and Colours.png"
+            src="assets/ShapesAndColours.png"
             alt="Shapes and Colours image"
         />
 
@@ -159,7 +201,7 @@
             effect in our animation.
         </p>
 
-        <div class="gap4 rFocus">
+        <div class="animateIn gap4 rFocus">
             <video muted autoplay loop preload playsinline>
                 <source src="assets/Typeface Animation.mp4" type="video/mp4" />
                 Typeface Animation
@@ -168,32 +210,80 @@
 
         <h2 class="gap4 fullWidth">We're really something to cluck about</h2>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 0"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 1.mp4" type="video/mp4" />
             Instagram Animation 1
         </video>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 1"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 2.mp4" type="video/mp4" />
             Instagram Animation 2
         </video>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 2"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 3.mp4" type="video/mp4" />
             Instagram Animation 3
         </video>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 3"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 4.mp4" type="video/mp4" />
             Instagram Animation 4
         </video>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 4"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 5.mp4" type="video/mp4" />
             Instagram Animation 5
         </video>
 
-        <video class="gap5 singleCol" muted autoplay loop preload playsinline>
+        <video
+            class="gap5 singleCol"
+            style="--staggerDelay: 5"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Story 6.mp4" type="video/mp4" />
             Instagram Animation 6
         </video>
@@ -219,15 +309,26 @@
         </p>
 
         <img
-            class="gap4 lFocus"
+            class="gap6 lFocus"
+            style="background-color: #fef6e7; --staggerDelay: 0"
             src="assets/Social Media 1.png"
             alt="Social Media Imag 1"
         />
 
-        <video class="gap5 lSub" muted autoplay loop preload playsinline>
-            <source src="assets/Infographic.mp4" type="video/mp4" />
-            Infographic Animation
-        </video>
+        <div class="gap6" style="display: flex; grid-column: span 2">
+            <video
+                class="lSub"
+                style="height: 97.4%; align-self: flex-end; --staggerDelay: 1"
+                muted
+                autoplay
+                loop
+                preload
+                playsinline
+            >
+                <source src="assets/Infographic.mp4" type="video/mp4" />
+                Infographic Animation
+            </video>
+        </div>
 
         <h2 class="gap4 fullWidth">
             Plucked from mistreatment. Plucked with Love.
@@ -235,10 +336,20 @@
 
         <img
             class="gap5 tripleCol"
+            style="--staggerDelay: 0"
             src="assets/Bus.jpg"
             alt="Bus OOH image 1"
         />
-        <video class="gap5 tripleCol" muted autoplay loop preload playsinline>
+
+        <video
+            class="gap5 tripleCol"
+            style="--staggerDelay: 1"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source
                 src="assets/Billboard Animation in Mockup.mp4"
                 type="video/mp4"
@@ -252,6 +363,7 @@
             getting out on adventures, so we created various out-of-home
             advertisements that we were sure would get people clucking.
         </p>
+
         <p class="gap3 tripleCol">
             We also considered what may arrive with your chicken, and how the
             brand may continue to interact with the custom after delivery. This
@@ -260,22 +372,89 @@
         </p>
 
         <div class="gap5 rSub imgDiv">
-            <img class="rSub" src="assets/tshirts.png" alt="tshirts" />
-            <img class="rSub" src="assets/BusiCard.jpg" alt="Business Card" />
+            <img
+                class="rSub"
+                style="--staggerDelay: 2"
+                src="assets/tshirts.png"
+                alt="tshirts"
+            />
+            <img
+                class="rSub"
+                style="--staggerDelay: 3"
+                src="assets/BusiCard.jpg"
+                alt="Business Card"
+            />
         </div>
 
-        <img class="gap5 rFocus" src="assets/Van.jpg" alt="Van mockup image" />
+        <img
+            class="gap5 rFocus"
+            style="--staggerDelay: 4"
+            src="assets/Van.jpg"
+            alt="Van mockup image"
+        />
 
-        <!--<img class="rSub" src="assets/3DChicken.jpg" alt="3D Chicken" />-->
-
-        <p class="gap3 rFocus">
+        <p class="gap3 lSub">
             When it came to presenting our work to the client — in this case the
             design agency, Public London — we made sure to consider all the
             small things in our brand that really made us stood out among our
-            piers. This included custom T-shirts with our logos, a 3D printed
-            chicken in a nest that we gave as a gift, and a presentation that
-            left them without any feedback to give us.
+            piers.
         </p>
+
+        <img
+            class="gap5 lFocus"
+            style="--staggerDelay: 1"
+            src="assets/3D Chicken.jpeg"
+            alt="3D Chicken"
+        />
+
+        <div class="gap5 lSub imgDiv">
+            <img
+                style="
+                    padding: 5%;
+                    background-color: #152229;
+                    --staggerDelay: 2;
+                "
+                class="lSub"
+                src="assets/Thank Front.png"
+                alt="Thank You Card Front"
+            />
+            <img
+                style="
+                    padding: 5%;
+                    background-color: #152229;
+                    --staggerDelay: 3;
+                "
+                class="lSub"
+                src="assets/Thank Back.png"
+                alt="Thank You Card Back"
+            />
+        </div>
+
+        <p class="gap3 rSub">
+            This included custom T-shirts with our logos, a 3D printed chicken
+            that we gave as a gift, and a presentation that left them without
+            any feedback to give us.
+        </p>
+
+        <h2 class="gap4 fullWidth">Presentation Time...</h2>
+
+        <p class="singleCol"></p>
+
+        <a class="doubleCol" href="assets/Final Applications.pdf"
+            ><img
+                class="gap5 tripleCol"
+                src="assets/Final Applications Thumbnail.png"
+                alt="PDF thumbnail"
+        /></a>
+
+        <p class="doubleCol">
+            When presenting this work, we had to put all our confidence and
+            energy into unveiling the brand as it stood between us and our
+            internship with Public London. Have a look at what we presented by
+            clicking the link to the left.
+        </p>
+
+        <p class="singleCol"></p>
 
         <h2 class="gap4 fullWidth">The flock needs you!</h2>
 
@@ -284,36 +463,23 @@
             src="assets/ChickenTeam.png"
             alt="Chicken Team image"
         />
-        <div>
-            <p class="gap1 dataTitle">The plucked team</p>
-        </div>
+
+        <p class="subTitle"></p>
+        <p style="text-align: right">The plucked team</p>
 
         <!-- Project Navigation Panel  -->
 
         <!-- Page Footer -->
-        <div class="footerGap"></div>
-        <div class="footerBg"></div>
-        <a class="footerName lFocus" href="/">
-            Jacob<br />
-            Bryant.
-        </a>
-        <div class="footerLinks"></div>
-        <div class="footerLinks">
-            <p class="footerTextTitle">Socials</p>
-            <a class="footerText">‎ </a>
+        <div class="fullWidth footerGap"></div>
+        <div class="footerBg">
+            <a class="footerName" href="/"> Jacob Bryant. </a>
+
             <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
                 >LinkedIn</a
             >
             <a class="footerText" href="https://www.instagram.com/jacobdb03/"
                 >Instagram</a
             >
-        </div>
-        <div class="footerLinks">
-            <p class="footerTextTitle">Page links</p>
-
-            <a class="footerText" href="/about/">About</a>
-            <a class="footerText" href="/contact">Contact</a>
-            <a class="footerText" href="/work/">Portfolio</a>
         </div>
         <p class="footerTextTitle fullWidth">
             © This website is coded and designed by myself. All work shown has
@@ -322,20 +488,3 @@
         </p>
     </body>
 </html>
-
-<!--
-/* AFTER I HAVE THIS WORKING: I NEED TO
-
-0. Make this blurhash work stuff server side (it broke on upload)
-1. Simplify the processes of calling this blurhash function - currently needs three functions: why?
-2. rename the newblurhash call function to something shorter as it will be called a lot
-3. shrink size of the images
-4. test if multiple images work as they are currently using the same imgPlace id
-5. implement it to all images on plucked
-6. improve the image spaacing and vertical pacing.
-7. add animation effects while scrolling and hovering throughout page
-8. add background animation or different backgrounds or shapes
-9. remove some of the waffley text
-10. work on front cover
-
-*/ -->

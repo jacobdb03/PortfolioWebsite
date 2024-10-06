@@ -1,0 +1,187 @@
+/* ---- The normal page content html tags to design the content ---- */
+
+body {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2.5%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: var(--white);
+    max-width: 1280px;
+    margin: auto;
+
+    font-family: "Outfit", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(80px, 16em, 200px);
+    color: var(--blue);
+    line-height: 80%;
+
+    grid-column: span 5;
+
+    align-self: flex-end;
+
+    margin-bottom: 0px;
+}
+h2 {
+    font-weight: 700;
+    color: var(--blue);
+
+    font-size: 3em;
+
+    line-height: 130%;
+    text-align: center;
+
+    transition-duration: 0.2s;
+}
+
+h3 {
+    font-weight: 300;
+    color: var(--black);
+
+    font-size: 1.5em;
+    line-height: 130%;
+
+    transition-duration: 0.2s;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 200%;
+
+    color: var(--black);
+
+    align-self: flex-end;
+
+    transition-duration: 0.2s;
+}
+
+video {
+    border-radius: 20px;
+    /*border: var(--borderWidth) solid var(--blue);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    max-width: 100%;
+    width: 100%;
+
+    align-self: flex-end;
+
+    transition-duration: 0.2s;
+
+    margin: 0px;
+    padding: 0px;
+
+    opacity: 0;
+
+    /* box-shadow: 0vw 0vw 50px 0.5vw #d6e1eb; */
+}
+
+img {
+    border-radius: 20px;
+    /*border: var(--borderWidth) solid var(--blue);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    max-width: 100%;
+    width: 100%;
+
+    align-self: flex-end;
+
+    margin: 0px;
+    padding: 0px;
+
+    opacity: 0;
+
+    /* box-shadow: 0vw 0vw 50px 0.5vw #d6e1eb; */
+}
+
+a {
+    color: var(--black);
+
+    line-height: 100%;
+
+    text-decoration: none;
+    margin: 0px;
+    transition-duration: 0.2s;
+}
+
+div {
+    margin: 0px;
+}
+
+canvas {
+    border-radius: 20px;
+    /* border: var(--borderWidth) solid var(--blue);*/
+    box-sizing: border-box;
+
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+/* ---- Class when multiple images are needed in one column group (e.g. in lSub or rSub) ---- */
+.imgDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---- Classes for "metadata" info at top of page (see layoutVariables for more) ---- */
+
+.data {
+    /* Any non title information */
+    color: var(--black);
+
+    line-height: 100%;
+
+    margin-bottom: 0.2em;
+    margin-top: 0px;
+}
+
+a.data:hover {
+    color: var(--orange);
+}
+
+p.data {
+    font-size: 1em;
+    line-height: 1.5em;
+
+    font-weight: 300;
+    color: var(--blue);
+}
+
+a.data {
+    font-size: 1em;
+    line-height: 1.5em;
+
+    font-weight: 300;
+    color: var(--blue);
+}
+
+.metaInfo {
+    grid-column: 6;
+    text-align: left;
+
+    align-self: flex-end;
+    margin: 0px;
+}
+
+.dataTitle {
+    /* Any title information */
+
+    color: var(--black);
+
+    font-size: 1.2em;
+    text-align: left;
+
+    font-weight: 600;
+
+    margin-bottom: 0px;
+}
