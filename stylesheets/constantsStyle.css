@@ -134,3 +134,35 @@ nav {
 p.tag {
     color: var(--blue);
 }
+
+/* ---- Buttons  ---- */
+
+.defaultButton {
+    background-color: var(--blue);
+    border: 0.3em solid var(--blue);
+
+    border-radius: 5em;
+
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+
+    padding: 1.2em;
+
+    grid-column: 3 / span 2;
+
+    transition-duration: 0.2s;
+}
+
+.defaultButton:hover {
+    /* What happens on hovering over navbar */
+
+    background-color: var(--white);
+    border: 0.3em solid var(--blue);
+
+    color: var(--blue);
+
+    padding: 1.2em;
+
+    transition-duration: 0.2s;
+}
