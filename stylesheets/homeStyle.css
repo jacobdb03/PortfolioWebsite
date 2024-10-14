@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(50px, 25em, 250px);
+    font-size: clamp(10px, 25em, 250px);
     color: var(--blue);
 
     display: flex;
@@ -79,6 +79,11 @@ a {
     height: 100vh;
 
     grid-column: span 5;
+}
+
+.mobileTitleDiv {
+    position: relative;
+    top: -30vh;
 }
 
 .titleImg {

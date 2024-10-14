@@ -9,16 +9,29 @@
         text-align: center;
     }
 
+    h1 {
+        font-size: 8em;
+    }
+
+    nav {
+        visibility: visible;
+    }
+
+    .mobileTitleDiv {
+        visibility: visible;
+    }
+
     .thumbnail {
         height: clamp(200px, 15vh, 300px);
         margin-bottom: 5em;
     }
 
-    nav {
-    }
-
     .footerBg {
         visibility: collapse;
+    }
+
+    .background1 {
+        visibility: hidden;
     }
 }
 
@@ -33,15 +46,28 @@
         text-align: start;
     }
 
+    h1 {
+        font-size: 20em;
+    }
+
     .thumbnail {
         height: clamp(200px, 50vh, 300px);
         margin-bottom: 0em;
     }
 
     nav {
+        visibility: visible;
+    }
+
+    .mobileTitleDiv {
+        visibility: collapse;
     }
 
     .footerBg {
+        visibility: visible;
+    }
+
+    .background1 {
         visibility: visible;
     }
 }
