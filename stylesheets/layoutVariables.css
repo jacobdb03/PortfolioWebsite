@@ -52,7 +52,7 @@
 .title {
     grid-column: 1 / span 5;
 
-    align-self: flex-end;
+    align-self: flex-start;
     margin: 0px;
 }
 

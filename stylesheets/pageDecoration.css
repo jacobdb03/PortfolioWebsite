@@ -32,9 +32,9 @@
     grid-column-gap: 2.5%;
 
     bottom: -1em;
-    left: -2em;
+    left: 5em;
 
-    width: calc(100% + 4em);
+    width: calc(100% - 10em);
     height: 10em;
 
     border-radius: 20em;
