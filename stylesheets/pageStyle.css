@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(50px, 25em, 150px);
+    font-size: clamp(20px, 25em, 150px);
     color: var(--blue);
     line-height: 100%;
 
@@ -149,7 +149,7 @@ a.data:hover {
 }
 
 p.data {
-    font-size: 1em;
+    font-size: 12px;
     line-height: 1.5em;
 
     font-weight: 300;
@@ -157,7 +157,7 @@ p.data {
 }
 
 a.data {
-    font-size: 1em;
+    font-size: 12px;
     line-height: 1.5em;
 
     font-weight: 300;
@@ -177,7 +177,7 @@ a.data {
 
     color: var(--black);
 
-    font-size: 1.2em;
+    font-size: 13px;
     text-align: left;
 
     font-weight: 600;

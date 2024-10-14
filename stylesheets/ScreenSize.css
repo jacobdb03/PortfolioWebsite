@@ -1,14 +1,24 @@
 @media only screen and (min-width: 0px) {
     body {
-        font-size: 0.5vw;
+        font-size: 0.6em;
 
-        display: inline-block;
+        display: block;
         margin-left: 10%;
         margin-right: 10%;
+
+        text-align: center;
     }
 
     .thumbnail {
         height: clamp(200px, 15vh, 300px);
+        margin-bottom: 5em;
+    }
+
+    nav {
+    }
+
+    .footerBg {
+        visibility: collapse;
     }
 }
 
@@ -18,18 +28,25 @@
         max-width: 1280px;
 
         display: grid;
-        margin: auto;
-
-        margin-left: 3.5vw;
-        margin-right: 3.5vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: start;
     }
 
     .thumbnail {
         height: clamp(200px, 50vh, 300px);
+        margin-bottom: 0em;
+    }
+
+    nav {
+    }
+
+    .footerBg {
+        visibility: visible;
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1350px) {
     body {
         margin: auto;
     }
