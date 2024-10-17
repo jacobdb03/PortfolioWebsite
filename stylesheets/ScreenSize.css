@@ -47,7 +47,7 @@
     }
 
     h1 {
-        font-size: 20em;
+        font-size: 100px;
     }
 
     .thumbnail {
@@ -75,6 +75,10 @@
 @media only screen and (min-width: 1350px) {
     body {
         margin: auto;
+    }
+
+    h1 {
+        font-size: 200px;
     }
 
     .thumbnail {
