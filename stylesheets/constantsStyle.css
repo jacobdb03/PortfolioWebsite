@@ -1,3 +1,25 @@
+/* ---- Class for body grid ---- */
+
+body {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2.5%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: var(--white);
+    max-width: 1280px;
+    margin: auto;
+
+    font-family: "Outfit", sans-serif;
+
+    cursor: default;
+
+    color-scheme: light dark;
+}
+
 /* ---- Class for nav bar design ---- */
 nav {
     /* Declaring a nav section and creating a flexbox for it */
@@ -30,6 +52,8 @@ nav {
 
     margin: 1em;
     padding: 1.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     transition-duration: 0.2s;
 
@@ -130,6 +154,7 @@ nav {
     align-self: flex-end;
 
     max-width: 100%;
+    font-size: 1.1em;
 }
 
 p.tag {
@@ -176,7 +201,8 @@ p.tag {
     border-radius: 50px;
 
     margin-top: 10em;
-    padding: 10em;
+    margin-bottom: 5em;
+    padding: 5em;
 
     box-shadow: 0vw 0vw 20px 0.5vw #d6e1eb;
 
@@ -186,9 +212,44 @@ p.tag {
     align-self: flex-end;
 
     h2 {
-        color: var(--white);
+        color: var(--white, #ffffff);
     }
     p {
-        color: var(--white);
+        color: var(--white, #);
     }
 }
+
+/*
+.cursorBlob {
+    position: fixed;
+    z-index: 2;
+    height: 2em;
+    width: 2em;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    background-color: #0f89fa;
+}
+
+.cursorBlue {
+    background-color: #0f89fa;
+}
+
+.cursorWhite {
+    background-color: #eff1f3;
+}
+
+.whiteCursorBlobHitbox {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100dvw;
+    height: 100dvh;
+
+    z-index: 3;
+
+    background-color: transparent;
+}
+*/

@@ -4,7 +4,11 @@
     --black: #152229;
     --white: #eff1f3;
     --grey: #d6e1eb;
-    --blue: #0f89fa;
+    --blue: #2560e0;
+    /*0f89fa8
+    2560E0
+    2C50C8
+    */
     --altBlue: #3068b1;
     --orange: #ff817b;
     --altOrange: #ffc7aa;
@@ -74,6 +78,17 @@
 
 .thumbnailCol {
     grid-column: span 3;
+}
+
+.thumbnailColHome {
+    grid-column: span 3;
+}
+
+.portfolioCol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-column: 3 / span 4;
 }
 
 .middle {

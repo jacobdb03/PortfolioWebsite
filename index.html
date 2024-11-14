@@ -51,6 +51,18 @@
             rel="stylesheet"
         />
 
+        <!--Cursor Follower -->
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+        />
+
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
@@ -69,21 +81,23 @@
     </head>
 
     <body>
-        <!-- page decoration -->
+        <div class="blueBg"></div>
+        <!--<div class="cursorBlob"></div>
 
-        <div class="background1"></div>
         <script>
-            setBackground1("#0f89fa", "0", "100vh");
+            const cursor = new MouseFollower({
+                el: ".cursorBlob",
+                speed: 0.5,
+                skewing: 2,
+            });
         </script>
+
+        <div class="whiteCursorBlobHitbox" data-cursor="cursorWhite"></div>-->
 
         <!-- Home Section -->
 
         <div class="titleDiv">
             <img class="titleImg" src="assets/Jacob Bryant dot alt.svg" />
-        </div>
-
-        <div class="mobileTitleDiv">
-            <img class="titleImg" src="assets/Jacob Bryant dot alt blue.svg" />
         </div>
 
         <p class="fullWidth"></p>
@@ -118,7 +132,7 @@
             </p>
         </div>
 
-        <a class="gap5 thumbnailCol" href="work/tastebudsIdentity/">
+        <a class="gap5 thumbnailColHome" href="work/tastebudsIdentity/">
             <video class="thumbnail" muted preload autoplay loop playsinline>
                 <source
                     src="thumbnails/tastebuds_animated_thumb.mp4"
@@ -128,7 +142,7 @@
             </video>
         </a>
 
-        <a class="gap5 thumbnailCol" href="work/pluckedIdentity/">
+        <a class="gap5 thumbnailColHome" href="work/pluckedIdentity/">
             <video class="thumbnail" muted preload autoplay loop playsinline>
                 <source
                     src="thumbnails/Plucked_Thumb_Animated.mp4"
@@ -160,7 +174,7 @@
                 moral and ethical issues.
             </p>
         </div>
-        <a class="gap5 thumbnailCol" href="work/sportsFactory/"
+        <a class="gap5 thumbnailColHome" href="work/sportsFactory/"
             ><img class="thumbnail" src="thumbnails/SportsFactory_Thumb.png" />
         </a>
 
@@ -174,7 +188,7 @@
             </p>
         </div>
 
-        <a class="gap4 defaultButton" href="/about/">What else?</a>
+        <a class="gap1 defaultButton" href="/about/">What else?</a>
         <!-- Page Footer -->
 
         <div class="fullWidth footerGap"></div>

@@ -1,23 +1,7 @@
 /* ---- The normal page content html tags to design the content ---- */
 
-body {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 2.5%;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    background-color: var(--white);
-    max-width: 1280px;
-    margin: auto;
-
-    font-family: "Outfit", sans-serif;
-}
-
 h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: clamp(10px, 25em, 250px);
     color: var(--blue);
 
@@ -73,23 +57,27 @@ a {
 }
 
 .titleDiv {
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
+
     align-items: flex-end;
 
     height: 100vh;
 
-    grid-column: span 5;
-}
+    grid-column: span 4;
 
-.mobileTitleDiv {
-    position: relative;
-    top: -30vh;
+    min-width: 0px;
+    min-height: 0px;
 }
 
 .titleImg {
     max-width: 1280px;
 
     margin: 5vh;
+
+    width: 100%;
+    height: auto;
 }
 
 /* ---- Thumbnail section ---- */
@@ -102,7 +90,7 @@ a {
 
     max-width: 100%;
     width: clamp(1000px, 100%, 1280px);
-    height: clamp(400px, 25vh, 600px);
+    height: 50px;
 
     opacity: 0;
 
@@ -130,4 +118,49 @@ a {
 
 .workH3 {
     align-self: flex-start;
+}
+
+.navBox {
+    position: sticky;
+    top: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--blue);
+
+    border-radius: 50px;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    height: 35em;
+
+    a {
+        font-size: 1.8em;
+        line-height: 100%;
+
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        text-align-last: center;
+        color: var(--white);
+
+        transition-duration: 0.2s;
+    }
+
+    a:hover {
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 200%;
+
+        transition-duration: 0.2s;
+    }
 }
