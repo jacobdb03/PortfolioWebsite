@@ -5,6 +5,7 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(element);*/
 
+/*
 function isInViewport(item) {
   var bounding = item.getBoundingClientRect();
   (myElementHeight = item.offsetHeight), (myElementWidth = item.offsetWidth);
@@ -25,6 +26,7 @@ function isInViewport(item) {
   }
 }
 
+
 let imgSelector = document.querySelectorAll("img");
 
 for (const i of imgSelector) {
@@ -44,10 +46,13 @@ for (const i of vidSelector) {
     }
   });
 }
+*/
 
+/*
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+*/
 
 // document.addEventListener("scroll", function () {
 //   // Calculate the scroll percentage (0 at the top, 1 at the bottom)
@@ -101,14 +106,11 @@ const transitionSpeedFactor = 0.8; // This controls how quickly the transition h
 // Parallax Scroll effect
 window.addEventListener("scroll", function () {
   let scrollY = window.scrollY;
-  let parallaxScroll = scrollY * 1; // Slower movement for parallax effect
-  let scrollPercentage = Math.min(
-    parallaxScroll / (boxHeight * transitionSpeedFactor),
-    1,
-  );
-  backgroundBox.style.background = `linear-gradient(to bottom right, var(--blue) ${100 - scrollPercentage * 100}%, var(--white) 100%)`;
 
-  backgroundBox.style.opacity = 1 - scrollPercentage;
+  backgroundBox.style.transform = `translateY(${scrollY * -1}px)`;
+
+  /*backgroundBox.style.background = `linear-gradient(to bottom, var(--blue) ${100 - scrollPercentage * 100}%, var(--white) 100%)`;
+  backgroundBox.style.opacity = 1 - scrollPercentage / 2;*/
 });
 
 /*

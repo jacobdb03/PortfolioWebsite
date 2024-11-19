@@ -60,10 +60,6 @@ video {
 
     margin: 0px;
     padding: 0px;
-
-    opacity: 0;
-
-    /* box-shadow: 0vw 0vw 50px 0.5vw #d6e1eb; */
 }
 
 img {
@@ -77,12 +73,10 @@ img {
 
     align-self: flex-end;
 
+    transition-duration: 0.2s;
+
     margin: 0px;
     padding: 0px;
-
-    opacity: 0;
-
-    /* box-shadow: 0vw 0vw 50px 0.5vw #d6e1eb; */
 }
 
 a {
@@ -161,7 +155,7 @@ a.data {
 
     color: var(--black);
 
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
 
     font-weight: 600;

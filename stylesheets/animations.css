@@ -14,7 +14,7 @@
     }
 }
 
-.animateIn:not(.titleImg) {
+.animateIn {
     animation: imgAnimation 300ms ease-in-out calc(var(--staggerDelay) * 200ms)
         1 normal forwards;
 }

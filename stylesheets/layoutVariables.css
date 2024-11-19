@@ -56,12 +56,14 @@
 .title {
     grid-column: 1 / span 5;
 
-    align-self: flex-start;
+    align-self: end;
     margin: 0px;
 }
 
 .subTitle {
+    align-self: end;
     grid-column: 1 / span 5;
+    margin: 0px;
 }
 
 .footerGap {

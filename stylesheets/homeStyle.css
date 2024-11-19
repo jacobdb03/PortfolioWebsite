@@ -90,9 +90,9 @@ a {
 
     max-width: 100%;
     width: clamp(1000px, 100%, 1280px);
-    height: 50px;
+    height: 100% /*clamp(450px, 15vh, 1000px)*/;
 
-    opacity: 0;
+    opacity: 1;
 
     animation-timing-function: ease-in-out;
     transition-duration: 0.75s;
@@ -114,10 +114,6 @@ a {
 
 .aboutPage {
     line-height: 200%;
-}
-
-.workH3 {
-    align-self: flex-start;
 }
 
 .navBox {
