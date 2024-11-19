@@ -9,10 +9,6 @@
         text-align: center;
     }
 
-    h1 {
-        font-size: 8em;
-    }
-
     nav {
         visibility: visible;
     }
@@ -33,10 +29,6 @@
         text-align: start;
     }
 
-    h1 {
-        font-size: 15em;
-    }
-
     nav {
         visibility: visible;
     }
@@ -49,10 +41,6 @@
 @media only screen and (min-width: 1350px) {
     body {
         margin: auto;
-    }
-
-    h1 {
-        font-size: 15em;
     }
 
     .footerBg {

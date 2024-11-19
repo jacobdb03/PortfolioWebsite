@@ -2,7 +2,7 @@
 
 h1 {
     font-weight: 700;
-    font-size: 16px;
+    font-size: clamp(2em, 10vw, 12em);
     color: var(--blue);
     line-height: 100%;
 

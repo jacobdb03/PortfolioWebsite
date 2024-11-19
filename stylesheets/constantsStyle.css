@@ -1,7 +1,7 @@
 /* ---- Class for body grid ---- */
 
 body {
-    display: grid;
+    display: flex;
     position: relative;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 2.5%;
@@ -24,21 +24,23 @@ body {
 nav {
     /* Declaring a nav section and creating a flexbox for it */
     grid-column: 1 / span 6;
+    display: flex;
 
     position: sticky;
     z-index: 1;
     top: 1em;
 
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
-    height: 5em;
+    height: 10em;
 }
 
 .navbar {
     /* A div that contains the design for the two sepearted elements of the navbar */
+
+    display: flex;
 
     background-color: var(--blue);
     border: 0.3em solid var(--blue);
@@ -48,12 +50,14 @@ nav {
     border-radius: 5em;
 
     color: var(--white);
-    text-align: center;
 
-    margin: 1em;
-    padding: 1.2em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding: 1.3em;
+    margin: 1.5em;
+
+    height: 6em;
+
+    justify-content: center;
+    align-items: center;
 
     transition-duration: 0.2s;
 
@@ -62,6 +66,8 @@ nav {
 
         background-color: transparent;
         border: 0em solid var(--blue);
+
+        width: 8em;
 
         transition-duration: 0.2s;
     }
@@ -72,9 +78,6 @@ nav {
 
     background-color: var(--white);
     border: 0.3em solid var(--blue);
-
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
 
     transition-duration: 0.2s;
 
@@ -89,11 +92,9 @@ nav {
         /* nested a tag that declares what happens when you hover over the text in the navbar */
         font-weight: 700;
 
-        color: var(--orange);
+        color: var(--black);
         background-color: transparent;
         border: 0em solid var(--blue);
-
-        padding: 1.2em;
 
         transition-duration: 0.2s;
     }
@@ -149,7 +150,7 @@ nav {
 .tag {
     border: 2px solid var(--blue);
     border-radius: 50px;
-    padding: 0.75em;
+    padding: 0.5em;
 
     text-align: center;
     align-self: flex-end;

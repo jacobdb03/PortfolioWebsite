@@ -28,15 +28,17 @@ h2 {
 }
 
 h3 {
+    display: flex;
     font-weight: 400;
 
-    font-size: 3em;
+    font-size: clamp(2.2em, 3em, 100%);
     line-height: 130%;
     color: var(--blue);
 
     margin-bottom: 0.2em;
 
-    align-self: flex-end;
+    height: 2em;
+    align-items: center;
 }
 
 p {
