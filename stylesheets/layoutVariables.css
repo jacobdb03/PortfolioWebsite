@@ -53,18 +53,6 @@
 }
 
 /* ---- Specifcs: Used specifically in the header of the page as unique elements ---- */
-.title {
-    grid-column: 1 / span 5;
-
-    align-self: end;
-    margin: 0px;
-}
-
-.subTitle {
-    align-self: end;
-    grid-column: 1 / span 5;
-    margin: 0px;
-}
 
 .footerGap {
     margin-top: 30em;
@@ -95,7 +83,6 @@
 
 .middle {
     grid-column: 2 / span 4;
-    text-align: center;
 }
 
 /* ---- Layout options: A variety of options to layout the pages ---- */

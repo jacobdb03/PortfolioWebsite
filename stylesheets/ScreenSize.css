@@ -3,10 +3,8 @@
         font-size: 0.6em;
 
         display: block;
-        margin-left: 10%;
-        margin-right: 10%;
-
-        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     nav {
@@ -24,8 +22,8 @@
         max-width: 1280px;
 
         display: grid;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 5em;
+        margin-right: 5em;
         text-align: start;
     }
 
@@ -41,9 +39,5 @@
 @media only screen and (min-width: 1350px) {
     body {
         margin: auto;
-    }
-
-    .footerBg {
-        visibility: visible;
     }
 }
