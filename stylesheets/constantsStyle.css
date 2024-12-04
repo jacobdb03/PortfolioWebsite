@@ -61,15 +61,19 @@ nav {
         margin-left: 2em;
         margin-right: 2em;
 
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
 
         width: 10%;
     }
     a:first-child {
         justify-self: start;
         margin-right: auto;
+        margin-left: 3em;
         text-align: left;
+    }
+    a:last-child {
+        margin-right: 3em;
     }
 }
 
@@ -186,6 +190,8 @@ nav:hover {
 /* ---- Buttons  ---- */
 
 .defaultButton {
+    grid-column: 3 / span 2;
+
     background-color: var(--blue);
     border: 0.3em solid var(--blue);
 
@@ -193,11 +199,12 @@ nav:hover {
 
     color: var(--white);
     font-size: 1.5em;
+
+    display: flex;
     text-align: center;
+    justify-content: center;
 
     padding: 1.2em;
-
-    grid-column: 3 / span 2;
 
     transition-duration: 0.2s;
 }

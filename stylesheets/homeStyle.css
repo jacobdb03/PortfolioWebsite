@@ -18,7 +18,9 @@ h2 {
 
     font-size: min(2.5em, 5vw);
 
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    text-align: middle;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     padding-left: 50px;
