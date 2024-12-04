@@ -46,9 +46,7 @@ h3 {
     line-height: 100%;
     color: var(--blue);
 
-    margin-bottom: 0.2em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-bottom: 0em;
 
     justify-content: start;
     align-self: center;
@@ -129,6 +127,7 @@ a {
 
     padding: 2em;
     padding-bottom: 0em;
+    margin-bottom: 2em;
 }
 
 .thumbnailFolder:hover {
@@ -153,6 +152,8 @@ a {
     align-items: center;
 
     height: 10em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {

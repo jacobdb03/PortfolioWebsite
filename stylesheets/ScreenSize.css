@@ -3,8 +3,6 @@
         font-size: 0.6em;
 
         display: block;
-        margin-left: 1em;
-        margin-right: 1em;
     }
 
     nav {
@@ -19,12 +17,8 @@
 @media only screen and (min-width: 640px) {
     body {
         font-size: min(20px, 0.8vw);
-        max-width: 1280px;
 
         display: grid;
-        margin-left: 5em;
-        margin-right: 5em;
-        text-align: start;
     }
 
     nav {
@@ -38,6 +32,5 @@
 
 @media only screen and (min-width: 1350px) {
     body {
-        margin: auto;
     }
 }

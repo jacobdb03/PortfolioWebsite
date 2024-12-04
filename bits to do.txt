@@ -1,5 +1,7 @@
 what am I going to do for the team name and links tags? where do I put them?
 
+put the page header bots in floating boxes?
+
 correct about page to be more interesting and animated - big text, like jkr
 
 refine the contents page
@@ -7,11 +9,17 @@ refine the contents page
 Change up and improve and simplify the copywriting on every pagecontinue compressing stuff as a lot of the thumbnails are slow
 
 redesign the page you get welcomed to. - splash screen or video showreel
+
 add in the thumbnail app icon idea that pan accross the bottom of the screen - in navigation of each page?
+
 go back through coding html video watch list on youtube and look at other css tricks to find ways of making my website look beautiful
-make the window 1920px max width and make sure the scaling of text works appropriately
+
+Add elements that scale horizontally outside of the 1280px borders
+
 convert all my sizes to min width - or convert everything to clamp
+
 Make the tags sortable
+
 change the desctiption on every page to say I'm 21 not 20 - or reword this so i dont have to change it evert year
 
 make sure images are in line with each other - eg if you have two images side by side make sure they stay the same size as each other

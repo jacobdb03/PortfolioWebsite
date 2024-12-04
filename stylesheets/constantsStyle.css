@@ -13,6 +13,9 @@ body {
 
     background-color: var(--white);
     max-width: 1280px;
+
+    padding-left: 10%;
+    padding-right: 10%;
     margin: auto;
 
     font-family: "Outfit", sans-serif;
@@ -27,56 +30,50 @@ nav {
     /* Declaring a nav section and creating a flexbox for it */
     grid-column: 1 / span 6;
     display: flex;
+    flex-wrap: nowrap;
 
     position: sticky;
     z-index: 1;
     top: 1em;
-
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    height: 10em;
-}
-
-.navbar {
-    /* A div that contains the design for the two sepearted elements of the navbar */
-
-    display: flex;
 
     background-color: var(--blue);
     border: 0.3em solid var(--blue);
 
     box-sizing: border-box;
 
+    justify-content: end;
+
     border-radius: 5em;
 
-    color: var(--white);
-
-    padding: 1.3em;
-    margin: 1.5em;
-
-    height: 6em;
-
-    justify-content: center;
-    align-items: center;
-
-    transition-duration: 0.2s;
+    padding: 0em;
+    margin: 1em;
 
     a {
         font-size: 1.5em;
+        text-align: right;
 
         background-color: transparent;
         border: 0em solid var(--blue);
 
-        width: 8em;
-        height: 2em;
+        color: var(--white);
 
         transition-duration: 0.2s;
+        margin-left: 2em;
+        margin-right: 2em;
+
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+
+        width: 10%;
+    }
+    a:first-child {
+        justify-self: start;
+        margin-right: auto;
+        text-align: left;
     }
 }
 
-.navbar:hover {
+nav:hover {
     /* What happens on hovering over navbar */
 
     background-color: var(--white);
@@ -117,8 +114,7 @@ nav {
 
     bottom: 4em;
 
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
     height: 8em;
 
     border-radius: 20em;
@@ -126,6 +122,7 @@ nav {
     background-color: var(--blue);
 
     margin-bottom: 0em;
+    margin-left: 2.5%;
 
     a {
         display: inline-block;
