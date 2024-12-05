@@ -120,7 +120,7 @@ nav:hover {
     flex-direction: row;
     flex-wrap: wrap;
 
-    justify-content: center;
+    justify-content: start;
 
     bottom: 5em;
 
@@ -148,6 +148,7 @@ nav:hover {
 
     align-self: center;
     justify-self: start;
+    text-align: start;
 
     margin-left: 1em;
     margin-right: auto;
@@ -183,7 +184,7 @@ nav:hover {
 }
 
 .footerText:last-child {
-    margin-right: 4em;
+    margin-right: 5em;
 }
 
 .footerText:hover {

@@ -9,6 +9,7 @@ refine the contents page
 redesign the page you get welcomed to. - splash screen or video showreel
 Blue too much in some places — I think it is nicer when used subtly. eg: make link boxes have a blue outline instead pf fill and make the who is box the thumbnail hover effect (neomorphic effect)
 
+"work" link on my footer?
 
 Change up and improve and simplify the copywriting on every pagecontinue compressing stuff as a lot of the thumbnails are slow
 

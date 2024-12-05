@@ -5,14 +5,16 @@
         display: block;
     }
 
-    .tag {
+    .footerName {
+        flex-basis: 100%;
     }
 
-    nav {
-        visibility: visible;
+    .thumbnailCaption {
+        h3 {
+            flex-basis: 100%;
+        }
     }
-
-
+}
 
 @media only screen and (min-width: 640px) {
     body {
@@ -21,17 +23,16 @@
         display: grid;
     }
 
-    .tag {
+    .footerName {
+        flex-basis: 30%;
     }
 
-    nav {
-        visibility: visible;
+    .thumbnailCaption {
+        h3 {
+            flex-basis: 0%;
+        }
     }
-
-
 }
 
 @media only screen and (min-width: 1350px) {
-    body {
-    }
 }
