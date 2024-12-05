@@ -44,7 +44,7 @@ h2 {
 h3 {
     font-weight: 500;
 
-    font-size: clamp(2.2em, 3em, 100%);
+    font-size: 3em;
     line-height: 100%;
     color: var(--blue);
 
@@ -78,8 +78,8 @@ p {
 
     color: var(--black);
     text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 a {
@@ -150,6 +150,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    white-space: nowrap;
 
     align-items: center;
 

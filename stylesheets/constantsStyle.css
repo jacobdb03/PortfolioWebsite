@@ -23,6 +23,15 @@ body {
     cursor: default;
 
     color-scheme: light dark;
+
+    /*outline checker for overflowing elements*/
+    /*
+    * {
+        outline: 1px solid red !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    */
 }
 
 /* ---- Class for nav bar design ---- */
@@ -34,7 +43,7 @@ nav {
 
     position: sticky;
     z-index: 1;
-    top: 1em;
+    top: 2em;
 
     background-color: var(--blue);
     border: 0.3em solid var(--blue);
@@ -58,13 +67,10 @@ nav {
         color: var(--white);
 
         transition-duration: 0.2s;
-        margin-left: 2em;
-        margin-right: 2em;
 
         margin-top: 1em;
         margin-bottom: 1em;
-
-        width: 10%;
+        margin-left: 2em;
     }
     a:first-child {
         justify-self: start;
@@ -107,18 +113,17 @@ nav:hover {
 /* ---- Footer design ---- */
 
 .footerBg {
-    position: absolute;
     z-index: 0;
+    grid-column: 1 / span 6;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    justify-content: right;
+    justify-content: center;
 
-    bottom: 4em;
+    bottom: 5em;
 
-    width: 95%;
     height: 8em;
 
     border-radius: 20em;
@@ -127,6 +132,7 @@ nav:hover {
 
     margin-bottom: 0em;
     margin-left: 2.5%;
+    margin-right: 2.5%;
 
     a {
         display: inline-block;
@@ -138,16 +144,13 @@ nav:hover {
     line-height: 100%;
     font-size: 4em;
 
-    margin-right: auto;
-
     color: var(--white);
-
-    grid-column: 1 / span 4;
 
     align-self: center;
     justify-self: start;
 
     margin-left: 1em;
+    margin-right: auto;
 }
 
 .footerName:hover {
@@ -155,8 +158,8 @@ nav:hover {
 }
 
 .footerTextTitle {
-    font-size: clamp(10px, 1.2em, 20px);
-    line-height: 150%;
+    font-size: clamp(11px, 1.3em, 12px);
+    line-height: 120%;
     font-weight: 100;
     color: var(--black);
 
@@ -172,15 +175,15 @@ nav:hover {
     font-size: 1.4em;
     line-height: 180%;
 
-    text-align: center;
+    text-align: end;
     align-self: center;
-    justify-content: end;
+    justify-content: start;
 
-    margin-left: 5em;
+    margin-left: 3em;
 }
 
 .footerText:last-child {
-    margin-right: 3em;
+    margin-right: 4em;
 }
 
 .footerText:hover {
