@@ -14,6 +14,15 @@
     }
 }
 
+@keyframes borderRotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
 .animateIn {
     animation: imgAnimation 300ms ease-in-out calc(var(--staggerDelay) * 200ms)
         1 normal forwards;

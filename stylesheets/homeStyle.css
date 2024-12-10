@@ -13,10 +13,10 @@ h1 {
 
 h2 {
     font-weight: 700;
-    color: var(--white);
+    color: var(--blue);
     line-height: 100%;
 
-    font-size: min(2.5em, 5vw);
+    font-size: min(4em, 5vw);
 
     display: flex;
     justify-content: center;
@@ -29,9 +29,6 @@ h2 {
     margin-right: 2em;
 
     transition-duration: 0.2s;
-
-    background-color: var(--blue);
-    border-radius: 50px;
 }
 
 .topLink {
@@ -202,6 +199,8 @@ a {
     line-height: 200%;
 }
 
+/* ---- Stuff for portfolio page navigation  currently offline  ----*/
+
 .navBox {
     display: flex;
     flex-direction: row;
@@ -248,3 +247,5 @@ a {
 
     transition-duration: 0.2s;
 }
+
+/* ----  ----*/
