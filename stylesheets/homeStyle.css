@@ -36,6 +36,8 @@ h2 {
     justify-content: space-between;
     text-align: right;
     color: var(--white);
+    background-color: var(--blue);
+    border-radius: 50px;
 }
 
 h3 {
@@ -81,7 +83,7 @@ p {
 }
 
 a {
-    color: var(--black);
+    color: inherit;
 
     text-decoration: none;
 
