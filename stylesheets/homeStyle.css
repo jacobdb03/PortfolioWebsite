@@ -37,7 +37,9 @@ h2 {
     text-align: right;
     color: var(--white);
     background-color: var(--blue);
-    border-radius: 50px;
+    border-radius: 5em;
+    margin-top: 0em;
+    font-size: 2em;
 }
 
 h3 {
@@ -123,7 +125,7 @@ a {
     background-color: var(--white);
     grid-column: span 6;
 
-    border-radius: 50px;
+    border-radius: 5em;
 
     transition-duration: 0.3s;
 
@@ -157,16 +159,20 @@ a {
     height: 10em;
     margin-left: 3em;
     margin-right: 3em;
+
+    h3 {
+        transition-duration: 0s;
+    }
 }
 
 .thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {
     font-weight: 600;
-
-    transition-duration: 0.2s;
+    transition-duration: 0s;
+    color: var(--orange);
 }
 
 .thumbnail {
-    border-radius: 34px;
+    border-radius: 3.5em;
     /*border: var(--borderWidth) solid var(--white);*/
     box-sizing: border-box;
     object-fit: cover;

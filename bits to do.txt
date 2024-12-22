@@ -26,3 +26,7 @@ Make the tags sortable
 change the desctiption on every page to say I'm 21 not 20 - or reword this so i dont have to change it evert year
 
 make sure images are in line with each other - eg if you have two images side by side make sure they stay the same size as each other
+
+Remove some bits from tastebuds to get it a bit less overwhelming and so I can save some bits for interviews
+
+upon scrolling the navbar should aheink into middle -see wolff ollins

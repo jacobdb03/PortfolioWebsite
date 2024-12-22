@@ -5,7 +5,7 @@
     --white: #eff1f3;
     --grey: #d6e1eb;
     --blue: #2560e0;
-    --altBlue: #213979;
+    --altBlue: #234dad;
     --orange: #ff817b;
     --altOrange: #ffc7aa;
     --borderWidth: 0.5em;
@@ -115,4 +115,44 @@
 
 .tripleCol {
     grid-column: span 3;
+}
+
+.ratio16x9 {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ratio4x3 {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ratio3x4 {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ratio9x16 {
+    aspect-ratio: 9 / 16;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ratio2x3 {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
