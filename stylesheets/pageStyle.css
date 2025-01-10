@@ -63,6 +63,11 @@ video {
 }
 
 img {
+    margin: 0px;
+    padding: 0px;
+}
+
+img:not(.footerImg) {
     border-radius: 20px;
     /*border: var(--borderWidth) solid var(--blue);*/
     box-sizing: border-box;
@@ -74,9 +79,6 @@ img {
     align-self: flex-end;
 
     transition-duration: 0.2s;
-
-    margin: 0px;
-    padding: 0px;
 }
 
 a {

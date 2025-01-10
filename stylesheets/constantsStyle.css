@@ -194,6 +194,16 @@ nav:hover {
     color: var(--orange);
 }
 
+.footerImg {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    align-self: center;
+    justify-content: center;
+
+    margin-left: 4em;
+}
+
 /* ---- Buttons  ---- */
 
 .defaultButton {
