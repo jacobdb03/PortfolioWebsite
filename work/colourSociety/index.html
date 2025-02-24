@@ -25,27 +25,60 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
@@ -68,75 +101,82 @@
             </div>
         </div>
 
+        <img src="assets/PageTease.jpg" class="pageTease" />
+
         <!-- Main Page Content -->
 
-        <p class="fullWidth"></p>
-        <p class="fullWidth"></p>
+        <img
+            class="gap6 fullWidth"
+            src="assets/ColourPic1.jpeg"
+            alt="Colour identity picture 1"
+        />
 
-        <h3>Requirements</h3>
-        <p>• &nbsp&nbsp&nbsp 1x Business card</p>
-        <p>• &nbsp&nbsp&nbsp 1x Thank-you card</p>
-        <p>• &nbsp&nbsp&nbsp 1x Envelope</p>
-        <p>• &nbsp&nbsp&nbsp 1x Letterhead</p>
-        <p>• &nbsp&nbsp&nbsp 1x stationary</p>
+        <h1 class="gap3 fullWidth">Hydrodipping</h1>
 
-        <p class="gap3 doubleCol">
-            This project experimented with thermochromic ink, which is a type of
-            ink that reacts to heat. In this case, the hotter the ink got the
-            less visible the ink became, which meant it reacted to the warmth
-            from someones hand. This allowed for brilliant copywriting and
-            design ideas..
-        </p>
-
-        <p class="gap3 doubleCol">
-            The project also used a technique called hydrodipping as the insight
-            for the patterns and colours of the design. This technique was able
-            to create new patterns and designs for every instance and used a
+        <p class="gap5 rSub">
+            The project used a technique called hydrodipping as the insight for
+            the patterns and colours of the design. This technique was able to
+            create new patterns and designs for every instance and used a
             colourful process to reflect the society's focus on colour.
         </p>
 
         <img
-            class="gap3 fullWidth"
-            src="assets/ColourPic1.jpeg"
-            alt="Colour identity picture 1"
-        />
-        <img
-            class="gap3 doubleCol"
-            src="assets/ColourPic3.jpg"
-            alt="Colour identity picture 2"
-        />
-        <img
-            class="gap3 doubleCol"
-            src="assets/ColourPic5.jpg"
+            class="gap3 rFocus"
+            src="assets/ColourPic4.jpeg"
             alt="Colour identity picture 4"
         />
+
+        <h1 class="gap3 fullWidth">Thermochromic Ink</h1>
+
         <img
-            class="gap3 doubleCol"
-            src="assets/ColourPic4.jpeg"
+            class="gap3 lFocus"
+            src="assets/ColourPic2.jpg"
             alt="Colour identity picture 3"
+        />
+
+        <img
+            class="gap3 lFocus"
+            src="assets/ColourPic3.jpg"
+            alt="Colour identity picture 3"
+        />
+
+        <p class="gap5 lSub">
+            This project also experimented with thermochromic ink, which is a
+            type of ink that reacts to heat. In this case, the hotter the ink
+            got the less visible the ink became, which meant it reacted to the
+            warmth from someones hand. This allowed for brilliant copywriting
+            and design ideas..
+        </p>
+
+        <h1 class="gap3 fullWidth">Alternative colours</h1>
+
+        <p class="gap4 singleCol">
+            With a society that is focused solely focused oln colours, it
+            wouldn't be right not to consider how these techniques might look in
+            different colours.
+        </p>
+
+        <img
+            class="gap4 doubleCol"
+            src="assets/ColourPic6.jpg"
+            alt="Colour identity picture 6"
+        />
+        <img
+            class="gap4 doubleCol"
+            src="assets/ColourPic7.jpg"
+            alt="Colour identity picture 7"
+        />
+        <img
+            class="gap4 doubleCol"
+            src="assets/ColourPic8.jpg"
+            alt="Colour identity picture 8"
         />
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

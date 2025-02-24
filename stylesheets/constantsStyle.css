@@ -1,10 +1,10 @@
 /* ---- Class for body grid ---- */
 
-body {
+body:not(.pageTease) {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 2.5%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 1.5%;
 
     scroll-behavior: smooth;
 
@@ -12,7 +12,6 @@ body {
     overflow-x: hidden;
 
     background-color: var(--white);
-    max-width: 1280px;
 
     padding-left: 4%;
     padding-right: 4%;
@@ -20,59 +19,92 @@ body {
 
     font-family: "Outfit", sans-serif;
 
-    cursor: default;
-
     color-scheme: light dark;
+
+    cursor: none;
 
     /*outline checker for overflowing elements*/
 
-    /*
-    * {
+    /* * {
         outline: 1px solid red !important;
         opacity: 1 !important;
         visibility: visible !important;
-    }
-    */
+    }*/
 }
 
-/* ---- Class for nav bar design ---- */
-nav {
-    /* Declaring a nav section and creating a flexbox for it */
-    grid-column: 1 / span 6;
-    display: flex;
-    flex-wrap: nowrap;
+a {
+    cursor: none;
+}
 
-    position: sticky;
+/* ---- Classes for nav bar design ---- */
+nav {
+    position: fixed;
     z-index: 1;
     top: 2em;
+    justify-self: center;
+
+    height: 6em;
+    z-index: 10;
+
+    /*Add some blur to the background*/
 
     background-color: var(--blue);
     border: 0.3em solid transparent;
 
-    /*background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px) saturate(150%) contrast(120%);*/
-
     box-sizing: border-box;
-
-    justify-content: end;
 
     border-radius: 5em;
 
     padding: 0em;
-    margin: 1em;
+    margin: 0em;
+    margin-left: -3.5em;
+    margin-right: -3.5em;
+
+    transition-duration: 0.3s;
+    width: 96vw;
+}
+
+nav:hover {
+    a {
+        background-color: transparent;
+
+        width: 4em;
+    }
+    a:hover {
+        font-weight: 900;
+
+        color: var(--orange);
+        background-color: transparent;
+        border: 0em solid var(--blue);
+    }
+}
+
+.navLinks {
+    display: flex;
+    flex-wrap: nowrap;
+
+    height: 5.5em;
+    align-items: center;
 
     a {
         font-size: 1.5em;
+        font-weight: 400;
         text-align: right;
 
         color: var(--white);
 
-        transition-duration: 0.2s;
-
-        margin-top: 1em;
-        margin-bottom: 1em;
         margin-left: 2em;
+        width: 4em;
+
+        transition-duration: 0.05s;
     }
+
+    a:hover {
+        font-weight: 700;
+
+        transition-duration: 0.1s;
+    }
+
     a:first-child {
         justify-self: start;
         margin-right: auto;
@@ -82,139 +114,152 @@ nav {
     a:last-child {
         margin-right: 3em;
     }
-}
 
-nav:hover {
-    /* What happens on hovering over navbar */
-
-    background-color: var(--white);
-    border: 0.3em solid var(--blue);
-
-    transition-duration: 0.2s;
-
-    a {
-        /* nested a tag declares what happens specifically to text on hovering over navbar */
-        color: var(--blue);
-        background-color: transparent;
-
-        transition-duration: 0.2s;
+    .navImg {
+        margin-top: 0.2em;
     }
-    a:hover {
-        /* nested a tag that declares what happens when you hover over the text in the navbar */
-        font-weight: 700;
 
-        color: var(--orange);
-        background-color: transparent;
-        border: 0em solid var(--blue);
-
-        transition-duration: 0.2s;
+    .navImg:hover img {
+        content: url("/assets/logoOrange.svg"); /* Swap the image */
     }
 }
 
-/* ---- Footer design ---- */
+.expandableFooter {
+    opacity: 0;
 
-.footerBg {
-    z-index: 0;
-    grid-column: 1 / span 6;
+    position: absolute;
+    bottom: -2em;
+
+    pointer-events: none;
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
 
-    justify-content: start;
+    width: 82vw;
 
-    bottom: 5em;
+    margin: 5em;
 
-    height: 8em;
+    transition-delay: 0s;
 
-    border-radius: 20em;
+    .footerLeft {
+        width: 50em;
 
-    background-color: var(--blue);
+        margin-right: auto;
+    }
 
-    margin-bottom: 0em;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    .footerRight {
+        width: 35em;
 
-    a {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3.5em;
+
+        p {
+            color: var(--grey);
+
+            line-height: 120%;
+            font-size: 1.5em;
+
+            padding: 0em;
+            margin: 0em;
+            margin-top: 1.5em;
+        }
+
+        a {
+            font-size: 4em;
+
+            line-height: 120%;
+
+            font-weight: 700;
+            color: var(--grey);
+
+            margin: 0em;
+            padding: 0em;
+
+            transition-duration: 0.05s;
+        }
+
+        a:hover {
+            font-weight: 900;
+            transition-duration: 0.1s;
+        }
+    }
+
+    .footerBottom {
+        position: absolute;
+        bottom: -8em;
+        margin-top: 0em;
+        width: 100%;
+
+        p {
+            color: var(--black);
+            text-align: center;
+            font-weight: 100;
+        }
     }
 }
 
-.footerName {
-    font-weight: 800;
-    line-height: 100%;
-    font-size: 4em;
+.expandedFooter {
+    height: 80vh;
+    width: 90vw;
+    border-radius: 2em;
 
-    color: var(--white);
+    margin: 5em;
 
-    align-self: center;
-    justify-self: start;
-    text-align: start;
+    transition-duration: 0.5s;
 
-    margin-left: 1em;
-    margin-right: auto;
-}
+    .expandableFooter {
+        opacity: 1;
+        pointer-events: auto;
+        transition-delay: 0.35s;
+        transition-duration: 0.5s;
+    }
 
-.footerName:hover {
-    font-weight: 900;
-    color: var(--orange);
-}
+    .navLinks {
+        a {
+            margin-top: 3em;
 
-.footerTextTitle {
-    font-size: clamp(11px, 1.3em, 12px);
-    line-height: 120%;
-    font-weight: 100;
-    color: var(--black);
+            font-size: 2.6em;
+            font-weight: 700;
 
-    text-align: center;
+            color: var(--grey);
 
-    margin-bottom: 1em;
-}
+            margin-left: 0em;
+            width: auto;
 
-.footerText {
-    font-weight: 400;
-    color: var(--white);
+            margin-left: 2em;
 
-    font-size: 1.4em;
-    line-height: 180%;
+            transition-duration: 0.05s;
+        }
 
-    text-align: end;
-    align-self: center;
-    justify-content: start;
+        a:hover {
+            font-weight: 900;
+            transition-duration: 0.1s;
+        }
 
-    margin-left: 3em;
-}
+        img {
+            width: 5em;
+        }
 
-.footerText:last-child {
-    margin-right: 5em;
-}
-
-.footerText:hover {
-    font-weight: 500;
-    color: var(--orange);
-}
-
-.footerImg {
-    display: flex;
-    flex-direction: column;
-    height: 45%;
-    align-self: center;
-    justify-content: center;
-
-    margin-left: 4em;
+        a:last-child {
+            margin-right: 2em;
+        }
+    }
 }
 
 /* ---- Buttons  ---- */
 
 .defaultButton {
-    grid-column: 3 / span 2;
+    grid-column: 4 / span 1;
 
     background-color: var(--white);
-    border: 0.3em solid var(--black);
+    border: 0.3em solid var(--blue);
+    color: var(--blue);
 
     border-radius: 5em;
 
-    color: var(--black);
     font-size: 1.5em;
 
     display: flex;
@@ -222,9 +267,8 @@ nav:hover {
     justify-content: center;
 
     padding: 1.2em;
-    margin-top: 2em;
 
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 }
 
 .defaultButton:hover {
@@ -232,7 +276,7 @@ nav:hover {
 
     background-color: var(--orange);
     border: 0.3em solid var(--orange);
-    color: var(--blue);
+    color: var(--white);
     font-weight: 700;
 
     padding: 1.2em;
@@ -245,7 +289,7 @@ nav:hover {
 .tag {
     border: 2px solid var(--blue);
     border-radius: 50px;
-    padding: 0.5em;
+    padding: 0.8em;
 
     text-align: center;
     align-self: center;
@@ -253,11 +297,23 @@ nav:hover {
     width: auto;
     font-size: 120%;
     height: 1em;
+    font-weight: 400;
 
     margin-right: 1em;
 
     color: var(--blue);
     line-height: 100%;
+
+    z-index: 1;
+}
+
+.tagLink {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.tagLink:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
 }
 
 .tagTitle {
@@ -295,7 +351,7 @@ nav:hover {
     padding-bottom: 7em;
     padding-top: 5em;
 
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
 
     align-self: center;
 
@@ -369,37 +425,141 @@ nav:hover {
     transition-duration: 1.5s;
 }
 
-/*
-.cursorBlob {
+.cursorClickBlob {
+    width: 20px;
+    height: 20px;
+    background: var(--blue);
+    border-radius: 50%;
     position: fixed;
-    z-index: 2;
-    height: 2em;
-    width: 2em;
-    top: 0;
-    left: 0;
-    border-radius: 50px;
-    background-color: #0f89fa;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:
+        transform 0.15s ease,
+        background-color 0.15s ease;
+    z-index: 10;
 }
 
-.cursorBlue {
-    background-color: #0f89fa;
+.cursorClickBlob.interactableAlt {
+    background: var(--white);
 }
 
-.cursorWhite {
-    background-color: #eff1f3;
+.cursorClickBlob.interactableLink {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: var(--orange);
 }
 
-.whiteCursorBlobHitbox {
-    position: fixed;
+/* ---- Thumbnail section ---- */
 
-    left: 0;
-    top: 0;
+.thumbnailFolder {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    grid-column: span 6;
 
-    width: 100dvw;
-    height: 100dvh;
+    border-radius: 2vw;
 
-    z-index: 3;
+    transition-duration: 0.1s;
 
-    background-color: transparent;
+    padding: 1.5em;
+    padding-bottom: 0em;
+    margin-bottom: 2em;
+
+    user-select: none;
 }
-*/
+
+.thumbnailFolder:hover {
+    box-shadow:
+        -12px -12px 30px rgba(255, 255, 255, 1),
+        25px 25px 10px rgba(var(--altBlueRGB), 0.1);
+
+    transition-duration: 0.3s;
+
+    background-color: var(--white);
+}
+
+/*.thumbnailFolder:not(:hover) {
+    filter: blur(4px);
+}*/
+
+.comingSoon {
+    font-size: 3em;
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.thumbnailCaption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    align-items: center;
+
+    height: auto;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1.5em;
+
+    h3 {
+        transition-duration: 0.05s;
+        font-weight: 500;
+    }
+}
+
+.thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {
+    transition-duration: 0.08s;
+    font-weight: 700;
+}
+
+.thumbnail {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailSmall {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 8 / 7;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailLong {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 21 / 9;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailFolder .fullWidth {
+    height: 100%;
+    max-height: 100%;
+}

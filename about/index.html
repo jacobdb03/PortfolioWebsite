@@ -17,10 +17,33 @@
 
         <meta
             name="description"
-            content="Hi, I’m Jacob, a 21 year old designer in London and Norwich. I am
-            passionate, energetic and creative, and I always have a positive outlook.
-            Here is a link to my portfolio, have a look!"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
         />
+
+        <meta name="keywords" content="Portfolio, Student, Graphic Design" />
+
+        <!-- Thumbnail Stuff -->
+        <meta property="og:title" content="Jacob Bryant: Creative & Designer" />
+        <meta
+            property="og:image"
+            content="https://i.ibb.co/74nhjn4/Main-Website-Thumbnail.png"
+        />
+
+        <meta
+            property="og:description"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
+        />
+        <meta property="og:url" content="https://jacobbryant.design/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+
+        <meta property="og:type" content="website" />
 
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,88 +58,62 @@
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
-
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
-        <!--heading and about -->
+        <!-- Page Elements -->
 
-        <!--<div class="pageHeader fullWidth">
-            <h1>Jacob Bryant.</h1>
-            <h3 class="middle">Who is Jacob Bryant?</h3>
-        </div> -->
-
-        <div class="infoBox gap5">
-            <h1>Jacob Bryant</h1>
-
-            <h2>Design, Motion & Creative</h2>
-
-            <p>
-                Hello, I am a passionate creative based in London and Norwich —
-                dedicated to my projects and always hoping to learn. From time
-                to time I create artwork, which allows me to stay creative and
-                have a good knowledge of coding and computers, having designed
-                and developed this website from scratch. I try to stay active as
-                much as I can and I enjoy running, swimming and bouldering.
-            </p>
-
-            <p>
-                My creative journey began at age 10 with an inital interest in
-                doodles and drawings, which evolved into creating comics by 13.
-                I expanded my hobbies into coding when I was 14, which quickly
-                evolved into game design when I was 15. I developed my
-                appreciation for fine arts untill I was 18, before going to
-                university to study Graphic Communication, where I am now.
-            </p>
-
-            <p>
-                My years of experimenting with hobbies has allowed me to stretch
-                my way of thinking and push the boundaries of creative projects.
-                Being creative is what I am passionate about, and I love that I
-                can continue to push creativity through new mediums in my design
-                work. I am a well-rounded designer, but I specialise in motion
-                and ideas. I can't wait to meet you!
-            </p>
-        </div>
-
-        <a class="gap1 defaultButton" href="/work/">Want to see my work?</a>
-
-        <!-- Page Footer -->
-
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

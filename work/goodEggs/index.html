@@ -25,92 +25,143 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
         <div class="pageHeader">
             <div class="metaInfo">
-                <h3 class="tag">November 2023</h3>
-                <h3 class="tag">Concept Project</h3>
+                <h3 class="altBg tag">November 2024</h3>
+                <h3 class="altBg tag">Live Brief</h3>
             </div>
-            <h1 class="title">Analogue Type.</h1>
-            <h3 class="subTitle">
-                Creating a magazine spread in the style of killing eve,
-                featuring analogue typography as the hero.
+            <h1 class="altBg title">The Good Eggs.</h1>
+            <h3 class="altBg subTitle">
+                This project is the effort of 9 developers, designers and
+                business-people to create an online system that can connect
+                farmers with and audience, cutting out the middlemen
+                supermarkets to provide a better wage to farmers and fresher
+                produce to customers. This won the people's choice award at sync
+                the city 2024 — A competition to develop a startup business idea
+                from scratch in 54 hours.
             </h3>
 
             <div class="metaInfo">
-                <p class="tag">Magazine Design</p>
-                <p class="tag">Creative</p>
+                <p class="altBg tag">Branding</p>
+                <p class="altBg tag">Team Lead</p>
+                <p class="altBg tag">Socials</p>
+                <p class="altBg tag">Presentation</p>
             </div>
         </div>
 
         <!-- Main Page Content -->
 
-        <p class="fullWidth"></p>
+        <img src="assets/pageTease.jpg" class="pageTease" />
 
-        <img class="gap1 fullWidth" src="assets/typepic1.jpg" alt="typepic1" />
+        <h1 class="fullWidth gap4">Farm fresh is closer than you think.</h1>
 
-        <p class="gap3 doubleCol infoBox">
-            The hero of the design, the analogue type, is created out of ribbon
-            to best express the style of the show, Killing Eve. Ribbons create a
-            twisting, mesmerising path, and the way it curves and flows through
-            a scene is quite seductive. Visually, the colour red and ribbons are
-            already used as key themes within the show.
+        <img src="assets/logoFull.jpeg" class="fullWidth gap4" />
+        <img src="assets/logo3.jpg" class="fullWidth gap3" />
+
+        <h1 class="gap3 fullWidth">The good eggs website</h1>
+
+        <img src="assets/web1.jpg" class="quadCol gap3" />
+
+        <img src="assets/web2.jpg" class="tripleCol gap3" />
+
+        <div class="imgDiv tripleCol gap3">
+            <img src="assets/web3.jpg" class="" />
+        </div>
+
+        <img src="assets/web4.jpg" class="quadCol gap3" />
+
+        <h1 class="gap3 fullWidth">Images from the event!</h1>
+
+        <img src="assets/eventImg2.JPG" class="gap2 fullWidth" />
+
+        <img src="assets/eventImg4.JPG" class="gap2 doubleCol" />
+        <img
+            src="assets/eventImg1.JPG"
+            class="gap2 tripleCol customAspect"
+            style="aspect-ratio: 21 / 9.2"
+        />
+        <img src="assets/eventImg5.JPG" class="gap2 doubleCol" />
+
+        <h1 class="gap3 fullWidth">What we presented on stage</h1>
+
+        <p class="singleCol"></p>
+
+        <a class="tripleCol" href="assets/SyncPresentation.pdf"
+            ><img
+                class="gap5 tripleCol"
+                src="assets/eventImg6.JPG"
+                alt="PDF thumbnail"
+        /></a>
+
+        <p class="doubleCol">
+            I put this presentation together for another team member to present
+            on stage. The design is consistent with the good eggs style and the
+            organised, friendly nature of the presentation is one part of what
+            went towards us winning the people's choice award at the event.
         </p>
-
-        <img class="gap1 fullWidth" src="assets/typepic2.jpg" alt="typepic2" />
-
-        <p class="gap3 doubleCol">
-            The layout guides the reader around the page using the ribbon and
-            white space. By using lots of blank space around the design the text
-            is the main focus of the page, and brings the most attention to the
-            analogue type.
-        </p>
-        <img class="gap1 fullWidth" src="assets/typepic3.jpg" alt="typepic2" />
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

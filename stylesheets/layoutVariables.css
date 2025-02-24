@@ -3,9 +3,10 @@
     /* the global variables for the project*/
     --black: #152229;
     --white: #eff1f3;
-    --grey: #d6e1eb;
+    --grey: #c0d3fc;
     --blue: #2560e0;
     --altBlue: #234dad;
+    --altBlueRGB: 35, 77, 173;
     --orange: #ff817b;
     --altOrange: #ffc7aa;
     --borderWidth: 0.5em;
@@ -15,8 +16,10 @@
     --gap2: 1em;
     --gap3: 2em;
     --gap4: 5em;
-    --gap5: 10em;
-    --gap6: 20em;
+    --gap5: 8em;
+    --gap6: 15em;
+    --gap7: 20em;
+    --gap8: 25em;
 }
 
 /* ---- Gaps: used to declare how much space should be left between grid row ---- */
@@ -48,11 +51,15 @@
     margin-top: var(--gap6);
 }
 
-/* ---- Specifcs: Used specifically in the header of the page as unique elements ---- */
-
-.footerGap {
-    margin-top: 30em;
+.gap7 {
+    margin-top: var(--gap7);
 }
+
+.gap8 {
+    margin-top: var(--gap8);
+}
+
+/* ---- Specifcs: Used specifically in the header of the page as unique elements ---- */
 
 .navBarGap {
     font-size: 15em;
@@ -62,43 +69,37 @@
     margin: 0em;
 }
 
-.thumbnailCol {
-    grid-column: span 3;
-}
-
-.thumbnailColHome {
-    grid-column: span 3;
-}
-
-.portfolioCol {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    grid-column: 3 / span 4;
-}
-
 .middle {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
 }
 
 /* ---- Layout options: A variety of options to layout the pages ---- */
 .fullWidth {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 7;
 
     text-align: center;
-    max-width: 100%;
+    width: 100%;
+}
+
+.extendedWidth {
+    grid-column: 1 / span 7;
+
+    text-align: center;
+    margin-left: -5%;
+    margin-right: -5%;
+    width: 110%;
 }
 
 .lFocus {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
 }
 
 .lSub {
-    grid-column: 5 / span 2;
+    grid-column: 6 / span 2;
 }
 
 .rFocus {
-    grid-column: 3 / span 4;
+    grid-column: 3 / span 5;
 }
 
 .rSub {
@@ -115,6 +116,10 @@
 
 .tripleCol {
     grid-column: span 3;
+}
+
+.quadCol {
+    grid-column: span 4;
 }
 
 .textCenter {
@@ -166,9 +171,39 @@
     object-position: center;
 }
 
+.ratio3x2 {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.ratio21x9 {
+    aspect-ratio: 21 / 9;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
 .ratio1x1 {
     aspect-ratio: 1 / 1;
     width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.customAspect {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.fullHeight {
+    height: 100%;
 
     object-fit: cover;
     object-position: center;

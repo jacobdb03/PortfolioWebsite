@@ -2,13 +2,17 @@
 
 h1 {
     font-weight: 900;
-    font-size: clamp(2em, 10vw, 12em);
+    font-size: 9em;
     color: var(--blue);
 
-    grid-column: span 6;
+    grid-column: span 7;
+
+    text-align: left;
 
     margin: 0px;
     letter-spacing: 0.01em;
+
+    z-index: 1;
 }
 
 h2 {
@@ -29,6 +33,8 @@ h2 {
     margin-right: 2em;
 
     transition-duration: 0.2s;
+
+    z-index: 1;
 }
 
 .topLink {
@@ -43,7 +49,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 500;
+    font-weight: 300;
 
     font-size: 3em;
     line-height: 100%;
@@ -60,22 +66,25 @@ h3 {
     transition-duration: 0.2s;
 
     margin-right: auto;
+
+    z-index: 1;
 }
 
 .pageHeader {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 4;
 
     display: flex;
     height: 80lvh;
 
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
+    margin-bottom: 5em;
 }
 
 p {
     font-weight: 300;
-    font-size: clamp(2px, 1.6em, 20px);
+    font-size: 1.2em;
     line-height: 150%;
 
     color: var(--black);
@@ -100,128 +109,20 @@ a {
 
     align-items: flex-end;
 
-    height: 90lvh;
+    height: 100lvh;
+    z-index: 2;
 
     grid-column: span 4;
-
-    min-width: 0px;
-    min-height: 0px;
 }
 
 .titleImg {
     max-width: 1280px;
 
     margin-bottom: 5em;
+    margin-left: 2em;
 
     width: 100%;
     height: auto;
-}
-
-/* ---- Thumbnail section ---- */
-
-.thumbnailFolder {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    grid-column: span 6;
-
-    border-radius: 2vw;
-
-    transition-duration: 0.3s;
-
-    padding: 1.5em;
-    padding-bottom: 0em;
-    margin-bottom: 2em;
-}
-
-.thumbnailFolder:hover {
-    box-shadow:
-        -15px -15px 20px rgba(255, 255, 255, 1),
-        4px 4px 20px rgba(21, 34, 41, 0.4);
-
-    transition-duration: 0.1s;
-
-    background-color: var(--white);
-}
-
-/*.thumbnailFolder:not(:hover) {
-    filter: blur(4px);
-}*/
-
-.thumbnailCaption {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    white-space: nowrap;
-
-    align-items: center;
-
-    height: auto;
-    margin-top: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 1.5em;
-
-    h3 {
-        transition-duration: 0s;
-    }
-}
-
-.thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {
-    font-weight: 600;
-    transition-duration: 0s;
-    color: var(--orange);
-}
-
-.thumbnail {
-    border-radius: 1.5vw;
-    /*border: var(--borderWidth) solid var(--white);*/
-    box-sizing: border-box;
-    object-fit: cover;
-
-    width: 100%;
-    aspect-ratio: 16 / 9;
-
-    opacity: 1;
-
-    animation-timing-function: ease-in-out;
-    transition-duration: 0.75s;
-}
-
-.thumbnailSmall {
-    border-radius: 1vw;
-    /*border: var(--borderWidth) solid var(--white);*/
-    box-sizing: border-box;
-    object-fit: cover;
-
-    width: 100%;
-    aspect-ratio: 8 / 7;
-
-    opacity: 1;
-
-    animation-timing-function: ease-in-out;
-    transition-duration: 0.75s;
-}
-
-.thumbnailFolder .fullWidth {
-    height: 100%;
-    max-height: 100%;
-}
-
-.thumbnail:hover {
-    /*border: var(--borderWidth) solid var(--blue);*/
-
-    animation-timing-function: ease-in-out;
-    transition-duration: 0.15s;
-}
-
-.thumbnailText {
-    grid-column: span 2;
-    align-self: flex-end;
-}
-
-.aboutPage {
-    line-height: 200%;
 }
 
 /* ---- Stuff for portfolio page navigation  currently offline  ----*/
@@ -274,3 +175,19 @@ a {
 }
 
 /* ----  ----*/
+
+.blueBg {
+    position: absolute;
+    z-index: 0;
+
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--altBlue);
+
+    transition:
+        background 0.5s ease-in-out,
+        opacity 0s ease-in-out;
+}

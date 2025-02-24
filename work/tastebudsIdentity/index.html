@@ -23,56 +23,84 @@
             rel="stylesheet"
         />
 
-        <meta
-            name="keywords"
-            content="Brand Identity, tasetbuds, graphic design, tastebuds collective, tastebuds collective designer, buds, Charlotte Louise Beach, ALex Larter"
-        />
-
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
 
         <div class="pageHeader">
             <div class="metaInfo">
-                <h3 class="tag">May — August 2024</h3>
-                <h3 class="tag">Live Brief</h3>
+                <h3 class="altBg tag">May — August 2024</h3>
+                <h3 class="altBg tag">Live Brief</h3>
             </div>
 
-            <h1 class="title">Tastebuds.</h1>
-            <h3 class="subTitle">
+            <h1 class="altBg title">Tastebuds.</h1>
+            <h3 class="altBg subTitle">
                 A collective for the food & drink industry, connecting
                 suppliers, buyers and all other services in-between.
             </h3>
 
             <div class="metaInfo">
-                <p class="tag">Branding</p>
-                <p class="tag">Illustration</p>
-                <p class="tag">Creative Lead</p>
-                <p class="tag">Social Media</p>
-                <p class="tag">Motion</p>
+                <p class="altBg tag">Branding</p>
+                <p class="altBg tag">Illustration</p>
+                <p class="altBg tag">Creative Lead</p>
+                <p class="altBg tag">Social Media</p>
+                <p class="altBg tag">Motion</p>
             </div>
 
             <!--<div class="metaInfo">
@@ -108,35 +136,39 @@
             </div>-->
         </div>
 
-        <video class="gap4 fullWidth" muted preload autoplay loop playsinline>
-            <source src="assets/Logotype_Animation.mp4" type="video/mp4" />
+        <video class="pageTease" muted preload autoplay loop playsinline>
+            <source src="assets/greenLogoAnimation.mp4" type="video/mp4" />
             Animated tastebuds logo
         </video>
 
-        <h2 class="gap5 fullWidth">Sprout: Tastebuds beginnings</h2>
+        <h1 class="gap4 fullWidth">Sprout: Tastebuds beginnings</h1>
 
-        <img
-            class="gap3 tripleCol ratio3x4"
-            style="--staggerDelay: 0; object-fit: cover; object-position: 58%"
-            src="assets/Sprout/Sprout_BusinessCard_1.jpeg"
-            alt="Dark Business Cards"
-        />
+        <div class="gap3 quadCol">
+            <img
+                class="customAspect"
+                style="
+                    aspect-ratio: 100 / 92;
+                    object-fit: cover;
+                    object-position: 58%;
+                "
+                src="assets/Sprout/Sprout_BusinessCard_1.jpeg"
+                alt="Dark Business Cards"
+            />
+        </div>
 
         <div class="gap3 tripleCol imgDiv">
             <img
-                style="--staggerDelay: 0"
                 src="assets/Sprout/Sprout_Website_1.jpeg"
                 alt="Sprout Website Mockup"
             />
 
             <img
-                style="--staggerDelay: 1"
                 src="assets/Sprout/Sprout_Website_2.jpeg"
                 alt="Sprout Website Mockup"
             />
         </div>
 
-        <p class="gap3 tripleCol"></p>
+        <p class="gap3 quadCol"></p>
 
         <p class="gap3 tripleCol">
             Giving the "Food & Drink Innovation Cluster" a new name and identity
@@ -158,26 +190,9 @@
         </p>
         <p class="doubleCol">A futuristic and adaptable brand mark that can be used as </p>-->
 
-        <h1 class="gap4 fullWidth">Taste + Buds = Tastebuds</h1>
+        <h1 class="gap2 fullWidth">Taste + Buds = Tastebuds</h1>
 
-        <h2 class="textCenter doubleCol gap3">Taste</h2>
-        <h2 class="textCenter doubleCol gap3">Buds</h2>
-        <h2 class="textCenter doubleCol gap3">TasteBuds</h2>
-
-        <p class="textCenter doubleCol gap0">
-            Referencing the food and drink businesses they work in.
-        </p>
-
-        <p class="textCenter doubleCol gap0">
-            Referring to the growth of the business they support.
-        </p>
-
-        <p class="textCenter doubleCol gap0">
-            Supporting and growing the food and drink industry.
-        </p>
-
-        <p class="gap4"></p>
-
+        <p class="gap2"></p>
         <img
             class="lFocus ratio3x2"
             style="
@@ -193,7 +208,6 @@
         <video
             class="lSub ratio1x1"
             style="
-                --staggerDelay: 0;
                 background-color: #017370;
                 object-fit: contain;
                 padding: 5%;
@@ -218,7 +232,7 @@
             cultivating success.
         </p>
 
-        <p class="fullWidth gap4"></p>
+        <p class="fullWidth gap2"></p>
 
         <img
             class="rSub"
@@ -244,7 +258,7 @@
             alt="tastebuds diagram"
         />
 
-        <p class="gap3 tripleCol"></p>
+        <p class="gap3 quadCol"></p>
         <p class="gap3 tripleCol">
             The logo — formed from the letter b and bud shapes to look like a
             plant breaking through its seed. A Metaphor as to how tastebuds can
@@ -252,14 +266,12 @@
         </p>
 
         <img
-            class="gap5 fullWidth"
+            class="gap5 middle"
             src="assets/Brand/Logo sketches.jpeg"
             alt="logo sketches"
         />
 
-        <h1 class="gap4 fullWidth">Applications.</h1>
-
-        <h2 class="tripleCol gap2 textLeft">Socials.</h2>
+        <h1 class="gap4 fullWidth">Applications — Social Media.</h1>
 
         <img
             class="gap1 fullWidth"
@@ -284,28 +296,30 @@
         </div>
         <img
             class="gap4 doubleCol"
-            style="--staggerDelay: 2"
             src="assets/Social Media/July 3.jpeg"
             alt="instagram post 1"
         />
         <div class="imgDiv gap4">
             <img
                 class="singleCol"
-                style="--staggerDelay: 0"
                 src="assets/Social Media/July 4.jpeg"
                 alt="instagram post 1"
             />
             <img
                 class="singleCol"
-                style="--staggerDelay: 1"
                 src="assets/Social Media/July 5.jpeg"
                 alt="instagram post 1"
             />
         </div>
+        <img
+            class="gap4 doubleCol"
+            src="assets/Social Media/July 6.jpeg"
+            alt="instagram post 1"
+        />
 
         <video
             class="singleCol gap4"
-            style="object-fit: contain"
+            style="object-fit: cover; height: 88%"
             muted
             preload
             autoplay
@@ -318,37 +332,24 @@
             />
             Upcoming event 1
         </video>
-        <video class="singleCol gap4" muted preload autoplay loop playsinline>
-            <source
-                src="assets/Social Media/Upcoming event template 4.mp4"
-                type="video/mp4"
-            />
-            Upcoming event 1
-        </video>
 
-        <p class="gap4 doubleCol">
+        <p class="gap2 doubleCol">
             Tastebuds has an active presence on social media, letting their
             founders and their partners know what is new to tastebuds, events
             coming up and partner's stories.
         </p>
 
         <a
-            class="gap4 defaultButton"
+            class="gap5 defaultButton"
             href="https://www.instagram.com/tastebuds_collective/"
-            >Check out their page</a
+            >Their Instagram</a
         >
 
-        <h2 class="tripleCol gap4 textLeft">Presentations.</h2>
+        <p class="fullWidth"></p>
 
-        <video
-            class="gap1 fullWidth"
-            style="--staggerDelay: 0"
-            muted
-            autoplay
-            loop
-            preload
-            playsinline
-        >
+        <h1 class="fullWidth gap3">Applications — Presentations.</h1>
+
+        <video class="gap1 fullWidth" muted autoplay loop preload playsinline>
             <source
                 src="assets/Presentations/webinar opening.mp4"
                 type="video/mp4"
@@ -358,11 +359,7 @@
         <p class="fullWidth gap3"></p>
 
         <div class="imgDiv gap0 rSub">
-            <img
-                style="--staggerDelay: 0"
-                src="assets/Presentations/slide1.jpeg"
-                alt="Slide 1"
-            />
+            <img src="assets/Presentations/slide1.jpeg" alt="Slide 1" />
 
             <img
                 class="gap2"
@@ -379,6 +376,7 @@
             alt="eventbrite banner"
         />
 
+        <!--
         <h2 class="doubleCol gap4 textLeft">Email Signatures.</h2>
 
         <img
@@ -386,10 +384,9 @@
             style="--staggerDelay: 0"
             src="assets/Emails/Animated Jacob.gif"
             alt="Email Signature"
-        />
+        />-->
 
-        <h2 class="tripleCol gap4 textLeft">Illustrations.</h2>
-        <p class="tripleCol"></p>
+        <h1 class="fullWidth gap4">Applications — Illustrations.</h1>
 
         <img
             class="gap1 singleCol"
@@ -524,12 +521,11 @@
             and on the website.
         </p>
 
-        <h2 class="tripleCol gap4 textLeft">Websites.</h2>
-        <p class="tripleCol"></p>
+        <h1 class="fullWidth gap3">Applications — Website.</h1>
 
-        <div class="gap0 imgDiv doubleCol">
+        <div class="gap1 imgDiv doubleCol">
             <img
-                class="gap1 doubleCol"
+                class="gap1 doubleCol ratio1x1"
                 style="--staggerDelay: 1"
                 src="assets/Website/Splash Screens2.jpeg"
                 alt="Website Mockup"
@@ -549,36 +545,35 @@
             alt="Website Mockup"
         />
 
-        <p class="gap4 doubleCol">
+        <p class="gap2 doubleCol">
             Their new website attempts to be friendlier and have a more fun
             approach to how they talk with their partners. The website was
             developed by 101 websites, however I had an input on visual
             direction and ideas.
         </p>
 
-        <a class="gap4 defaultButton" href="https://tastebudscollective.co.uk/"
-            >Take a look at their live website</a
+        <a class="gap5 defaultButton" href="https://tastebudscollective.co.uk/"
+            >Their Website</a
         >
 
-        <h2 class="tripleCol gap4 textLeft">Mockups.</h2>
+        <!--
+
+        <h1 class="fullWidth gap4">Applications — Mockup.</h1>
 
         <img
             class="gap1 fullWidth"
             style="--staggerDelay: 0"
             src="assets/mockups/mockup.jpeg"
             alt="Businesss Card"
-        />
+        />-->
 
         <h2 class="gap4 fullWidth">In the end...</h2>
 
         <!--<p class="gap4 middle">The team left feedback on my time working with them, which can be seen here ADD TESTIMONIALS</p>-->
         <p class="singleCol"></p>
 
-        <a class="gap2 doubleCol" href="assets/StyleSheet.pdf"
-            ><img
-                class="gap1 tripleCol"
-                src="assets/Tastebuds Thumbnail.png"
-                alt="PDF thumbnail"
+        <a class="gap2 tripleCol" href="assets/StyleSheet.pdf"
+            ><img src="assets/Tastebuds Thumbnail.png" alt="PDF thumbnail"
         /></a>
 
         <p class="doubleCol">
@@ -623,25 +618,9 @@
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

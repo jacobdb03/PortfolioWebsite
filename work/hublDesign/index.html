@@ -15,11 +15,6 @@
 
         <meta name="author" content="Jacob Bryant" />
 
-        <meta
-            name="keywords"
-            content="Brand Identity, learn english, English, languages, Norwich, refugees, asylum seekers"
-        />
-
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,46 +25,79 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
         <div class="pageHeader">
             <div class="metaInfo">
-                <h3 class="tag">August – October 2024</h3>
-                <h3 class="tag">Live Brief</h3>
+                <h3 class="altBg tag">August – October 2024</h3>
+                <h3 class="altBg tag">Live Brief</h3>
             </div>
-            <h1 class="title">Hubl.</h1>
-            <h3 class="subTitle">
+            <h1 class="altBg title">Hubl.</h1>
+            <h3 class="altBg subTitle">
                 Assisting in the launch of an independent, english language
                 assessment hub by creating graphics and helping with their brand
                 identity
             </h3>
 
             <div class="metaInfo">
-                <p class="tag">Creative Direction</p>
-                <p class="tag">Social Media</p>
-                <p class="tag">Poster Design</p>
+                <p class="altBg tag">Creative Direction</p>
+                <p class="altBg tag">Social Media</p>
+                <p class="altBg tag">Poster Design</p>
             </div>
             <!-- --
             <div class="metaInfo">
@@ -88,92 +116,92 @@
 
         <!-- Main Page Content -->
 
-        <img class="gap5 tripleCol" src="assets/Poster 1.png" alt="Poster 1" />
+        <p class="fullWidth"></p>
+
+        <img class="pageTease" src="assets/hublThumb.jpg" />
+
+        <img class="gap5 quadCol" src="assets/Poster 1.png" alt="Poster 1" />
         <img class="gap5 tripleCol" src="assets/banner.jpeg" alt="Poster 1" />
 
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img1.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img2.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img3.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img4.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img5.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap5 singleCol"
-            src="assets/Post2 Img6.jpeg"
-            alt="Social Media Post 1"
-        />
+        <h1 class="gap3 fullWidth">Social Media</h1>
+
+        <div class="imgDiv gap5 singleCol">
+            <img
+                class="singleCol"
+                src="assets/Post2 Img1.jpeg"
+                alt="Social Media Post 1"
+            />
+            <img
+                class="gap1 singleCol"
+                src="assets/Post1 Img1.jpeg"
+                alt="Social Media Post 1"
+            />
+        </div>
+
+        <div class="imgDiv gap5 singleCol">
+            <img
+                class="singleCol"
+                src="assets/Post2 Img2.jpeg"
+                alt="Social Media Post 1"
+            />
+            <img
+                class="gap1 singleCol"
+                src="assets/Post1 Img2.jpeg"
+                alt="Social Media Post 1"
+            />
+        </div>
+
+        <div class="imgDiv gap5 singleCol">
+            <img
+                class="singleCol"
+                src="assets/Post2 Img3.jpeg"
+                alt="Social Media Post 1"
+            />
+            <img
+                class="gap1 singleCol"
+                src="assets/Post1 Img3.jpeg"
+                alt="Social Media Post 1"
+            />
+        </div>
+
+        <div class="imgDiv gap5 singleCol">
+            <img
+                class="singleCol"
+                src="assets/Post2 Img4.jpeg"
+                alt="Social Media Post 1"
+            />
+
+            <img
+                class="gap1 singleCol"
+                src="assets/Post1 Img4.jpeg"
+                alt="Social Media Post 1"
+            />
+        </div>
+
+        <div class="imgDiv gap5 singleCol">
+            <img
+                class="singleCol"
+                src="assets/Post2 Img5.jpeg"
+                alt="Social Media Post 1"
+            />
+            <img
+                class="gap1 singleCol"
+                src="assets/Post1 Img5.jpeg"
+                alt="Social Media Post 1"
+            />
+        </div>
 
         <img
-            class="gap4 singleCol"
-            src="assets/Post1 Img1.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap4 singleCol"
-            src="assets/Post1 Img2.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap4 singleCol"
-            src="assets/Post1 Img3.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap4 singleCol"
-            src="assets/Post1 Img4.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap4 singleCol"
-            src="assets/Post1 Img5.jpeg"
-            alt="Social Media Post 1"
-        />
-        <img
-            class="gap4 singleCol"
+            class="doubleCol gap5"
             src="assets/extraPost2.jpeg"
             alt="Social Media Post 1"
         />
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

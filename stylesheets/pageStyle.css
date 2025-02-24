@@ -2,7 +2,7 @@
 
 h1 {
     font-weight: 700;
-    font-size: clamp(2em, 5vw, 8em);
+    font-size: 5em;
     color: var(--blue);
     line-height: 100%;
 
@@ -12,10 +12,10 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--blue);
 
-    font-size: 3em;
+    font-size: 7em;
 
     line-height: 130%;
 
@@ -24,9 +24,9 @@ h2 {
 
 h3 {
     font-weight: 300;
-    color: var(--black);
+    font-size: 2em;
+    color: var(--blue);
 
-    font-size: 1.5em;
     line-height: 130%;
 
     transition-duration: 0.2s;
@@ -44,6 +44,7 @@ p {
     align-self: flex-end;
 
     transition-duration: 0.2s;
+    padding: 0.8em;
 }
 
 a {
@@ -51,65 +52,48 @@ a {
 
     font-size: 16px;
     font-weight: 300;
-    line-height: 200%;
 
     color: var(--black);
 
     margin: 0em;
 
-    align-self: flex-end;
-
     transition-duration: 0.2s;
+
+    cursor: none;
 }
 
 video {
-    border-radius: 20px;
-    /*border: var(--borderWidth) solid var(--blue);*/
     box-sizing: border-box;
     object-fit: cover;
 
-    max-width: 100%;
     width: 100%;
 
     align-self: flex-end;
 
-    transition-duration: 0.2s;
-
     margin: 0px;
     padding: 0px;
+
+    border-radius: 20px;
 }
 
 img {
     margin: 0px;
     padding: 0px;
-}
 
-img:not(.footerImg) {
-    border-radius: 20px;
-    /*border: var(--borderWidth) solid var(--blue);*/
     box-sizing: border-box;
     object-fit: cover;
 
-    max-width: 100%;
     width: 100%;
 
     align-self: flex-end;
+}
 
-    transition-duration: 0.2s;
+img:not(.navImg img):not(.pageTease):not(.extendedWidth) {
+    border-radius: 20px;
 }
 
 div {
     margin: 0px;
-}
-
-canvas {
-    border-radius: 20px;
-    /* border: var(--borderWidth) solid var(--blue);*/
-    box-sizing: border-box;
-
-    align-self: flex-end;
-    width: 100%;
-    height: auto;
 }
 
 /* ---- Class when multiple images are needed in one column group (e.g. in lSub or rSub) ---- */
@@ -121,60 +105,65 @@ canvas {
 
 /* ---- Classes for "metadata" info at top of page (see layoutVariables for more) ---- */
 
+.pageTease {
+    margin: 0em;
+    padding: 0em;
+
+    position: absolute;
+    top: 0;
+    left: -5%;
+
+    width: calc(100vw + 10%);
+    max-width: 120vw;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: -1;
+
+    border-radius: 0em;
+
+    height: 100lvh;
+}
+
+.pageHeader {
+    margin-left: 3em;
+    grid-column: 1 / span 3;
+
+    display: flex;
+    height: 82lvh;
+
+    margin-top: 10em;
+
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    .altBg {
+        color: var(--white);
+        border-color: var(--white);
+    }
+}
+
+.extraPageHeader {
+    grid-column: 6 / span 2;
+}
+
 .metaInfo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    grid-column: 2 / span 4;
     text-align: left;
 
     align-self: start;
     margin: 0px;
     margin-top: 0em;
-
-    h3 {
-        font-size: 1.3em;
-        font-weight: 500;
-        padding: 1.2em;
-    }
-
-    p:not(.tagTitle) {
-        font-size: 1.1em;
-
-        font-weight: 300;
-        padding: 0.8em;
-        padding-left: 1.4em;
-        padding-right: 1.4em;
-    }
-
-    a {
-        font-size: 1.1em;
-
-        font-weight: 300;
-        padding: 0.8em;
-        padding-left: 1.4em;
-        padding-right: 1.4em;
-        border: 2px solid var(--blue);
-        color: var(--blue);
-    }
-
-    a:hover {
-        border: 2px solid var(--orange);
-        color: var(--blue);
-        background-color: var(--orange);
-    }
 }
 
-.pageHeader {
-    grid-column: 2 / span 4;
-
-    display: flex;
-    height: 94lvh;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+.infoTitle {
+    margin-right: 2em;
+    flex-basis: 100%;
 }
 
 .title {
@@ -184,8 +173,15 @@ canvas {
 }
 
 .subTitle {
+    grid-column: span 3;
+
     align-self: auto;
     margin: 0px;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.borderBlue {
+    border-radius: 20px;
+    border: solid 0.5em var(--blue);
 }

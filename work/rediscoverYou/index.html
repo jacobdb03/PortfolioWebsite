@@ -15,11 +15,6 @@
 
         <meta name="author" content="Jacob Bryant" />
 
-        <meta
-            name="keywords"
-            content="Brand Identity, John Lewis, John Lewis AI, AI"
-        />
-
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,48 +22,81 @@
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
-        <!-- page decoration -->
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
         <div class="pageHeader">
             <div class="metaInfo">
-                <h3 class="tag">January 2024</h3>
-                <h3 class="tag">Concept Project</h3>
+                <h3 class="altBg tag">January 2024</h3>
+                <h3 class="altBg tag">Concept Project</h3>
             </div>
-            <h1 class="title">Rediscover You.</h1>
-            <h3 class="subTitle">
+            <h1 class="altBg title">Rediscover You.</h1>
+            <h3 class="altBg subTitle">
                 Working on a team with two others, we created the following
                 campaign using miniature figures and AI generated art to conquer
                 loneliness using John Lewis' tone of voice.
             </h3>
 
             <div class="metaInfo">
-                <p class="tag">Campaign Identity</p>
-                <p class="tag">Branding</p>
+                <p class="altBg tag">Campaign Identity</p>
+                <p class="altBg tag">Branding</p>
             </div>
 
             <!-- --
@@ -81,22 +109,14 @@
 
         <!-- Main Page Content -->
 
-        <!-- Header Section -->
-
-        <p class="gap3 rSub">
-            Requirements<br />
-            • &nbsp&nbsp&nbsp 10s+ social animation<br />
-            • &nbsp&nbsp&nbsp 3x Printed posters<br />
-            • &nbsp&nbsp&nbsp 3x billboard posters<br />
-            • &nbsp&nbsp&nbsp 2x Staff uniform badges<br />
-            • &nbsp&nbsp&nbsp 2x social media mockups<br />
-            • &nbsp&nbsp&nbsp 3x Website Pages<br /><br />
-            Click play on the video to the right for a better explanation of the
-            project!
-        </p>
+        <img
+            src="assets/PageTease.jpg"
+            class="pageTease"
+            style="object-position: top"
+        />
 
         <video
-            class="gap5 rFocus"
+            class="gap6 fullWidth"
             preload
             playsinline
             controls
@@ -106,69 +126,60 @@
             Campaign Animation
         </video>
 
-        <h2 class="gap4 fullWidth">Billboards</h2>
+        <h1 class="gap3 fullWidth">Billboards</h1>
 
         <img
-            class="gap5 lFocus"
-            style="--staggerDelay: 0"
+            class="gap3 fullWidth"
             src="assets/horizontal1.jpeg"
             alt="Horizontal Billboard image 1"
         />
 
-        <div class="gap5 lSub imgDiv">
-            <img
-                class="lSub"
-                style="--staggerDelay: 1"
-                src="assets/horizontal2.jpeg"
-                alt="Horizontal Billboard image 2"
-            />
-            <img
-                class="lSub"
-                style="--staggerDelay: 2"
-                src="assets/horizontal3.jpeg"
-                alt="Horizontal Billboard image 3"
-            />
-        </div>
+        <!-- --
+        <img src="assets/horizontal2.jpeg" alt="Horizontal Billboard image 2" />
+        <img src="assets/horizontal3.jpeg" alt="Horizontal Billboard image 3" />
+        -->
 
         <img
-            class="gap3 tripleCol"
-            style="--staggerDelay: 0"
+            class="gap3 quadCol"
             src="assets/mockup3.jpeg"
             alt="Horizontal Billboard mockup 1"
         />
-        <img
-            class="gap3 tripleCol"
-            style="--staggerDelay: 1"
-            src="assets/mockup4.jpeg"
-            alt="Horizontal Billboard mockup 2"
-        />
 
-        <h2 class="gap3 fullWidth">Posters</h2>
+        <div class="imgDiv gap3 tripleCol">
+            <img
+                class="customAspect"
+                style="aspect-ratio: 20 / 18"
+                src="assets/mockup4.jpeg"
+                alt="Horizontal Billboard mockup 2"
+            />
+        </div>
+
+        <h1 class="gap3 fullWidth">Posters</h1>
 
         <img
-            class="gap5 fullWidth"
+            class="gap3 fullWidth"
             src="assets/vertical4.jpeg"
             alt="Vertical Poster all image"
         />
 
         <img
-            class="gap4 tripleCol"
+            class="gap3 tripleCol customAspect"
+            style="aspect-ratio: 20 / 18"
             src="assets/mockup1.jpeg"
             alt="Vertical Poster mockup 1"
         />
 
         <img
-            class="gap4 tripleCol"
+            class="gap3 quadCol"
             src="assets/mockup2.jpeg"
             alt="Vertical Poster mockup 2"
         />
 
-        <h2 class="gap3 fullWidth">Website</h2>
+        <h1 class="gap3 fullWidth">Website</h1>
 
-        <div class="gap5 rSub imgDiv">
+        <div class="gap3 tripleCol imgDiv">
             <img
-                class="rFocus"
-                style="--staggerDelay: 1"
+                class="ratio16x9"
                 src="assets/mockup7.jpeg"
                 alt="website mockup"
             />
@@ -180,31 +191,21 @@
             </p>
         </div>
 
-        <video
-            class="gap5 rFocus"
-            style="--staggerDelay: 0"
-            muted
-            autoplay
-            loop
-            preload
-            playsinline
-        >
+        <video class="gap3 quadCol" muted autoplay loop preload playsinline>
             <source src="assets/websiteRecording.mp4" type="video/mp4" />
             Website Recording
         </video>
 
-        <h2 class="gap3 fullWidth">Social Media</h2>
+        <h1 class="gap3 fullWidth">Social Media</h1>
 
         <img
             class="lFocus"
-            style="--staggerDelay: 0"
             src="assets/facebook mockup.jpeg"
             alt="facebook mockup"
         />
 
         <img
             class="gap3 lSub"
-            style="--staggerDelay: 1"
             src="assets/instagram mockup.jpeg"
             alt="instagram mockup"
         />
@@ -215,26 +216,25 @@
             more attention.
         </p>
 
-        <h2 class="gap3 fullWidth">Staff Uniform</h2>
+        <h1 class="gap3 fullWidth">Staff Uniform</h1>
 
         <img
-            class="gap3 rSub"
-            style="--staggerDelay: 0"
+            class="gap3 rSub customAspect"
+            style="aspect-ratio: 7 / 12"
             src="assets/mockup6.jpeg"
             alt="nametag mockup"
         />
         <img
-            class="gap3 rFocus"
-            style="--staggerDelay: 1"
+            class="gap3 rFocus aspect3x2"
             src="assets/nametags.jpeg"
             alt="nametag image"
         />
 
-        <h2 class="gap4 fullWidth">Learning from the presentation</h2>
+        <h1 class="gap3 fullWidth">Presentation</h1>
 
         <p class="singleCol"></p>
 
-        <a class="gap4 doubleCol" href="assets/Submission PDF.pdf"
+        <a class="doubleCol" href="assets/Submission PDF.pdf"
             ><img
                 class="gap5 tripleCol"
                 src="assets/animationThumb.jpeg"
@@ -249,25 +249,9 @@
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

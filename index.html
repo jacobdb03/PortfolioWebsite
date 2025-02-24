@@ -17,9 +17,10 @@
 
         <meta
             name="description"
-            content="Hi, I’m Jacob, a 21 year old designer in London and Norwich. I am
-            passionate, energetic and creative, and I always have a positive outlook.
-            Here is a link to my portfolio, have a look!"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
         />
 
         <meta name="keywords" content="Portfolio, Student, Graphic Design" />
@@ -33,9 +34,10 @@
 
         <meta
             property="og:description"
-            content="Hi, I’m Jacob, a 20 year old designer in London and Norwich. I am
-        passionate, energetic and creative, and I always have a positive outlook.
-        Here is a link to my portfolio, have a look!"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
         />
         <meta property="og:url" content="https://jacobbryant.design/" />
         <meta property="og:image:width" content="1200" />
@@ -51,74 +53,81 @@
             rel="stylesheet"
         />
 
-        <!--Cursor Follower -->
-
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
-        />
-
-        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <div class="blueBg"></div>
-        <!--<div class="cursorBlob"></div>
-
-        <script>
-            const cursor = new MouseFollower({
-                el: ".cursorBlob",
-                speed: 0.5,
-                skewing: 2,
-            });
-        </script>
-
-        <div class="whiteCursorBlobHitbox" data-cursor="cursorWhite"></div>-->
 
         <!-- Nav Bar -->
-
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
-        <!-- Home Section -->
+        <!-- Showreel Section -->
 
         <div class="titleDiv">
-            <img class="titleImg" src="assets/Jacob Bryant dot alt.svg" />
+            <img class="titleImg" src="/assets/JacobBryantWhite.svg" />
         </div>
 
         <p class="fullWidth"></p>
 
-        <!-- Thumbnail Section -->
-
-        <!--<h2 class="gap4 fullWidth">My Work</h2>-->
+        <!-- Work Section -->
 
         <!-- ALTERNATIVE GAMES IDENTITY PROJECT -->
-        <a class="gap6 lFocus" href="/work/alternativeGames/">
+        <a class="gap4 fullWidth" href="/work/alternativeGames/">
             <div class="thumbnailFolder">
                 <video
-                    class="thumbnail fullWidth"
+                    class="thumbnailLong"
                     muted
                     preload
                     autoplay
@@ -133,69 +142,18 @@
                 </video>
 
                 <div class="thumbnailCaption">
-                    <h3>Alternative Games.</h3>
+                    <h3>Alt Games.</h3>
                     <p class="tag">Event Identity</p>
                     <p class="tag">Concept Brief</p>
                 </div>
             </div>
         </a>
 
-        <!-- The Good Eggs DESIGN WORK -->
-        <a class="gap4 lSub">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnailSmall"
-                    src="/thumbnails/GoodEggsSoon.png"
-                    alt="Exhibition Thumbnail"
-                />
-
-                <div class="thumbnailCaption">
-                    <p class="tag">Coming Soon.</p>
-                    <!--<p class="tag">Creative Lead</p>
-                    <p class="tag">Live Project</p>-->
-                </div>
-            </div>
-        </a>
-
-        <!-- SPORTS FACTORY DESIGN WORK -->
-        <a class="gap6 tripleCol" href="/work/sportsFactory/">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnail"
-                    src="/thumbnails/SportsFactory_Thumb.png"
-                    alt="Sports Factory Thumbnail"
-                />
-
-                <div class="thumbnailCaption">
-                    <h3>Sports Factory.</h3>
-                    <p class="tag">Brand Identity</p>
-                    <p class="tag">Live Project</p>
-                </div>
-            </div>
-        </a>
-
-        <!-- SHAKEN DESIGN WORK -->
-        <a class="gap3 lSub">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnailSmall"
-                    src="/thumbnails/ShakenSoon.png"
-                    alt="Hubl Thumbnail"
-                />
-
-                <div class="thumbnailCaption">
-                    <p class="tag">Coming Soon.</p>
-                    <!--<p class="tag">Design Support</p>
-                <p class="tag">Live Project</p>-->
-                </div>
-            </div>
-        </a>
-
         <!-- TASTEBUDS DESIGN WORK -->
-        <a class="gap3 rFocus" href="/work/tastebudsIdentity/">
+        <a class="gap1 fullWidth" href="/work/tastebudsIdentity/">
             <div class="thumbnailFolder">
                 <video
-                    class="thumbnail"
+                    class="thumbnailLong"
                     muted
                     preload
                     autoplay
@@ -211,17 +169,17 @@
 
                 <div class="thumbnailCaption">
                     <h3>Tastebuds.</h3>
-                    <p class="tag">Creative Lead</p>
+                    <p class="tag">Brand Identity</p>
                     <p class="tag">Live Project</p>
                 </div>
             </div>
         </a>
 
         <!-- PLUCKED CONCEPT PROJECT -->
-        <a class="gap6 tripleCol" href="/work/pluckedIdentity/">
+        <a class="gap1 fullWidth" href="/work/pluckedIdentity/">
             <div class="thumbnailFolder">
                 <video
-                    class="thumbnail"
+                    class="thumbnailLong"
                     muted
                     preload
                     autoplay
@@ -242,55 +200,18 @@
                 </div>
             </div>
         </a>
+        <a class="gap3 defaultButton" style="grid-column: 3" href="/work/"
+            >About Me</a
+        >
+        <a class="gap3 defaultButton" href="/work/">More Work</a>
 
-        <!-- HUBL DESIGN WORK -->
-        <a class="gap2 lSub" href="/work/hublDesign/">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnailSmall"
-                    src="/thumbnails/hublThumb.png"
-                    alt="Hubl Thumbnail"
-                />
+        <a class="gap3 defaultButton" style="grid-column: 5" href="/work/"
+            >Get in Touch</a
+        >
 
-                <div class="thumbnailCaption">
-                    <h3>Hubl.</h3>
-                    <!--<p class="tag">Design Support</p>-->
-                    <p class="tag">Live Project</p>
-                </div>
-            </div>
-        </a>
+        <!-- Page Elements -->
 
-        <a class="gap4 defaultButton" href="/work/">See More here!</a>
-
-        <a href="/about/" class="infoBox gap5 infoBoxAnimate">
-            <h2 style="margin-left: 0em">Who is Jacob Bryant?</h2>
-
-            <p class="gap3">
-                Hi, I’m a 21 year old designer in London and Norwich. I am
-                passionate, energetic and creative, and I always have a positive
-                outlook on projects, people and the planet.
-            </p>
-        </a>
-
-        <!-- Page Footer -->
-
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

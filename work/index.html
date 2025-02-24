@@ -14,12 +14,36 @@
         />
 
         <meta name="author" content="Jacob Bryant" />
+
         <meta
             name="description"
-            content="Hi, I’m Jacob, a 21 year old designer in London and Norwich. I am
-            passionate, energetic and creative, and I always have a positive outlook.
-            Here is a link to my portfolio, have a look!"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
         />
+
+        <meta name="keywords" content="Portfolio, Student, Graphic Design" />
+
+        <!-- Thumbnail Stuff -->
+        <meta property="og:title" content="Jacob Bryant: Creative & Designer" />
+        <meta
+            property="og:image"
+            content="https://i.ibb.co/74nhjn4/Main-Website-Thumbnail.png"
+        />
+
+        <meta
+            property="og:description"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
+        />
+        <meta property="og:url" content="https://jacobbryant.design/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+
+        <meta property="og:type" content="website" />
 
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,52 +58,118 @@
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!--heading and about -->
-        <div id="pageTop" style="position: absolute; top: 0%; left: 0%"></div>
         <div class="pageHeader fullWidth">
-            <h1>Portfolio.</h1>
-            <h3 class="middle">
-                My full collection of work, from the start of my design journey
-                in 2022
+            <h1>Full Portfolio</h1>
+            <h3>
+                Welcome to the archive of all my work from the start of my
+                design journey to now. I hope you like what you see!
             </h3>
         </div>
 
-        <!--thumbnails of work -->
+        <p class="fullWidth"></p>
 
-        <!--Nav Box -->
+        <p class="tag">Live Project</p>
+        <p class="tag">Concept Brief</p>
+        <p class="tag">Brand Identity</p>
+        <p class="tag">Motion Design</p>
+        <p class="tag">Event Identity</p>
 
-        <!--<div class="gap4 navBox fullWidth">
-            <a href="#2024">2024</a>
-            <a href="#2023">2023</a>
-            <a href="#archive">Archive</a>
-        </div>-->
+        <!-- CODER IN MOTION PROJECT -->
+        <a class="gap6 tripleCol">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/coderMotionThumb.jpeg"
+                    alt="Coder Thumbnail"
+                />
 
-        <h2 class="topLink middle gap4" id="2024">
-            2024 <a class="topLink" href="#pageTop">↑</a>
-        </h2>
+                <!--
+                <div class="thumbnailCaption">
+                    <h3>Coder in Motion.</h3>
+                    <p class="tag">Coming Soon</p>
+                </div>
+                -->
+                <p class="comingSoon">coming soon</p>
+            </div>
+        </a>
+
+        <p class="singleCol"></p>
+
+        <!-- MICHELLE JENKINS PROJECT -->
+        <a class="gap4 tripleCol">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/michelleThumb.jpeg"
+                    alt="Michelle Jenkins Thumbnail"
+                />
+
+                <!--
+                <div class="thumbnailCaption">
+                    <h3>Michelle Jenkins.</h3>
+                    <p class="tag">Coming Soon</p>
+                </div>
+                -->
+                <p class="comingSoon">coming soon</p>
+            </div>
+        </a>
 
         <!-- ALTERNATIVE GAMES IDENTITY PROJECT -->
-        <a class="gap3 fullWidth" href="/work/alternativeGames/">
+        <a class="gap5 lFocus" href="/work/alternativeGames/">
             <div class="thumbnailFolder">
                 <video
                     class="thumbnail fullWidth"
@@ -104,51 +194,65 @@
             </div>
         </a>
 
-        <!-- HUBL DESIGN SUPPORT WORK -->
-        <a class="gap3 tripleCol" href="/work/hublDesign/">
+        <!-- SHAKEN DESIGN WORK -->
+        <a class="gap1 lSub">
             <div class="thumbnailFolder">
                 <img
-                    class="thumbnail"
-                    src="/thumbnails/hublThumb.png"
-                    alt="Exhibition Thumbnail"
+                    class="thumbnailSmall"
+                    src="/thumbnails/ShakenSoon.png"
+                    alt="Shaken & Stirred Thumbnail"
                 />
 
+                <!-- --
                 <div class="thumbnailCaption">
-                    <h3>Hubl.</h3>
-                    <p class="tag">Design Support</p>
-                    <p class="tag">Live Project</p>
-                </div>
+                    <h3>Shaken & Stirred.</h3>
+                    <p class="tag">Coming Soon</p>
+                </div>-->
+
+                <p class="comingSoon">coming soon</p>
             </div>
         </a>
 
-        <!-- TASTEBUDS DESIGN WORK -->
-        <a class="gap3 tripleCol" href="/work/tastebudsIdentity/">
+        <p class="doubleCol"></p>
+
+        <!-- THE GOOD EGGS DESIGN WORK -->
+        <a class="gap4 quadCol" href="/work/goodEggs/">
             <div class="thumbnailFolder">
-                <video
+                <img
                     class="thumbnail"
-                    muted
-                    preload
-                    autoplay
-                    loop
-                    playsinline
-                >
-                    <source
-                        src="/thumbnails/tastebuds_animated_thumb.mp4"
-                        type="video/mp4"
-                    />
-                    Animated thumbnail for the Tastebuds Identity Page
-                </video>
+                    src="/thumbnails/GoodEggs_Thumb.jpeg"
+                    alt="The Good Eggs Thumbnail"
+                />
 
                 <div class="thumbnailCaption">
-                    <h3>Tastebuds.</h3>
+                    <h3>The Good Eggs.</h3>
                     <p class="tag">Creative Lead</p>
                     <p class="tag">Live Project</p>
                 </div>
             </div>
         </a>
 
+        <!-- CONSTELLATION CARDS CONCEPT PROJECT -->
+        <a class="gap4 tripleCol">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/Thumbnail7.jpg"
+                    alt="constellation cards Thumbnail"
+                />
+
+                <!--
+                <div class="thumbnailCaption">
+                    <h3>Constellation Cards.</h3>
+                    <p class="tag">Coming soon</p>
+                </div>
+                -->
+                <p class="comingSoon">coming soon</p>
+            </div>
+        </a>
+
         <!-- PLUCKED CONCEPT PROJECT -->
-        <a class="gap3 tripleCol" href="/work/pluckedIdentity/">
+        <a class="gap6 quadCol" href="/work/pluckedIdentity/">
             <div class="thumbnailFolder">
                 <video
                     class="thumbnail"
@@ -173,47 +277,51 @@
             </div>
         </a>
 
-        <!-- SPORTS FACTORY DESIGN WORK -->
-        <a class="gap3 tripleCol" href="/work/sportsFactory/">
+        <!-- TASTEBUDS DESIGN WORK -->
+        <a class="gap4 lFocus" href="/work/tastebudsIdentity/">
             <div class="thumbnailFolder">
-                <img
+                <video
                     class="thumbnail"
-                    src="/thumbnails/SportsFactory_Thumb.png"
-                    alt="Exhibition Thumbnail"
-                />
+                    muted
+                    preload
+                    autoplay
+                    loop
+                    playsinline
+                >
+                    <source
+                        src="/thumbnails/tastebuds_animated_thumb.mp4"
+                        type="video/mp4"
+                    />
+                    Animated thumbnail for the Tastebuds Identity Page
+                </video>
 
                 <div class="thumbnailCaption">
-                    <h3>Sports Factory.</h3>
-                    <p class="tag">Brand Identity</p>
+                    <h3>Tastebuds.</h3>
+                    <p class="tag">Creative Lead</p>
                     <p class="tag">Live Project</p>
                 </div>
             </div>
         </a>
 
-        <h2 class="topLink middle gap4" id="2023">
-            2023<a class="topLink" href="#pageTop">↑</a>
-        </h2>
-
-        <!-- BIOPHILIA EVENT PROJECT -->
-        <a class="gap3 tripleCol" href="/work/biophiliaIdentity/">
+        <!-- HUBL DESIGN WORK -->
+        <a class="gap6 lSub" href="/work/hublDesign/">
             <div class="thumbnailFolder">
                 <img
-                    class="thumbnail"
-                    src="/thumbnails/BiophiliaThumb.jpeg"
-                    alt="Exhibition Thumbnail"
-                    style="object-position: top"
+                    class="thumbnailSmall"
+                    src="/thumbnails/hublThumb.png"
+                    alt="Hubl Thumbnail"
                 />
 
                 <div class="thumbnailCaption">
-                    <h3>Biophilia.</h3>
-                    <p class="tag">Event Identity</p>
-                    <p class="tag">Concept Brief</p>
+                    <h3>Hubl.</h3>
+                    <!--<p class="tag">Design Support</p>-->
+                    <p class="tag">Live Project</p>
                 </div>
             </div>
         </a>
 
         <!-- REDISCOVER YOU CAMPAIGN PROJECT -->
-        <a class="gap3 tripleCol" href="/work/rediscoverYou/">
+        <a class="gap4 quadCol" href="/work/rediscoverYou/">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -230,28 +338,64 @@
             </div>
         </a>
 
-        <!--<h2 class="gap4 fullWidth" id="archive">Archive</h2>-->
-
-        <!-- SOCIETY OF COLOURS AND DYERS PROJECT -->
-        <a class="gap3 tripleCol" href="/work/colourSociety/">
+        <!-- SPORTS FACTORY DESIGN WORK -->
+        <a class="gap8 tripleCol" href="/work/sportsFactory/">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
+                    src="/thumbnails/SportsFactory_Thumb.png"
+                    alt="Sports Factory Thumbnail"
+                />
+
+                <div class="thumbnailCaption">
+                    <h3>Sports Factory.</h3>
+                    <p class="tag">Brand Identity</p>
+                    <p class="tag">Live Project</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- SOCIETY OF COLOURS AND DYERS PROJECT -->
+        <a class="gap6 doubleCol" href="/work/colourSociety/">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnailSmall"
                     src="/thumbnails/colourThumb.jpg"
                     alt="Exhibition Thumbnail"
-                    style="object-position: bottom"
+                    style="object-position: bottom; object-position: right"
                 />
 
                 <div class="thumbnailCaption">
                     <h3>Colour Society.</h3>
-                    <p class="tag">Brand Identity</p>
                     <p class="tag">Concept Brief</p>
                 </div>
             </div>
         </a>
 
+        <p class="singleCol"></p>
+
+        <!-- BIOPHILIA EVENT PROJECT -->
+        <a class="gap3 quadCol" href="/work/biophiliaIdentity/">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/BiophiliaThumb.jpeg"
+                    alt="Exhibition Thumbnail"
+                    style="object-position: top"
+                />
+
+                <div class="thumbnailCaption">
+                    <h3>Biophilia.</h3>
+                    <p class="tag">Event Identity</p>
+                    <p class="tag">Concept Brief</p>
+                </div>
+            </div>
+        </a>
+
+        <p class="singleCol"></p>
+
         <!-- ANALOGUE TYPE PROJECT -->
-        <a class="gap3 tripleCol" href="/work/analogueType/">
+        <a class="gap5 tripleCol" href="/work/analogueType/">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -268,41 +412,9 @@
             </div>
         </a>
 
-        <a href="#pageTop">
-            <h2 class="topLink middle gap4">
-                Back to top<a class="topLink" href="#pageTop">↑</a>
-            </h2></a
-        >
+        <!-- Page Elements -->
 
-        <!--href="constellationCards/"-->
-        <!-- <a class="gap3 thumbnailCol">
-            <img
-                class="thumbnail"
-                src="/thumbnails/Thumbnail7.jpg"
-                alt="Constellation Card Thumbnail"
-            />
-        </a>
-
-        <h2 class="gap4 fullWidth">More Work to Come...</h2>-->
-        <!-- Page Footer -->
-
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

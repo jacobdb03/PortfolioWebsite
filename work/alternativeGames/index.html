@@ -25,208 +25,229 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
         <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!-- Header Section -->
         <div class="pageHeader">
             <div class="metaInfo">
-                <h3 class="tag">October – November 2024</h3>
-                <h3 class="tag">Concept Project</h3>
+                <h2 class="altBg tag">October – November 2024</h2>
+                <h2 class="altBg tag">Concept Project</h2>
             </div>
-            <h1 class="title">Alternative Games.</h1>
-            <h3 class="subTitle">
+            <h1 class="altBg title">Alternative Games.</h1>
+            <h3 class="altBg subTitle">
                 A brand identity system allowing communities to unite over a
                 collection of nonsensical events.
             </h3>
 
             <div class="metaInfo">
-                <p class="tag">Event Identity</p>
-                <p class="tag">Branding</p>
-                <p class="tag">Logo Design</p>
-                <p class="tag">Motion</p>
-                <p class="tag">Poster Design</p>
-                <p class="tag">Out-of-home</p>
+                <p class="altBg tag">Event Identity</p>
+                <p class="altBg tag">Branding</p>
+                <p class="altBg tag">Logo Design</p>
+                <p class="altBg tag">Motion</p>
             </div>
-            <!-- --
-            <div class="metaInfo">
-                <div
-                    class="infoBox gap3"
-                    style="width: 45%; margin-right: auto"
-                >
-                    <h2>Brief</h2>
-                    <p>
-                        Create a brand identity and relevent applications
-                        showcasing an imaginary event that brings
-                    </p>
-                </div>
-                <div class="infoBox gap3" style="width: 45%">
-                    <h2>Solution</h2>
-                    <p>
-                        An energetic brand for a new sports event called The
-                        Alternative Games, that focus on community, the
-                        playfulness of sports and new silly events, inspired by
-                        the olympics.
-                    </p>
-                </div>
-            </div>
-            -->
         </div>
 
         <!-- Main Page Content -->
 
-        <video class="gap5 fullWidth" muted autoplay loop preload playsinline>
+        <video class="pageTease" muted autoplay loop preload playsinline>
             <source src="assets/motion2.mp4" type="video/mp4" />
             alternative games logo animation
         </video>
 
-        <h2 class="gap4 fullWidth">A new series of games</h2>
+        <h2 class="gap3 fullWidth">A new series of games</h2>
 
         <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/poster1.jpeg"
+            class="gap1 doubleCol"
+            src="assets/poster3.jpeg"
             alt="mockup of the posters"
         />
         <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/poster2.jpeg"
+            class="gap1 doubleCol"
+            src="assets/poster4.jpeg"
             alt="mockup of the posters"
         />
 
-        <h2 class="gap4 fullWidth">How do you get there?</h2>
-
-        <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/billboard1.jpeg"
-            alt="mockup of the billboards"
-        />
-        <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/billboard2.jpeg"
-            alt="mockup of the billboards"
-        />
-        <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/billboard3.jpeg"
-            alt="mockup of the billboards"
-        />
-        <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/billboard4.jpeg"
-            alt="mockup of the billboards"
-        />
-
-        <h2 class="gap4 fullWidth">Welcome to the games!</h2>
-
-        <div class="gap3 tripleCol imgDiv">
+        <div class="gap1 imgDiv tripleCol">
             <img
-                class="tripleCol"
+                class="fullHeight"
+                src="assets/poster1.jpeg"
+                alt="mockup of the posters"
+            />
+        </div>
+
+        <h2 class="gap3 fullWidth">Welcome to the games!</h2>
+
+        <div class="gap3 quadCol imgDiv">
+            <img
+                class="tripleCol ratio16x9"
                 src="assets/eventMockup5.jpeg"
                 alt="mockup of the event"
             />
             <img
-                class="gap3 tripleCol ratio16x9"
-                style="object-position: bottom"
+                class="gap3 tripleCol customAspect"
+                style="object-position: bottom; aspect-ratio: 25 / 18"
                 src="assets/eventMockup4.jpeg"
                 alt="mockup of the event"
             />
         </div>
 
         <img
-            class="gap3 tripleCol"
+            class="gap3 tripleCol ratio9x16"
             src="assets/eventMockup2.jpeg"
             alt="mockup of the event"
         />
 
-        <img
-            class="gap3 tripleCol ratio4x3"
-            src="assets/eventMockup1.jpeg"
-            alt="mockup of the event"
-        />
+        <div class="gap3 tripleCol imgDiv">
+            <img
+                class="fullHeight"
+                src="assets/eventMockup1.jpeg"
+                alt="mockup of the event"
+            />
+        </div>
 
         <img
-            class="gap3 tripleCol ratio4x3"
+            class="gap3 quadCol"
             src="assets/eventMockup3.jpeg"
             alt="mockup of the event"
         />
 
-        <h2 class="gap4 fullWidth">Can't make it in person?</h2>
+        <h2 class="gap3 fullWidth">Make sure you know how to get there</h2>
 
-        <img class="gap3 lFocus" src="assets/online1.jpeg" alt="TV Overlays" />
-        <div class="gap3 lSub imgDiv">
-            <img class="lSub" src="assets/online3.jpeg" alt="TV Overlays" />
-            <img class="lSub" src="assets/online4.jpeg" alt="TV Overlays" />
+        <div class="gap1 lFocus imgDiv">
+            <img
+                class="ratio4x3"
+                src="assets/billboard2.jpeg"
+                alt="mockup of the billboards"
+            />
         </div>
 
+        <div class="gap1 lSub imgDiv">
+            <img
+                class="ratio16x9"
+                src="assets/billboard3.jpeg"
+                alt="mockup of the billboards"
+            />
+            <img
+                class="ratio16x9"
+                src="assets/billboard1.jpeg"
+                alt="mockup of the billboards"
+            />
+            <img
+                class="ratio16x9"
+                src="assets/billboard4.jpeg"
+                alt="mockup of the billboards"
+            />
+        </div>
+
+        <h2 class="gap4 fullWidth">Can't make it in person?</h2>
+
         <img
-            class="gap3 lFocus ratio16x9"
-            src="assets/social2.jpeg"
-            alt="Socials"
+            class="gap3 lFocus customAspect"
+            style="aspect-ratio: 25 / 17; object-position: left"
+            src="assets/online1.jpeg"
+            alt="TV Overlays"
         />
-        <img
-            class="gap3 lSub ratio3x4"
-            src="assets/social1.jpeg"
-            alt="Socials"
-        />
+        <div class="gap3 lSub imgDiv">
+            <img
+                class="lSub ratio16x9"
+                style="object-position: bottom"
+                src="assets/online3.jpeg"
+                alt="TV Overlays"
+            />
+            <img
+                class="lSub ratio16x9"
+                style="object-position: bottom"
+                src="assets/online4.jpeg"
+                alt="TV Overlays"
+            />
+            <img
+                class="lSub ratio16x9"
+                style="object-position: bottom"
+                src="assets/online2.jpeg"
+                alt="TV Overlays"
+            />
+        </div>
+
+        <div class="gap5 rSub">
+            <img
+                class="borderBlue fullHeight"
+                src="assets/social1.jpeg"
+                alt="Socials"
+            />
+        </div>
+
+        <div class="gap5 rFocus imgDiv">
+            <img class="borderBlue" src="assets/social2.jpeg" alt="Socials" />
+        </div>
 
         <h2 class="gap4 fullWidth">The brand Overview</h2>
 
         <img
             class="gap2 fullWidth"
-            src="assets/bentoBoard.jpeg"
+            src="assets/bento board.jpeg"
             alt="Bento Board"
         />
 
-        <p class="singleCol"></p>
-
-        <!--<a class="doubleCol" href="assets/finalOutcome.pdf"
-            ><img
-                class="gap5 tripleCol"
-                src="assets/PDFThumb.png"
-                alt="PDF thumbnail"
-        /></a>-->
-
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

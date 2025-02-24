@@ -15,11 +15,6 @@
 
         <meta name="author" content="Jacob Bryant" />
 
-        <meta
-            name="keywords"
-            content="Brand Identity, Chicken Rental, Public London, Chickens, Rent a chicken"
-        />
-
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,77 +25,61 @@
 
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
-        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
-        <!-- page decoration -->
-
-        <!--<div class="background1"></div>
-        <script>
-            setBackground1("#b2e3ff", "124em", "230em");
-        </script>-->
-
-        <!--<div class="background2"></div>
-        <script>
-            setBackground2("#ffc7aa", "342em", "200em");
-        </script>-->
-        <!--<div class="pageBg"></div>-->
-
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
-
-        <!--<div class="gap5 fullWidth">
-            <div id="Van"></div>
-            <script>
-                var VanImage = document.createElement("img");
-
-                getImgSrc("./assets/Van.jpg");
-                drawHashImg("UBGuwJ0000^*0*4nF2-;_2Mw~qSjtn9aMcxa", 1920, 1080);
-
-                VanImage.src = "./assets/Van.jpg";
-                console.log(VanImage.src);
-
-                VanImage.onload = () => {
-                    console.log(getContainerID(getContainerName()));
-                    getContainerID(getContainerName()).replaceWith(VanImage);
-                };
-            </script>
-        </div>
-
-        <div class="gap5 fullWidth">
-            <div id="Bus"></div>
-            <script>
-                var BusImage = document.createElement("img");
-
-                getImgSrc("./assets/Bus.jpg");
-                drawHashImg("U9GRSA-P6B-o9=$ys;S$3Z%N^iT1vdFzkX-9", 1920, 1080);
-
-                BusImage.src = "./assets/Bus.jpg";
-                console.log(BusImage.src);
-
-                BusImage.onload = () => {
-                    console.log(getContainerID(getContainerName()));
-                    getContainerID(getContainerName()).replaceWith(BusImage);
-                };
-            </script>
-        </div>-->
 
         <!-- Header Section -->
 
@@ -112,10 +91,10 @@
 
             <h1 class="title">Plucked.</h1>
             <h3 class="subTitle">
-                In response to a brief set by Public London, my team and I
-                created this brand identity for an imaginary brand called
-                plucked; promoting better lives for chickens through a chicken
-                rental program.
+                An unapologetically bold but fun brand identity for plucked; an
+                imaginary chicken rental brand standing up for the mistreatment
+                of chickens in the poultry industry. Brief set by design agency
+                Public London
             </h3>
 
             <div class="metaInfo">
@@ -147,34 +126,29 @@
 
         <!-- Main Page Content -->
 
-        <video class="gap4 fullWidth" muted autoplay loop preload playsinline>
-            <source src="assets/Brand Board.mp4" type="video/mp4" />
-            Brand Board
-        </video>
-
-        <p class="gap3 rSub">
-            Welcome to plucked — a brand identity for a chicken rental company.
-            This project was a live competition for university, set by the
-            design agency Public London. We created the identify to be powerful,
-            using vengeful chickens as the route for the design. <br /><br />
-            This ideology created an unapologetically bold but fun personality
-            for the brand that would both attract our target audience of
-            families, while standing up for the mistreatment of chickens in the
-            poultry industry — or as we like to put it — plucking chickens from
-            their life sentence in poultry prison to go to happier homes.
-        </p>
-
-        <video class="gap3 rFocus" muted autoplay loop preload playsinline>
+        <video
+            class="gap3 fullWidth pageTease"
+            muted
+            autoplay
+            loop
+            preload
+            playsinline
+        >
             <source src="assets/Plucked Logo.mp4" type="video/mp4" />
             Plucked Logo
         </video>
 
-        <h2 class="gap4 fullWidth">
+        <video class="gap6 fullWidth" muted autoplay loop preload playsinline>
+            <source src="assets/Brand Board.mp4" type="video/mp4" />
+            Brand Board
+        </video>
+
+        <h1 class="gap3 fullWidth">
             Get ready to have your feathers ruffled...
-        </h2>
+        </h1>
 
         <img
-            class="gap5 lFocus"
+            class="gap4 lFocus"
             src="assets/ShapesAndColours.png"
             alt="Shapes and Colours image"
         />
@@ -183,15 +157,15 @@
             When designing, we took inspiration from real chickens to create the
             brand elements for Plucked. The brand uses playful cartoon shapes
             designed from parts of a chicken, while the colours reflect the
-            neutral pallete of a chicken.
+            natural colours of chickens.
         </p>
 
         <p class="gap4 rSub" style="align-self: flex-start">
-            We created a custom, working typeface, by starting with a bold
-            impactful typeface, but plucking the corners of each letter, to keep
-            the impact of the font while becoming more playful. "Plucking"
-            became the primary part of our design language and we used the
-            effect in our animation.
+            We created a custom, working typeface. Starting with a bold
+            impactful typeface, but plucking the corners of each letter to
+            create a playful but impactful typeface. "Plucking" became the
+            primary part of our design language and we used the effect in our
+            animation.
         </p>
 
         <div class="animateIn gap4 rFocus">
@@ -201,7 +175,7 @@
             </video>
         </div>
 
-        <h2 class="gap4 fullWidth">We're really something to cluck about</h2>
+        <h1 class="gap3 fullWidth">We're really something to cluck about</h1>
 
         <video
             class="gap5 singleCol"
@@ -281,24 +255,20 @@
             Instagram Animation 6
         </video>
 
-        <p class="gap3 doubleCol">
+        <img class="gap5 singleCol" src="assets/Story 7.png" alt="Story 7" />
+
+        <p class="gap3 tripleCol">
             Instagram became our main way to interact with a younger,
-            family-centred audience, which simultaneously allowed for the
-            hypothetical brand to raise awareness for the mistreatment of
-            chickens in the poultry industry.
+            family-centred audience, which simultaneously allowed for the brand
+            to raise awareness for the mistreatment of chickens.
         </p>
 
-        <p class="gap3 doubleCol">
+        <p class="gap3 quadCol">
             We created stories and instagram posts that communicated our brand's
-            energy, purpose and mission, using our fun Plucked shapes and colour
-            palette to make a visually unique and captivating instagram page.
-        </p>
-
-        <p class="gap3 doubleCol">
-            On top of the social media content, we created digestable
-            infographics in the brand's style that communicated some of the
-            horrific facts we found about the poultry industry while researching
-            for the project.
+            energy, purpose and mission using plucked's shapes and colours.
+            Alongside the social media content, we created digestable
+            infographics that communicated some of the horrific facts we
+            discovered about the poultry industry.
         </p>
 
         <img
@@ -323,19 +293,19 @@
             </video>
         </div>
 
-        <h2 class="gap4 fullWidth">
+        <h1 class="gap3 fullWidth">
             Plucked from mistreatment. Plucked with Love.
-        </h2>
+        </h1>
 
         <img
-            class="gap5 tripleCol"
+            class="imgDiv gap4 quadCol"
             style="--staggerDelay: 0"
             src="assets/Bus.jpeg"
             alt="Bus OOH image 1"
         />
 
         <video
-            class="gap5 tripleCol"
+            class="gap4 tripleCol ratio3x2"
             style="--staggerDelay: 1"
             muted
             autoplay
@@ -380,8 +350,8 @@
         </div>
 
         <img
-            class="gap5 rFocus"
-            style="--staggerDelay: 4"
+            class="gap5 rFocus customAspect"
+            style="--staggerDelay: 4; aspect-ratio: 21 / 11"
             src="assets/Van.jpeg"
             alt="Van mockup image"
         />
@@ -394,8 +364,8 @@
         </p>
 
         <img
-            class="gap5 lFocus"
-            style="--staggerDelay: 1"
+            class="gap5 lFocus customAspect"
+            style="--staggerDelay: 1; aspect-ratio: 10 / 6"
             src="assets/3D Chicken.jpeg"
             alt="3D Chicken"
         />
@@ -429,11 +399,11 @@
             any feedback to give us.
         </p>
 
-        <h2 class="gap4 fullWidth">Presentation Time...</h2>
+        <h1 class="gap4 fullWidth">Presentation Time...</h1>
 
         <p class="singleCol"></p>
 
-        <a class="doubleCol" href="assets/Final Applications.pdf"
+        <a class="tripleCol" href="assets/Final Applications.pdf"
             ><img
                 class="gap5 tripleCol"
                 src="assets/Final Applications Thumbnail.jpeg"
@@ -449,37 +419,21 @@
 
         <p class="singleCol"></p>
 
-        <h2 class="gap4 fullWidth">The flock needs you!</h2>
+        <h1 class="gap4 fullWidth">The flock needs you!</h1>
 
         <img
-            class="gap5 fullWidth"
+            class="gap5 extendedWidth"
             src="assets/ChickenTeam.jpeg"
             alt="Chicken Team image"
         />
 
-        <p class="fullWidth" style="text-align: right">The plucked team</p>
+        <p class="gap1 fullWidth" style="text-align: right">The plucked team</p>
 
         <!-- Project Navigation Panel  -->
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>

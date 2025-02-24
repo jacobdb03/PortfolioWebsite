@@ -17,10 +17,33 @@
 
         <meta
             name="description"
-            content="Hi, I’m Jacob, a 21 year old designer in London and Norwich. I am
-            passionate, energetic and creative, and I always have a positive outlook.
-            Here is a link to my portfolio, have a look!"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
         />
+
+        <meta name="keywords" content="Portfolio, Student, Graphic Design" />
+
+        <!-- Thumbnail Stuff -->
+        <meta property="og:title" content="Jacob Bryant: Creative & Designer" />
+        <meta
+            property="og:image"
+            content="https://i.ibb.co/74nhjn4/Main-Website-Thumbnail.png"
+        />
+
+        <meta
+            property="og:description"
+            content="Hello! I’m Jacob, a 21-year-old graphic designer based
+            between London and Norwich. I’m an optimistic, creative,
+            and hard-working designer with a passion for brand
+            identity and motion design."
+        />
+        <meta property="og:url" content="https://jacobbryant.design/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+
+        <meta property="og:type" content="website" />
 
         <!--Google API font stuff -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,66 +58,94 @@
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
 
-        <link rel="stylesheet" href="/stylesheets/pageDecoration.css" />
         <link rel="stylesheet" href="/stylesheets/animations.css" />
         <link rel="stylesheet" href="/stylesheets/ScreenSize.css" />
 
         <!--My JS documentS -->
-        <script src="/javascript/backgroundSet.js"></script>
         <script src="/javascript/scroll.js" defer></script>
-
-        <script src="/javascript/mainBlurhash.js"></script>
-        <script src="/javascript/blurLogic.js"></script>
+        <script src="/javascript/mouse.js" defer></script>
     </head>
 
     <body>
         <!-- Nav Bar -->
         <nav>
-            <a href="/">Home.</a>
-            <a href="/about">About.</a>
-            <a href="/contact">Contact.</a>
+            <div class="navLinks">
+                <a href="/"
+                    ><div class="navImg">
+                        <img src="/assets/logoWhite.svg" /></div
+                ></a>
+                <a href="/work">Work.</a>
+                <a href="/about">About.</a>
+                <a href="/contact">Contact.</a>
+            </div>
+
+            <div class="expandableFooter">
+                <div class="footerLeft">
+                    <img src="/assets/JacobBryantWhite.svg" />
+                </div>
+                <div class="footerRight">
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/jacobdb03/"
+                        >Linkedin</a
+                    >
+                    <a
+                        target="blank"
+                        href="https://www.instagram.com/jacobdb03/"
+                        >Instagram</a
+                    >
+                    <p>
+                        Hello! I’m Jacob, a 21-year-old graphic designer based
+                        between London and Norwich. I’m an optimistic, creative,
+                        and hard-working designer with a passion for brand
+                        identity and motion design.
+                    </p>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        This website is coded and designed by myself. All work
+                        shown has been worked on by myself unless stated
+                        otherwise. Thanks for dropping by! :D
+                    </p>
+                </div>
+            </div>
         </nav>
 
         <!--heading and about -->
         <div class="pageHeader fullWidth">
-            <h1>Hello.</h1>
-            <h3 class="middle">
-                If you want to work with me, give feedback or just say hi, lets
+            <h1>Nice to meet you!</h1>
+            <h3>
+                If you want to work with me, give feedback or just say hi — lets
                 chat!
             </h3>
         </div>
 
+        <p class="fullWidth"></p>
+
         <a
             class="tag doubleCol"
+            target="blank"
             href="mailto:Hi@jacobbryant.design?subject=Hello!"
             >Hi@JacobBryant.Design</a
         >
-        <a class="singleCol tag" href="https://www.linkedin.com/in/jacobdb03/">
+        <a
+            class="singleCol tag"
+            target="blank"
+            href="https://www.linkedin.com/in/jacobdb03/"
+        >
             LinkedIn
         </a>
-        <a class="singleCol tag" href="https://www.instagram.com/jacobdb03/">
+        <a
+            class="singleCol tag"
+            target="blank"
+            href="https://www.instagram.com/jacobdb03/"
+        >
             Instagram
         </a>
 
-        <!-- Page Footer -->
+        <!-- Page Elements -->
 
-        <div class="fullWidth footerGap"></div>
-        <div class="footerBg">
-            <img class="footerImg" src="/assets/JLogoWhite.svg" />
-            <a class="footerName" href="/"> Jacob Bryant. </a>
-
-            <a class="footerText" href="/work/">Work</a>
-            <a class="footerText" href="https://www.linkedin.com/in/jacobdb03/"
-                >LinkedIn</a
-            >
-            <a class="footerText" href="https://www.instagram.com/jacobdb03/"
-                >Instagram</a
-            >
-        </div>
-        <p class="footerTextTitle fullWidth">
-            © This website is coded and designed by myself. All work shown has
-            been worked on by myself unless stated otherwise. Thanks for
-            dropping by! :D
-        </p>
+        <div class="cursorClickBlob"></div>
+        <p class="fullWidth gap8"></p>
     </body>
 </html>
