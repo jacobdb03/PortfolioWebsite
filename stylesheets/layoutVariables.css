@@ -22,6 +22,23 @@
     --gap8: 25em;
 }
 
+@media (max-width: 768px) {
+    body {
+        display: block !important;
+        font-size: 5px;
+
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        font-size: 10px;
+    }
+}
+
 /* ---- Gaps: used to declare how much space should be left between grid row ---- */
 .gap0 {
     margin-top: var(--gap0);
