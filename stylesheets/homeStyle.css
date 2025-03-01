@@ -36,6 +36,7 @@ h3 {
     font-size: 3em;
     line-height: 100%;
     color: var(--blue);
+    text-align: left;
 
     margin-bottom: 0em;
 
@@ -90,7 +91,7 @@ a {
     font-size: 2.5em;
     text-align: left;
 
-    margin-top: -4vh;
+    margin-top: -10vh;
 }
 
 .titleSubText {
@@ -101,7 +102,7 @@ a {
 
     text-align: right;
 
-    margin-top: -4.5vh;
+    margin-top: -2.2vh;
     margin-left: 20px;
 }
 
@@ -111,11 +112,21 @@ a {
     max-width: 1280px;
 
     margin-left: -1em;
-    margin-top: 55lvh;
 
     width: 60%;
 
+    justify-self: start;
+
     z-index: 2;
+}
+
+.titleDiv {
+    grid-column: span 7;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: end;
 }
 
 /* ---- Stuff for portfolio page navigation  currently offline  ----*/
