@@ -509,6 +509,30 @@ nav:hover {
     }
 }
 
+.thumbnailCaptionSmall {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    align-items: center;
+
+    height: auto;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1.5em;
+
+    h3 {
+        transition-duration: 0.05s;
+        font-weight: 500;
+        font-size: 2em;
+    }
+    .tag p {
+        font-size: 1.8em;
+    }
+}
+
 .thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {
     transition-duration: 0.08s;
     font-weight: 700;

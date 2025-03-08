@@ -191,7 +191,7 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background-color: var(--altBlue);
+    background-color: var(--blue);
 
     transition:
         background 0.5s ease-in-out,
