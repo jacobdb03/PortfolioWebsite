@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gradient Aura Cursor</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: black;
+                overflow: hidden;
+                cursor: none; /* Hide default cursor */
+            }
+
+            .cursor-aura {
+                position: fixed;
+                width: 200px;
+                height: 200px;
+                filter: blur(80px);
+                pointer-events: none;
+                mix-blend-mode: lighten;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                background: radial-gradient(
+                    circle,
+                    #ff5200aa,
+                    #c2275388,
+                    #4a096788,
+                    transparent
+                );
+                transition: background 0.5s ease-in-out;
+            }
+
+            .trail {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                filter: blur(50px);
+                mix-blend-mode: lighten;
+                pointer-events: none;
+                border-radius: 50%;
+                background: radial-gradient(
+                    circle,
+                    rgba(255, 82, 0, 0.5),
+                    rgba(194, 39, 83, 0.3),
+                    transparent
+                );
+                opacity: 1;
+                transition:
+                    transform 1s ease-out,
+                    opacity 1s ease-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cursor-aura"></div>
+
+        <script>
+            const aura = document.querySelector(".cursor-aura");
+            const colors = ["#ff5200", "#c22753", "#4a0967"];
+            let colorIndex = 0;
+
+            document.addEventListener("mousemove", (e) => {
+                aura.style.left = `${e.clientX}px`;
+                aura.style.top = `${e.clientY}px`;
+
+                // Change aura color gradually
+                colorIndex = (colorIndex + 1) % colors.length;
+                aura.style.background = `radial-gradient(circle, ${colors[colorIndex]}aa, ${colors[(colorIndex + 1) % colors.length]}88, transparent)`;
+
+                createTrail(e.clientX, e.clientY);
+            });
+
+            function createTrail(x, y) {
+                const trail = document.createElement("div");
+                trail.classList.add("trail");
+                document.body.appendChild(trail);
+
+                // Position at cursor location
+                trail.style.left = `${x}px`;
+                trail.style.top = `${y}px`;
+
+                // Animate trail to fade out
+                setTimeout(() => {
+                    trail.style.transform = "translate(-50%, -50%) scale(0.5)";
+                    trail.style.opacity = "0";
+                }, 50);
+
+                // Remove the trail after fading
+                setTimeout(() => {
+                    trail.remove();
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>
