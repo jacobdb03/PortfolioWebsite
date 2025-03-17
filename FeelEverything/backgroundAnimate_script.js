@@ -7,13 +7,13 @@ let isHovered = false;
 hoverText.addEventListener("mouseenter", () => {
   if (!isHovered) {
     container.classList.add("active");
-    textContent.textContent = "To Feel Everything.";
+    textContent.textContent = "Human-Powered Everything.";
     isHovered = true;
   }
 });
 
 hoverText.addEventListener("mouseleave", () => {
   container.classList.remove("active");
-  textContent.textContent = "Feel Nothing.";
+  textContent.textContent = "Swiss-Engineered Nothing.";
   isHovered = false;
 });
