@@ -61,6 +61,7 @@
         <!--My JS documentS -->
         <script src="/javascript/scroll.js" defer></script>
         <script src="/javascript/mouse.js" defer></script>
+        <script src="/javascript/workView.js" defer></script>
     </head>
 
     <body>
@@ -117,6 +118,7 @@
             </h3>
         </div>
 
+        <!--Removed for now: Not working
         <p class="fullWidth"></p>
 
         <p class="tag">Live Project</p>
@@ -125,8 +127,21 @@
         <p class="tag">Motion Design</p>
         <p class="tag">Event Identity</p>
 
+        -->
+
+        <div class="fullWidth gap8"></div>
+
+        <div class="doubleCol"></div>
+
+        <div id="selectButton" class="viewModeButton viewModeActive">
+            Selected Works
+        </div>
+        <div id="timelineButton" class="viewModeButton">Full Timeline</div>
+
+        <div class="fullWidth"></div>
+
         <!-- CODER IN MOTION PROJECT -->
-        <a class="gap6 tripleCol">
+        <a class="gap7 tripleCol timelineHidden" id="timelineView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -144,10 +159,10 @@
             </div>
         </a>
 
-        <p class="singleCol"></p>
+        <p class="singleCol timelineHidden" id="timelineView"></p>
 
         <!-- MICHELLE JENKINS PROJECT -->
-        <a class="gap4 tripleCol">
+        <a class="gap5 tripleCol timelineHidden" id="timelineView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -166,7 +181,7 @@
         </a>
 
         <!-- ALTERNATIVE GAMES IDENTITY PROJECT -->
-        <a class="gap5 lFocus" href="/work/alternativeGames/">
+        <a class="gap5 lFocus" href="/work/alternativeGames/" id="selectedView">
             <div class="thumbnailFolder">
                 <video
                     class="thumbnail fullWidth"
@@ -192,7 +207,7 @@
         </a>
 
         <!-- SHAKEN DESIGN WORK -->
-        <a class="gap1 lSub">
+        <a class="gap1 lSub timelineHidden" id="timelineView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnailSmall"
@@ -213,7 +228,7 @@
         <p class="doubleCol"></p>
 
         <!-- THE GOOD EGGS DESIGN WORK -->
-        <a class="gap4 quadCol" href="/work/goodEggs/">
+        <a class="gap4 rFocus" href="/work/goodEggs/" id="selectedView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -229,27 +244,8 @@
             </div>
         </a>
 
-        <!-- CONSTELLATION CARDS CONCEPT PROJECT -->
-        <a class="gap4 tripleCol">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnail"
-                    src="/thumbnails/Thumbnail7.jpg"
-                    alt="constellation cards Thumbnail"
-                />
-
-                <!--
-                <div class="thumbnailCaption">
-                    <h3>Constellation Cards.</h3>
-                    <p class="tag">Coming soon</p>
-                </div>
-                -->
-                <p class="comingSoon">coming soon</p>
-            </div>
-        </a>
-
         <!-- PLUCKED CONCEPT PROJECT -->
-        <a class="gap6 quadCol" href="/work/pluckedIdentity/">
+        <a class="gap6 lFocus" href="/work/pluckedIdentity/" id="selectedView">
             <div class="thumbnailFolder">
                 <video
                     class="thumbnail"
@@ -274,8 +270,52 @@
             </div>
         </a>
 
+        <!-- CONSTELLATION CARDS CONCEPT PROJECT -->
+        <a class="gap4 doubleCol timelineHidden" id="timelineView">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/Thumbnail7.jpg"
+                    alt="constellation cards Thumbnail"
+                />
+
+                <!--
+                <div class="thumbnailCaption">
+                    <h3>Constellation Cards.</h3>
+                    <p class="tag">Coming soon</p>
+                </div>
+                -->
+                <p class="comingSoon">coming soon</p>
+            </div>
+        </a>
+
+        <!-- HUBL DESIGN WORK -->
+        <a
+            class="gap7 rSub timelineHidden"
+            href="/work/hublDesign/"
+            id="timelineView"
+        >
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnailSmall"
+                    src="/thumbnails/hublThumb.png"
+                    alt="Hubl Thumbnail"
+                />
+
+                <div class="thumbnailCaptionSmall">
+                    <h3>Hubl.</h3>
+                    <!--<p class="tag">Design Support</p>-->
+                    <p class="tag">Live Project</p>
+                </div>
+            </div>
+        </a>
+
         <!-- TASTEBUDS DESIGN WORK -->
-        <a class="gap4 lFocus" href="/work/tastebudsIdentity/">
+        <a
+            class="gap4 rFocus"
+            href="/work/tastebudsIdentity/"
+            id="selectedView"
+        >
             <div class="thumbnailFolder">
                 <video
                     class="thumbnail"
@@ -300,25 +340,8 @@
             </div>
         </a>
 
-        <!-- HUBL DESIGN WORK -->
-        <a class="gap6 lSub" href="/work/hublDesign/">
-            <div class="thumbnailFolder">
-                <img
-                    class="thumbnailSmall"
-                    src="/thumbnails/hublThumb.png"
-                    alt="Hubl Thumbnail"
-                />
-
-                <div class="thumbnailCaptionSmall">
-                    <h3>Hubl.</h3>
-                    <!--<p class="tag">Design Support</p>-->
-                    <p class="tag">Live Project</p>
-                </div>
-            </div>
-        </a>
-
         <!-- REDISCOVER YOU CAMPAIGN PROJECT -->
-        <a class="gap4 quadCol" href="/work/rediscoverYou/">
+        <a class="gap4 quadCol" href="/work/rediscoverYou/" id="selectedView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -336,7 +359,7 @@
         </a>
 
         <!-- SPORTS FACTORY DESIGN WORK -->
-        <a class="gap8 tripleCol" href="/work/sportsFactory/">
+        <a class="gap8 tripleCol" href="/work/sportsFactory/" id="selectedView">
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -353,7 +376,11 @@
         </a>
 
         <!-- SOCIETY OF COLOURS AND DYERS PROJECT -->
-        <a class="gap6 doubleCol" href="/work/colourSociety/">
+        <a
+            class="gap6 doubleCol timelineHidden"
+            href="/work/colourSociety/"
+            id="timelineView"
+        >
             <div class="thumbnailFolder">
                 <img
                     class="thumbnailSmall"
@@ -372,7 +399,11 @@
         <p class="singleCol"></p>
 
         <!-- BIOPHILIA EVENT PROJECT -->
-        <a class="gap3 quadCol" href="/work/biophiliaIdentity/">
+        <a
+            class="gap3 quadCol"
+            href="/work/biophiliaIdentity/"
+            id="selectedView"
+        >
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
@@ -392,7 +423,11 @@
         <p class="singleCol"></p>
 
         <!-- ANALOGUE TYPE PROJECT -->
-        <a class="gap5 tripleCol" href="/work/analogueType/">
+        <a
+            class="gap5 tripleCol timelineHidden"
+            href="/work/analogueType/"
+            id="timelineView"
+        >
             <div class="thumbnailFolder">
                 <img
                     class="thumbnail"
