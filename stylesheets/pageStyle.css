@@ -12,14 +12,16 @@ h1 {
 }
 
 h2 {
-    font-weight: 800;
+    font-weight: 700;
     color: var(--blue);
 
-    font-size: 7em;
+    font-size: 3em;
 
-    line-height: 130%;
+    line-height: 120%;
 
     transition-duration: 0.2s;
+
+    margin-bottom: 0em;
 }
 
 h3 {
@@ -35,7 +37,7 @@ h3 {
 p {
     font-size: 16px;
     font-weight: 300;
-    line-height: 200%;
+    line-height: 150%;
 
     color: var(--black);
 
@@ -44,7 +46,6 @@ p {
     align-self: flex-end;
 
     transition-duration: 0.2s;
-    padding: 0.8em;
 }
 
 a {
@@ -145,10 +146,6 @@ div {
     }
 }
 
-.extraPageHeader {
-    grid-column: 6 / span 2;
-}
-
 .metaInfo {
     display: flex;
     flex-direction: row;
@@ -159,6 +156,40 @@ div {
     align-self: start;
     margin: 0px;
     margin-top: 0em;
+}
+
+.extraPageHeader {
+    grid-column: 6 / span 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: right;
+
+    align-self: end;
+    justify-content: end;
+    margin: 0px;
+
+    .altBg {
+        color: var(--white);
+        border-color: var(--white);
+    }
+    .extraTitle {
+        font-size: 3em;
+        font-weight: 500;
+        flex-basis: 100%;
+        line-height: 0%;
+        margin-top: 1em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .tag {
+        margin-bottom: 0em;
+    }
+
+    p {
+        line-height: 100%;
+    }
 }
 
 .infoTitle {
@@ -175,13 +206,24 @@ div {
 .subTitle {
     grid-column: span 3;
 
-    align-self: auto;
+    font-size: 16px;
+
     margin: 0px;
     margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .borderBlue {
     border-radius: 20px;
     border: solid 0.5em var(--blue);
+}
+
+.pageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+    }
 }

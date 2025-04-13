@@ -1,17 +1,17 @@
 const buttons = document.querySelectorAll(".viewModeButton");
-const targetElements = document.querySelectorAll("#timelineView"); // Selects all elements with the ID
+const timelineElements = document.querySelectorAll("#timelineView");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+    if (button.classList.contains("viewModeActive")) return;
+
     buttons.forEach((btn) => btn.classList.remove("viewModeActive"));
     button.classList.add("viewModeActive");
 
-    targetElements.forEach((element) => {
-      if (element.classList.contains("timelineHidden")) {
-        element.classList.remove("timelineHidden"); // Remove class
-      } else {
-        element.classList.add("timelineHidden"); // Add class
-      }
-    });
+    if (button.id === "timelineButton") {
+      timelineElements.forEach((el) => el.classList.remove("timelineHidden"));
+    } else if (button.id === "selectButton") {
+      timelineElements.forEach((el) => el.classList.add("timelineHidden"));
+    }
   });
 });

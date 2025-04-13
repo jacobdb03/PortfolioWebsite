@@ -1,6 +1,8 @@
 const cursor = document.querySelector(".cursorClickBlob");
 const links = document.querySelectorAll("a:not(#timelineView)");
-const alt = document.querySelectorAll(".blueBg, .titleDiv, nav");
+const alt = document.querySelectorAll(
+  ".blueBg, .titleDiv, nav, .viewModeButton",
+);
 
 // Update cursor position
 window.addEventListener("mousemove", (e) => {

@@ -88,13 +88,14 @@
 
 .middle {
     grid-column: 2 / span 5;
+    text-align: center;
 }
 
 /* ---- Layout options: A variety of options to layout the pages ---- */
 .fullWidth {
     grid-column: 1 / span 7;
 
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 

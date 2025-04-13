@@ -301,10 +301,18 @@ nav:hover {
 
     margin-right: 1em;
 
+    margin-top: 1em;
+
+    margin-bottom: 1em;
+
     color: var(--blue);
     line-height: 100%;
 
     z-index: 1;
+
+    a {
+        font-weight: 900;
+    }
 }
 
 .tagLink {
@@ -331,6 +339,21 @@ nav:hover {
     margin-bottom: 0.5em;
 
     color: var(--black);
+}
+
+.tagBig {
+    font-size: 5em;
+    color: var(--white);
+
+    border-radius: 100px;
+
+    margin: 0em;
+
+    border: 2px solid var(--white);
+
+    padding: 0.4em;
+    text-align: center;
+    align-self: center;
 }
 
 /*---- Info box colourful border gradient ----*/
@@ -568,6 +591,21 @@ nav:hover {
     transition-duration: 0.75s;
 }
 
+.thumbnailTall {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 9 / 10;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
 .thumbnailLong {
     border-radius: 1.5vw;
     /*border: var(--borderWidth) solid var(--white);*/
@@ -575,7 +613,7 @@ nav:hover {
     object-fit: cover;
 
     width: 100%;
-    aspect-ratio: 21 / 9;
+    aspect-ratio: 39 / 16;
 
     opacity: 1;
 
