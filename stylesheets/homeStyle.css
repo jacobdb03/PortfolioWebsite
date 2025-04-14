@@ -88,7 +88,8 @@ a {
     grid-column: span 2;
     color: var(--white);
 
-    font-size: 8em;
+    font-weight: 600;
+    font-size: 7em;
     text-align: left;
 }
 
