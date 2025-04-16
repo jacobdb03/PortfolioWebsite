@@ -1,73 +1,46 @@
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY + window.innerHeight;
-  const documentHeight = document.documentElement.scrollHeight;
-  const navbar = document.querySelector("nav");
-  const expandContent = document.querySelector(".expandableFooter");
-  const pageContent = document.querySelectorAll(
-    "body > *:not(.expandableFooter):not(nav):not(.cursorClickBlob)",
-  ); // Exclude footer & navbar
-
-  if (scrollPosition >= documentHeight) {
-    navbar.classList.add("expandedFooter");
-    expandContent.style.pointerEvents = "auto"; // Enable footer buttons
-
-    // Apply blur effect only to elements that are NOT expandableFooter
-    pageContent.forEach((element) => {
-      element.style.filter = "blur(3px)";
-    });
-  }
-
-  if (
-    navbar.classList.contains("expandedFooter") &&
-    window.scrollY < lastScrollY
-  ) {
-    navbar.classList.remove("expandedFooter");
-    expandContent.style.pointerEvents = "none"; // Disable footer buttons
-
-    // Remove blur effect
-    pageContent.forEach((element) => {
-      element.style.filter = "none";
-    });
-  }
-
-  lastScrollY = window.scrollY;
-});
-
 let lastScrollY = window.scrollY;
 
-function checkScroll() {
+const navbar = document.querySelector("nav");
+const expandContent = document.querySelector(".expandableFooter");
+const pageContent = document.querySelectorAll(
+  "body > *:not(.expandableFooter):not(nav):not(.cursorClickBlob)",
+);
+
+function handleScroll() {
   const scrollPosition = window.scrollY + window.innerHeight;
   const documentHeight = document.documentElement.scrollHeight;
-  const navbar = document.querySelector("nav");
-  const expandContent = document.querySelector(".expandableFooter");
-  const pageContent = document.querySelectorAll(
-    "body > *:not(.expandableFooter):not(nav):not(.cursorClickBlob)",
-  );
+  const scrollTop = window.scrollY;
 
-  if (scrollPosition >= documentHeight) {
-    navbar.classList.add("expandedFooter");
-    expandContent.style.pointerEvents = "auto"; // Enable footer buttons
+  // Check if scrolled to the bottom
+  const atBottom = scrollPosition >= documentHeight;
 
-    // Apply blur effect only to elements that are NOT expandableFooter
-    pageContent.forEach((element) => {
-      element.style.filter = "blur(3px)";
-    });
+  // Apply navbar width change based on scroll position
+  if (scrollTop >= window.innerHeight * 0.8) {
+    navbar.style.width = "50vw"; // Set width to 60vw if scrolled more than 20vh
   } else {
-    // Ensure the footer retracts if the user is no longer at the bottom
-    navbar.classList.remove("expandedFooter");
-    expandContent.style.pointerEvents = "none";
-
-    // Remove blur effect
-    pageContent.forEach((element) => {
-      element.style.filter = "none";
-    });
+    navbar.style.width = "90vw"; // Reset to 90vw if at the top
   }
 
-  lastScrollY = window.scrollY;
+  if (atBottom) {
+    navbar.classList.add("expandedFooter");
+    navbar.style.width = "90vw"; // Reset navbar width back to 90vw when at the bottom
+    expandContent.style.pointerEvents = "auto";
+    applyBlurEffect(true); // Apply blur when at the bottom
+  } else {
+    navbar.classList.remove("expandedFooter");
+    expandContent.style.pointerEvents = "none";
+    applyBlurEffect(false); // Remove blur when not at the bottom
+  }
+
+  lastScrollY = scrollTop;
 }
 
-// Attach the scroll event listener
-window.addEventListener("scroll", checkScroll);
+function applyBlurEffect(blur) {
+  pageContent.forEach((element) => {
+    element.style.filter = blur ? "blur(3px)" : "none";
+  });
+}
 
-// Run the function immediately in case the page is reloaded while at the bottom
-document.addEventListener("DOMContentLoaded", checkScroll);
+// Attach event listeners
+window.addEventListener("scroll", handleScroll);
+document.addEventListener("DOMContentLoaded", handleScroll);

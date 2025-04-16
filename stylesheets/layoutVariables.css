@@ -205,6 +205,14 @@
     object-position: center;
 }
 
+.ratio9x21 {
+    aspect-ratio: 9 / 21;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
 .ratio1x1 {
     aspect-ratio: 1 / 1;
     width: 100%;

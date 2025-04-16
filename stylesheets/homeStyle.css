@@ -106,20 +106,6 @@ a {
     margin-bottom: 1em;
 }
 
-.titleImg {
-    grid-column: span 7;
-
-    max-width: 1280px;
-
-    margin-left: -1em;
-
-    width: 60%;
-
-    justify-self: start;
-
-    z-index: 2;
-}
-
 .titleDiv {
     grid-column: span 7;
 
@@ -132,6 +118,14 @@ a {
 
     margin: 0em;
     padding: 0em;
+
+    img {
+        max-width: 1280px;
+        margin-left: 0em;
+        width: 60%;
+        justify-self: start;
+        z-index: 2;
+    }
 }
 
 /* ---- Stuff for portfolio page navigation  currently offline  ----*/
@@ -193,6 +187,22 @@ a {
     top: 0;
     width: 100vw;
     height: 100vh;
+
+    background-color: var(--blue);
+
+    transition:
+        background 0.5s ease-in-out,
+        opacity 0s ease-in-out;
+}
+
+.blueFolioBg {
+    position: absolute;
+    z-index: 0;
+
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50vh;
 
     background-color: var(--blue);
 
@@ -263,12 +273,19 @@ a {
     color: var(--white);
 }
 
-#timelineView {
-}
+.miniFolioDiv {
+    grid-column: 1 / span 6;
 
-.timelineHidden {
-    /*display: none;*/
-}
+    margin-top: 6lvh;
 
-#selectedView {
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin-top: -1.5em;
+        font-size: 22px;
+        font-weight: 500;
+        width: 50%;
+    }
 }
