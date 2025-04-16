@@ -38,6 +38,8 @@ a {
 
 /* ---- Classes for nav bar design ---- */
 nav {
+    display: grid;
+
     position: fixed;
     z-index: 1;
     top: 2em;
@@ -57,11 +59,8 @@ nav {
 
     padding: 0em;
     margin: 0em;
-    margin-left: -3.5em;
-    margin-right: -3.5em;
 
     transition-duration: 0.3s;
-    width: 90vw;
 }
 
 nav:hover {

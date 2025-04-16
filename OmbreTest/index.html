@@ -14,25 +14,93 @@
         />
 
         <!--My CSS documents -->
-        <link rel="stylesheet" href="./stylesheet.css" />
+        <link rel="stylesheet" href="./defaults/stylesheet.css" />
 
         <!--p5 documents -->
 
-        <script src="./p5.js" defer></script>
-        <script
+        <script src="./defaults/p5.js" defer></script>
+        <!--<script
             src="https://cdn.jsdelivr.net/npm/p5.capture@1.4.1/dist/p5.capture.umd.min.js"
             defer
-        ></script>
+        ></script>-->
     </head>
 
     <body>
-        <script src="p5CaptureOptions.js" defer></script>
+        <script src="./defaults/p5CaptureOptions.js" defer></script>
 
-        <!--<script src="./gridHalftone.js" defer></script>-->
-        <!--<script src="./test.js" defer></script>-->
-        <!--<script src="./logoHalftoneOld.js" defer></script>-->
-        <!--<script src="./logoHalftoneScroll.js" defer></script>-->
-        <!--<script src="./logoHalftoneTime.js" defer></script>-->
-        <script src="./logoFullTime.js" defer></script>
+        <label
+            for="getImgButton"
+            style="
+                font-family: sans-serif;
+                text-decoration: none;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                border-radius: 50px;
+                padding: 20px;
+                background-color: #234dad;
+                width: 120px;
+                color: white;
+                text-align: center;
+            "
+            >Pick Img
+            <input
+                id="getImgButton"
+                name="getImgButton"
+                type="file"
+                style="display: none"
+                accept="image/*"
+        /></label>
+
+        <label
+            for="playPauseButton"
+            style="
+                font-family: sans-serif;
+                text-decoration: none;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                border-radius: 50px;
+                padding: 20px;
+                background-color: #234dad;
+                width: 120px;
+                color: white;
+                text-align: center;
+            "
+            >Play/Pause
+            <input id="playPauseButton" name="playPauseButton" type="checkbox"
+        /></label>
+
+        <label
+            for="animationSlider"
+            style="
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 300px;
+                display: flex;
+                align-items: center;
+            "
+        >
+            <input
+                type="range"
+                id="animationSlider"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+                style="width: 100%"
+            />
+        </label>
+
+        <!--<script src="./code/01_gridHalftone.js" defer></script>-->
+        <!--<script src="./code/02_test.js" defer></script>-->
+        <!--<script src="./code/03_logoHalftoneOld.js" defer></script>-->
+        <!--<script src="./code/04_logoHalftoneScroll.js" defer></script>-->
+        <!--<script src="./code/05_time_logomark.js" defer></script>-->
+        <!--<script src="./code/06_time_wordmark.js" defer></script>-->
+
+        <script src="./code/07_customControl.js" defer></script>
     </body>
 </html>
