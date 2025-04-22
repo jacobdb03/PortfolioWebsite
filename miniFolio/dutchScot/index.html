@@ -56,6 +56,8 @@
         <!--My CSS documentS -->
         <link rel="stylesheet" href="/stylesheets/layoutVariables.css" />
         <link rel="stylesheet" href="/stylesheets/homeStyle.css" />
+        <link rel="stylesheet" href="/stylesheets/pageStyle.css" />
+
         <link rel="stylesheet" href="/stylesheets/constantsStyle.css" />
 
         <!--My JS documentS -->
@@ -110,23 +112,67 @@
 
         <!-- Showreel Section -->
 
-        <div style="height: 10lvh"></div>
+        <div class="blueBg"></div>
 
-        <div class="miniFolioDiv">
-            <img src="/assets/JacobBryant LongBlue.svg" />
-            <!--<p>
-                I craft brand identities with character, insight,and energy —
-                always bringing optimism and positivity to my process.
-            </p>-->
+        <div class="titleDiv" style="height: 95lvh">
+            <img class="titleImg" src="/assets/JacobBryantWhite.svg" />
+
+            <h2
+                class="titleText"
+                style="position: absolute; font-size: 40px; left: 81px"
+            >
+                Mini Folio.
+            </h2>
         </div>
 
         <!-- Work Section -->
 
         <!-- SHAKEN DESIGN WORK -->
-        <a class="gap4 doubleCol" href="/work/shakenStirred/">
+        <div class="gap6 pageSection fullWidth">
+            <h1>Shaken & Stirred.</h1>
+            <p>
+                Shakken & Stirred is a sophisticated, vibrant but playful
+                cocktail tasting event.<br />The event is planned to happen at
+                Junkyard Market in Norwich in summer 2025.
+            </p>
+        </div>
+
+        <div class="imgDiv doubleCol gap4">
+            <img
+                class="ratio2x3"
+                src="/work/shakenStirred/assets/Poster 3.jpeg"
+                alt="Poster 2"
+            />
+            <img
+                class="ratio2x3"
+                src="/work/shakenStirred/assets/Poster 1.jpeg"
+                alt="Poster 1"
+            />
+        </div>
+        <img
+            class="gap4 tripleCol customAspect"
+            style="aspect-ratio: 14.5 / 29"
+            src="/work/shakenStirred/assets/posterMockup.jpeg"
+        />
+        <div class="imgDiv doubleCol gap4">
+            <img
+                class="ratio2x3"
+                src="/work/shakenStirred/assets/Poster 4.jpeg"
+                alt="Poster 4"
+            />
+
+            <img
+                class="ratio2x3"
+                src="/work/shakenStirred/assets/Poster 5.jpeg"
+                alt="Poster 5"
+            />
+        </div>
+
+        <p class="doubleCol"></p>
+        <a class="gap4 tripleCol" href="/work/shakenStirred/">
             <div class="thumbnailFolder">
                 <img
-                    class="thumbnailSmall"
+                    class="thumbnail"
                     src="/thumbnails/ShakenSoon.png"
                     alt="Shaken & Stirred Thumbnail"
                 />
@@ -134,11 +180,73 @@
                 <div class="thumbnailCaption">
                     <h3>Shaken & Stirred.</h3>
                     <p class="tag">Event Identity</p>
-                    <p class="tag">Freelance Work</p>
                 </div>
             </div>
         </a>
 
+        <!-- SWISS-ENGINEERED NOTHING PROJECT -->
+
+        <div class="gap6 pageSection fullWidth">
+            <h1>Swiss-Engineered Nothing.</h1>
+            <p>
+                A minimalist, human-centred campaign answering the On brief for
+                D&AD<br />Newblood 2025 that asked to tell On's story through
+                movement to a new generation.
+            </p>
+        </div>
+
+        <video
+            class="gap4 lFocus ratio16x9"
+            poster="/work/engineeredNothing/assets/PosterThumb.jpeg"
+            muted
+            autoplay
+            loop
+            preload="auto"
+            playsinline
+        >
+            <source
+                src="/work/engineeredNothing/assets/postersSlide.mp4"
+                type="video/mp4"
+            />
+            Poster animation
+        </video>
+
+        <div class="gap4 imgDiv doubleCol">
+            <img
+                class="fullHeight"
+                src="/work/engineeredNothing/assets/WomenScreenMockup.jpeg"
+                alt="Women Screen Mockup"
+            />
+        </div>
+
+        <div class="gap3 imgDiv doubleCol">
+            <video
+                class="fullHeight"
+                style="object-position: 5% 0%"
+                poster="/work/engineeredNothing/assets/auraEffect.jpeg"
+                muted
+                autoplay
+                loop
+                preload
+                playsinline
+            >
+                <source
+                    src="/work/engineeredNothing/assets/socialsSlide.mp4"
+                    type="video/mp4"
+                />
+                Social Media Animation
+            </video>
+        </div>
+
+        <video class="gap3 rFocus" muted autoplay loop preload playsinline>
+            <source
+                src="/work/engineeredNothing/assets/websiteRecording.mp4"
+                type="video/mp4"
+            />
+            Website Recording Video
+        </video>
+
+        <p class="doubleCol"></p>
         <a class="gap4 tripleCol" href="/work/engineeredNothing/">
             <div class="thumbnailFolder">
                 <img
@@ -156,26 +264,86 @@
             </div>
         </a>
 
-        <!-- ALTERNATIVE GAMES IDENTITY PROJECT -->
+        <!-- ALTERNATIVE GAMES PROJECT -->
 
-        <a class="gap4 doubleCol" href="/work/alternativeGames/">
+        <div class="gap6 pageSection fullWidth">
+            <h1>Alternative Games.</h1>
+            <p>
+                A brand identity system allowing communities to unite over a
+                collection of nonsensical events.
+            </p>
+        </div>
+
+        <div class="gap4 imgDiv tripleCol">
+            <img
+                class="fullHeight"
+                src="/work/alternativeGames/assets/poster1.jpeg"
+                alt="mockup of the posters"
+            />
+        </div>
+
+        <img
+            class="gap4 quadCol"
+            src="/work/alternativeGames/assets/billboard2.jpeg"
+            alt="mockup of the posters"
+        />
+
+        <div class="imgDiv gap3 rSub">
+            <img
+                class="fullHeight"
+                src="/work/alternativeGames/assets/social1.jpeg"
+                alt="mockup of the posters"
+            />
+        </div>
+
+        <img
+            class="gap3 rFocus"
+            src="/work/alternativeGames/assets/onlineMockup5.jpeg"
+            alt="mockup of the posters"
+        />
+
+        <p class="doubleCol"></p>
+        <a class="gap4 tripleCol" href="/work/alternativeGames/">
             <div class="thumbnailFolder">
-                <img
-                    class="thumbnailSmall"
-                    src="/thumbnails/Alt Spiral.jpg"
-                    alt="Alternative Games Thumbnail"
-                    style="object-position: 47% 50%"
-                />
+                <video
+                    poster="/thumbnails/Alt Spiral.jpg"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    playsinline
+                >
+                    <source
+                        src="/thumbnails/alternativeGames_thumb_animated.mp4"
+                        type="video/mp4"
+                    />
+                    Poster animation
+                </video>
 
                 <div class="thumbnailCaption">
                     <h3>Alternative Games.</h3>
                     <p class="tag">Event Identity</p>
-                    <p class="tag">University Project</p>
                 </div>
             </div>
         </a>
 
-        <a class="gap1 defaultButton" href="/">My Full Portfolio</a>
+        <!-- MY PORTFOLIO LINK -->
+
+        <a class="gap4 middle" href="https://jacobbryant.design/">
+            <div class="thumbnailFolder">
+                <img
+                    class="thumbnail"
+                    src="/thumbnails/MainWebsiteThumbnail.png"
+                    alt="Engineered Nothing Thumbnail"
+                    style="object-position: bottom"
+                />
+
+                <div class="thumbnailCaption">
+                    <h3>Have a look at the rest of my work!</h3>
+                    <p class="tag">JacobBryant.Design</p>
+                </div>
+            </div>
+        </a>
 
         <!-- Page Elements -->
 

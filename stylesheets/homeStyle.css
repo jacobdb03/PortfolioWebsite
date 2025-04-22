@@ -85,11 +85,11 @@ a {
 }
 
 .titleText {
-    grid-column: span 2;
     color: var(--white);
+    grid-column: span 7;
 
     font-weight: 600;
-    font-size: 7em;
+    font-size: 7.8em;
     text-align: left;
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 .titleDiv {
-    grid-column: span 7;
+    grid-column: span 6;
 
     z-index: 2;
 

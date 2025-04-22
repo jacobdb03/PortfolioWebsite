@@ -346,13 +346,15 @@ nav:hover {
 
     border-radius: 100px;
 
-    margin: 0em;
-
     border: 2px solid var(--white);
 
-    padding: 0.4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+
     text-align: center;
     align-self: center;
+
+    z-index: 1;
 }
 
 /*---- Info box colourful border gradient ----*/

@@ -15,7 +15,7 @@ let ombreLogo;
 let sliderValue = 0;
 
 let runSave = 1;
-let chosenLetter = "Éé";
+let chosenLetter = "Ii";
 let saveValue = 1;
 
 //Svg variable
