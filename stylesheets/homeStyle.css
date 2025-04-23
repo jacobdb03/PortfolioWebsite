@@ -94,16 +94,17 @@ a {
 }
 
 .titleSubText {
-    grid-column: span 3;
+    grid-column: 6 / span 2;
     color: var(--white);
 
     font-size: 1.8em;
 
-    text-align: right;
+    text-align: left;
 
-    margin-left: 20px;
-    margin-top: -3.5em;
-    margin-bottom: 1em;
+    position: absolute;
+    top: 75lvh;
+
+    z-index: 2;
 }
 
 .titleDiv {
