@@ -218,7 +218,17 @@ div {
 }
 
 .pageSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+
+    p {
+        margin-top: 0.4em;
+        padding-left: 0em;
+        font-weight: 400;
+        font-size: 20px;
+        width: 40%;
+        line-height: 130%;
+    }
+    h1 {
+        font-size: 70px;
+    }
 }
