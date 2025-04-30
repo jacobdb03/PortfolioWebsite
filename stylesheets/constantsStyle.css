@@ -32,6 +32,12 @@ body:not(.pageTease) {
     }*/
 }
 
+body.addBlur > *:not(.expandableFooter):not(nav):not(.cursorClickBlob) {
+    transition: filter 1s ease;
+    filter: blur(3px);
+    pointer-events: none;
+}
+
 a {
     cursor: none;
 }
@@ -43,10 +49,13 @@ nav {
     position: fixed;
     z-index: 1;
     top: 2em;
-    justify-self: center;
+    left: 0em;
 
     height: 6em;
     z-index: 10;
+
+    width: 90vw;
+    transform: translate(5vw);
 
     /*Add some blur to the background*/
 
@@ -123,6 +132,16 @@ nav:hover {
     }
 }
 
+nav.nav-shrink {
+    width: 50vw;
+    transform: translate(25vw);
+}
+
+nav.nav-expand {
+    width: 90vw;
+    transform: translate(5vw);
+}
+
 .expandableFooter {
     opacity: 0;
 
@@ -135,11 +154,11 @@ nav:hover {
     flex-wrap: wrap;
     flex-direction: row;
 
-    width: 82vw;
-
     margin: 5em;
 
     transition-delay: 0s;
+
+    width: 82vw;
 
     .footerLeft {
         width: 50em;
@@ -202,10 +221,10 @@ nav:hover {
 
 .expandedFooter {
     height: 80vh;
-    width: 90vw;
     border-radius: 2em;
 
     margin: 5em;
+    margin-left: 0em;
 
     transition-duration: 0.5s;
 
@@ -226,7 +245,7 @@ nav:hover {
             color: var(--grey);
 
             margin-left: 0em;
-            width: auto;
+            width: 6vw;
 
             margin-left: 2em;
 
@@ -235,6 +254,7 @@ nav:hover {
 
         a:hover {
             font-weight: 900;
+
             transition-duration: 0.1s;
         }
 
@@ -355,6 +375,9 @@ nav:hover {
     align-self: center;
 
     z-index: 1;
+
+    position: sticky;
+    bottom: 1em;
 }
 
 /*---- Info box colourful border gradient ----*/

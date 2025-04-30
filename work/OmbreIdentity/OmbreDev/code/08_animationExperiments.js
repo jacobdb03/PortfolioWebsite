@@ -9,15 +9,15 @@ let timeline = [];
 let globalFrame = 0;
 let pause;
 
-const pixelSample = 2;
+const pixelSample = 1;
 const gridSpace = 15;
 
 function preload() {
-  frame1 = loadImage("./assets/Draft1/Frame1.svg");
-  frame2 = loadImage("./assets/Draft1/Frame2.svg");
-  frame3 = loadImage("./assets/Draft1/Frame3.svg");
-  frame4 = loadImage("./assets/Draft1/Frame4.svg");
-  frame5 = loadImage("./assets/Draft1/Frame5.svg");
+  frame1 = loadImage("./assets/animationDraft1/Frame1.svg");
+  frame2 = loadImage("./assets/animationDraft1/Frame2.svg");
+  frame3 = loadImage("./assets/animationDraft1/Frame3.svg");
+  frame4 = loadImage("./assets/animationDraft1/Frame4.svg");
+  frame5 = loadImage("./assets/animationDraft1/Frame5.svg");
 }
 
 function setup() {

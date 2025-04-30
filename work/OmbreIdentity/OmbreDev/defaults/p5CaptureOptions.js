@@ -1,6 +1,7 @@
 P5Capture.setDefaultOptions({
-  format: "png",
-  framerate: 30,
-  bitrate: 8000,
-  width: 3840,
+  format: "mp4",
+  framerate: 60,
+  height: 2160,
+  quality: 1,
+  bitrate: 100000,
 });

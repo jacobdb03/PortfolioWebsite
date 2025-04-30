@@ -11,34 +11,32 @@ function handleScroll() {
   const documentHeight = document.documentElement.scrollHeight;
   const scrollTop = window.scrollY;
 
-  // Check if scrolled to the bottom
-  const atBottom = scrollPosition >= documentHeight;
+  const atBottom =
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight - 2;
 
   // Apply navbar width change based on scroll position
   if (scrollTop >= window.innerHeight * 0.8) {
-    navbar.style.width = "50vw"; // Set width to 60vw if scrolled more than 20vh
+    navbar.classList.add("nav-shrink");
+    navbar.classList.remove("nav-expand");
   } else {
-    navbar.style.width = "90vw"; // Reset to 90vw if at the top
+    navbar.classList.add("nav-expand");
+    navbar.classList.remove("nav-shrink");
   }
 
   if (atBottom) {
     navbar.classList.add("expandedFooter");
-    navbar.style.width = "90vw"; // Reset navbar width back to 90vw when at the bottom
     expandContent.style.pointerEvents = "auto";
-    applyBlurEffect(true); // Apply blur when at the bottom
+    document.body.classList.add("addBlur");
+    navbar.classList.add("nav-expand");
+    navbar.classList.remove("nav-shrink");
   } else {
     navbar.classList.remove("expandedFooter");
     expandContent.style.pointerEvents = "none";
-    applyBlurEffect(false); // Remove blur when not at the bottom
+    document.body.classList.remove("addBlur");
   }
 
   lastScrollY = scrollTop;
-}
-
-function applyBlurEffect(blur) {
-  pageContent.forEach((element) => {
-    element.style.filter = blur ? "blur(3px)" : "none";
-  });
 }
 
 // Attach event listeners

@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBlack.otf) format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBold.otf) format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProHeavy.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProMedium.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProRegular.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBook.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProLight.otf) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProThin.otf) format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OmbreSans";
+    src: url(font/OmbreSansVF.ttf) format("truetype");
+    font-style: normal;
+}
+
+:root {
+    --black: #0d0c1d;
+    --white: #f8eee6;
+    --orange: #ff6702;
+    --blue: #c3d5f2;
+    --lightBlue: #f0f3ff;
+    --darkWhite: #f1dac4;
+}
+
+body {
+    display: flex;
+
+    margin: 0px;
+
+    cursor: default;
+
+    background-color: var(--white);
+}
+
+h1 {
+    position: absolute;
+    bottom: 0px;
+
+    font-family: "OmbreSans", sans-serif;
+    font-weight: 900;
+    color: var(--black);
+
+    font-size: 29vw;
+    line-height: 80%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: "FilsonPro", sans-serif;
+    font-weight: 600;
+
+    text-decoration: none;
+    color: var(--black);
+
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a:first-of-type {
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    width: calc(100vw - 80px);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's above other content */
+}
+
+.blackBg {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    height: 100vh;
+    z-index: 2;
+}
+
+.webPageContent {
+    font-family: "FilsonPro";
+    font-weight: 400;
+    margin: 10vw;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    color: var(--white);
+
+    position: absolute;
+    top: 100vh;
+    z-index: 3;
+
+    margin: 10vw;
+
+    p {
+        grid-column: span 2;
+    }
+}
