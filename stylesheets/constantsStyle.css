@@ -360,26 +360,6 @@ nav.nav-expand {
     color: var(--black);
 }
 
-.tagBig {
-    font-size: 5em;
-    color: var(--white);
-
-    border-radius: 100px;
-
-    border: 2px solid var(--white);
-
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-
-    text-align: center;
-    align-self: center;
-
-    z-index: 1;
-
-    position: sticky;
-    bottom: 1em;
-}
-
 /*---- Info box colourful border gradient ----*/
 
 .infoBox {

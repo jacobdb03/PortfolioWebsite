@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Title Banner Stuff -->
+        <title>Conductor</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
+
+        <!-- Meta Info -->
+        <meta charset="utf-8" />
+
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
+
+        <!-- Logic and styles -->
+        <link rel="stylesheet" href="conductorStyles.css" />
+
+        <!-- Locomotive Scroll CSS -->
+    </head>
+
+    <body>
+        <div class="startBar">
+            <img src="assets/curlyBrace.svg" />
+        </div>
+        <!-- <div class="gridBg" style="top: 1vh"></div>
+        <div class="gridBg" style="top: 25vh"></div>
+        <div class="gridBg" style="top: 50vh"></div>
+        <div class="gridBg" style="top: 75vh"></div>
+        <div class="gridBg" style="top: 99vh"></div> -->
+
+        <div class="gridBg" style="top: 10vh"></div>
+        <div class="gridBg" style="top: 15vh"></div>
+        <div class="gridBg" style="top: 20vh"></div>
+        <div class="gridBg" style="top: 25vh"></div>
+        <div class="gridBg" style="top: 30vh"></div>
+
+        <div class="gridBg" style="top: 70vh"></div>
+        <div class="gridBg" style="top: 75vh"></div>
+        <div class="gridBg" style="top: 80vh"></div>
+        <div class="gridBg" style="top: 85vh"></div>
+        <div class="gridBg" style="top: 90vh"></div>
+
+        <div class="webPageContent" id="scrollGroup">
+            <img class="logoImg" src="assets/FullWordmark.png" />
+
+            <div class="sectionContent">
+                <div class="textBox1">
+                    <h1>Orchestrating Unforgettable Train&nbsp;Journeys.</h1>
+                    <p>
+                        Experience the perfect harmony of music and travel with
+                        Conductor - where the timeless elegance of orchestral
+                        performances meets the rhythm of the rails. We transform
+                        your train journey into a moving concert hall,
+                        delivering immersive live and curated orchestral
+                        experiences on board.
+                    </p>
+                    <p>
+                        Why Choose Conductor? Seamless Symphony on the Move
+                        Enjoy world-class orchestral performances perfectly
+                        timed to your journey, creating a soundtrack that
+                        complements every mile. Curated Musical Journeys From
+                        classical masterpieces to contemporary scores, our
+                        expert curators craft playlists and live sets that
+                        elevate your travel experience. Comfort Meets Culture
+                        Relax in beautifully designed carriages equipped with
+                        premium sound systems and elegant ambiance inspired by
+                        concert halls. Engage and Discover Join exclusive
+                        pre-journey talks, meet musicians, and explore the
+                        stories behind the music as you travel.
+                    </p>
+                </div>
+                <img class="mainImg" src="assets/placeHolder.jpg" />
+            </div>
+
+            <div class="sectionContent">
+                <div class="textBox1">
+                    <h1>Orchestrating Unforgettable Train&nbsp;Journeys.</h1>
+                    <p>adfcvasiddbasuobduoasdboausbd</p>
+                    <p>
+                        Why Choose Conductor? Seamless Symphony on the Move
+                        Enjoy world-class orchestral performances perfectly
+                        timed to your journey, creating a soundtrack that
+                        complements every mile. Curated Musical Journeys From
+                        classical masterpieces to contemporary scores, our
+                        expert curators craft playlists and live sets that
+                        elevate your travel experience. Comfort Meets Culture
+                        Relax in beautifully designed carriages equipped with
+                        premium sound systems and elegant ambiance inspired by
+                        concert halls. Engage and Discover Join exclusive
+                        pre-journey talks, meet musicians, and explore the
+                        stories behind the music as you travel.
+                    </p>
+                </div>
+                <img class="mainImg" src="assets/placeHolder.jpg" />
+            </div>
+        </div>
+
+        <script>
+            window.onload = () => {
+                document.onwheel = customScrollFunction;
+
+                function customScrollFunction(event) {
+                    let deltaY = event.deltaY;
+                    let deltaYSign = Math.sign(deltaY);
+
+                    if (deltaYSign == -1) {
+                        document.getElementById("scrollGroup").scrollBy({
+                            top: 0,
+                            left: -20,
+                            behavior: "auto",
+                        });
+                    } else {
+                        document.getElementById("scrollGroup").scrollBy({
+                            top: 0,
+                            left: 20,
+                            behavior: "auto",
+                        });
+                    }
+                }
+            };
+        </script>
+    </body>
+</html>

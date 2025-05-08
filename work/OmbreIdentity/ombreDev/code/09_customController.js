@@ -5,7 +5,7 @@ let w = window.innerWidth;
 let h = window.innerHeight;
 
 // Halftone Scaling variables
-let defScale = 12;
+let defScale = 15;
 let circleScale = defScale;
 let defSpace = 8;
 let gridSpace = defSpace;
@@ -23,20 +23,21 @@ const backgroundColour = "#f8eee6";
 function centreImage() {
   if (!packagingImage) return;
 
-  cols = floor(packagingImage.width / pixelSample);
-  rows = floor(packagingImage.height / pixelSample);
+  cols = packagingImage.width / pixelSample;
+  rows = packagingImage.height / pixelSample;
 
-  centreX = round(w / 2 - (cols * gridSpace) / 2);
-  centreY = round(h / 2 - (rows * gridSpace) / 2);
+  centreX = w / 2 - (cols * gridSpace) / 2;
+  centreY = h / 2 - (rows * gridSpace) / 2;
 }
+
 function drawHalftone() {
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
       let a = alpha(packagingImage.get(i * pixelSample, j * pixelSample));
 
       // Set a threshold for alpha value (e.g., 50)
-      if (a > 70) {
-        let scaleFactor = map(a, 80, 255, 0, 1);
+      if (a > 0) {
+        let scaleFactor = map(a, 10, 255, 0, 1);
 
         // Draw the circle only if alpha exceeds the threshold
         circle(
@@ -87,11 +88,11 @@ function setup() {
   // Pixel grid control slider
   const slider = document.getElementById("sizeSlider");
   slider.addEventListener("input", () => {
-    circleScale = map(slider.value, 0, 100, defScale * 1, defScale * 5);
-    gridSpace = map(slider.value, 0, 100, defSpace * 1, defSpace * 5);
-    pixelSample = map(slider.value, 0, 100, defSample * 1, defSample * 6);
+    circleScale = map(slider.value, 0, 100, defScale * 0.1, defScale * 8);
+    gridSpace = map(slider.value, 0, 100, defSpace * 2, defSpace * 8);
+    pixelSample = map(slider.value, 0, 100, defSample * 2, defSample * 9.35);
 
-    redraw();
+    centreImage();
   });
 }
 
@@ -107,7 +108,6 @@ function draw() {
   noStroke();
   fill(halftoneColour);
 
-  centreImage();
   drawHalftone();
 }
 
