@@ -123,11 +123,13 @@ p {
     z-index: 1;
 
     h1 {
-        margin-top: 2vh;
+        font-size: 5vw;
+        line-height: 105%;
+        margin-bottom: 3vh;
     }
     p {
-        margin-top: 6vh;
         margin-left: 1.5vh;
+        width: 35vw;
     }
 }
 
@@ -146,7 +148,6 @@ p {
     }
     p {
         margin-top: 0vh;
-        margin-left: 5vh;
         width: 30vw;
     }
 }
@@ -180,11 +181,11 @@ p {
 }
 
 .mainImg {
-    width: 40vw;
+    width: 60vw;
     height: 50vh;
     object-fit: cover;
 
-    margin-left: 10vw;
+    margin-left: 0vw;
     margin-right: 10vw;
 
     z-index: 1;
@@ -196,7 +197,6 @@ p {
     object-fit: cover;
 
     margin-left: 0vw;
-    margin-right: 10vw;
 
     z-index: 1;
 }
