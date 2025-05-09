@@ -20,16 +20,16 @@
     </head>
 
     <body>
-        <div class="startBar">
+        <!-- <div class="startBar">
             <img src="assets/curlyBrace.svg" />
-        </div>
-        <!-- <div class="gridBg" style="top: 1vh"></div>
+        </div> -->
+        <div class="gridBg" style="top: 2vh"></div>
         <div class="gridBg" style="top: 25vh"></div>
         <div class="gridBg" style="top: 50vh"></div>
         <div class="gridBg" style="top: 75vh"></div>
-        <div class="gridBg" style="top: 99vh"></div> -->
+        <div class="gridBg" style="top: 98vh"></div>
 
-        <div class="gridBg" style="top: 10vh"></div>
+        <!-- <div class="gridBg" style="top: 10vh"></div>
         <div class="gridBg" style="top: 15vh"></div>
         <div class="gridBg" style="top: 20vh"></div>
         <div class="gridBg" style="top: 25vh"></div>
@@ -39,10 +39,22 @@
         <div class="gridBg" style="top: 75vh"></div>
         <div class="gridBg" style="top: 80vh"></div>
         <div class="gridBg" style="top: 85vh"></div>
-        <div class="gridBg" style="top: 90vh"></div>
+        <div class="gridBg" style="top: 90vh"></div> -->
 
         <div class="webPageContent" id="scrollGroup">
-            <img class="logoImg" src="assets/FullWordmark.png" />
+            <img class="logoImg" src="assets/Logomark.png" />
+            <div class="navbar">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Book</a>
+            </div>
+
+            <div class="bottomBar">
+                <!-- <h3>Get on board</h3>
+                <p>tickets@conductor.co.uk</p>
+                <p>+44 20 7946 0123</p> -->
+                <img src="assets/wordmark.png" />
+            </div>
 
             <div class="sectionContent">
                 <div class="textBox1">
@@ -51,48 +63,61 @@
                         Experience the perfect harmony of music and travel with
                         Conductor - where the timeless elegance of orchestral
                         performances meets the rhythm of the rails. We transform
-                        your train journey into a moving concert hall,
-                        delivering immersive live and curated orchestral
-                        experiences on board.
-                    </p>
-                    <p>
-                        Why Choose Conductor? Seamless Symphony on the Move
-                        Enjoy world-class orchestral performances perfectly
-                        timed to your journey, creating a soundtrack that
-                        complements every mile. Curated Musical Journeys From
-                        classical masterpieces to contemporary scores, our
-                        expert curators craft playlists and live sets that
-                        elevate your travel experience. Comfort Meets Culture
-                        Relax in beautifully designed carriages equipped with
-                        premium sound systems and elegant ambiance inspired by
-                        concert halls. Engage and Discover Join exclusive
-                        pre-journey talks, meet musicians, and explore the
-                        stories behind the music as you travel.
+                        your train journey into a moving experience, delivering
+                        curated orchestral experiences and fine dining on board
+                        while we take you to some of the most essential concerts
+                        accross the UK.
                     </p>
                 </div>
-                <img class="mainImg" src="assets/placeHolder.jpg" />
-            </div>
+                <img
+                    class="mainImg"
+                    src="./assets/Train Exterior MotionBlur.jpg"
+                />
 
-            <div class="sectionContent">
-                <div class="textBox1">
-                    <h1>Orchestrating Unforgettable Train&nbsp;Journeys.</h1>
-                    <p>adfcvasiddbasuobduoasdboausbd</p>
+                <div class="textBox2">
+                    <h3>01 Get on board</h3>
                     <p>
-                        Why Choose Conductor? Seamless Symphony on the Move
-                        Enjoy world-class orchestral performances perfectly
-                        timed to your journey, creating a soundtrack that
-                        complements every mile. Curated Musical Journeys From
-                        classical masterpieces to contemporary scores, our
-                        expert curators craft playlists and live sets that
-                        elevate your travel experience. Comfort Meets Culture
-                        Relax in beautifully designed carriages equipped with
-                        premium sound systems and elegant ambiance inspired by
-                        concert halls. Engage and Discover Join exclusive
-                        pre-journey talks, meet musicians, and explore the
-                        stories behind the music as you travel.
+                        Begin your journey at the departure station, where our
+                        friendly staff welcome you and help you settle in.
+                    </p>
+                    <h3>02 Listen to music and dine</h3>
+                    <p>
+                        Relax as we curate the perfect orchestral soundtrack
+                        while we take you to your destination, while you savor
+                        delicious meals and drinks.
+                    </p>
+                    <h3>03 Arrive at the venue</h3>
+                    <p>
+                        Disembark right at your concert destination, refreshed
+                        and ready for the performance
+                    </p>
+                    <h3>04 Return home</h3>
+                    <p>
+                        After the show, simply board the train for a smooth,
+                        enjoyable ride back-no stress, just music and comfort
+                        all the way.
                     </p>
                 </div>
-                <img class="mainImg" src="assets/placeHolder.jpg" />
+                <img class="secondImg" src="assets/Conductor2.jpg" />
+
+                <div class="textBox3">
+                    <h1>Full steam ahead</h1>
+                    <p>
+                        Secure your seat on Conductor’s exclusive journeys and
+                        experience the perfect blend of travel, music, and fine
+                        dining. Choose your concert, select your preferred
+                        departure time, and reserve your spot with ease.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <a href="">Book now</a>
+                    <a href="">Get in touch</a>
+                </div>
+
+                <img class="thirdImg" src="assets/train.jpg" />
+                <p>&nbsp</p>
             </div>
         </div>
 
@@ -107,13 +132,13 @@
                     if (deltaYSign == -1) {
                         document.getElementById("scrollGroup").scrollBy({
                             top: 0,
-                            left: -20,
+                            left: -30,
                             behavior: "auto",
                         });
                     } else {
                         document.getElementById("scrollGroup").scrollBy({
                             top: 0,
-                            left: 20,
+                            left: 30,
                             behavior: "auto",
                         });
                     }
