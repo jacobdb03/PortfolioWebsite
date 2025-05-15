@@ -1,5 +1,7 @@
 /* ---- Class for body grid ---- */
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 body:not(.pageTease) {
     display: grid;
     position: relative;

@@ -20,13 +20,13 @@
 
         <script src="./defaults/p5.js" defer></script>
 
-        <script src="./code/12_animationDraft2.js" defer></script>
+        <script src="./code/09_customController.js" defer></script>
     </head>
 
     <body>
         <!-- ---- GUI Elements for 08 + 09 ---- -->
 
-        <script
+        <!-- <script
             src="https://cdn.jsdelivr.net/npm/p5.capture@1.6.0/dist/p5.capture.umd.min.js"
             defer
         ></script>
@@ -52,10 +52,26 @@
                 name="playPauseButton"
                 type="checkbox"
                 checked="checked"
-        /></label>
+        /></label> -->
 
         <!-- ---- GUI Elements for 07 + 10 + 11 ---- -->
-        <!-- <script src="https://unpkg.com/p5.js-svg@1.6.0" defer></script>
+
+        <div style="position: absolute; display: flex; width: 100vw">
+            <h1
+                style="
+                    flex-basis: 100%;
+                    text-align: center;
+                    font-size: 1vw;
+                    font-family: &quot;FilsonPro&quot;, sans-serif;
+                "
+            >
+                Import and export images using the buttons below. For results
+                with variable circle sizes: Import an SVG with varying alpha
+                values: e.g. A gradient that fades from 100% to 0% opacity.
+            </h1>
+        </div>
+
+        <script src="https://unpkg.com/p5.js-svg@1.6.0" defer></script>
 
         <label for="getImgButton" class="defLabel pickImgLabel"
             >Pick Img
@@ -82,7 +98,7 @@
                 step="1"
                 style="width: 100%"
             />
-        </label> -->
+        </label>
 
         <!-- ---- Old Javascript Code ---- -->
 

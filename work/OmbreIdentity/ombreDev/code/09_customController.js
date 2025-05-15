@@ -5,11 +5,11 @@ let w = window.innerWidth;
 let h = window.innerHeight;
 
 // Halftone Scaling variables
-let defScale = 15;
+let defScale = 5;
 let circleScale = defScale;
-let defSpace = 8;
+let defSpace = 10;
 let gridSpace = defSpace;
-let defSample = 2;
+let defSample = 10;
 let pixelSample = defSample;
 let centreX, centreY, rows, cols;
 let packagingImage;
@@ -21,8 +21,6 @@ const backgroundColour = "#f8eee6";
 
 /* ---- Custom Functions ---- */
 function centreImage() {
-  if (!packagingImage) return;
-
   cols = packagingImage.width / pixelSample;
   rows = packagingImage.height / pixelSample;
 
@@ -36,8 +34,8 @@ function drawHalftone() {
       let a = alpha(packagingImage.get(i * pixelSample, j * pixelSample));
 
       // Set a threshold for alpha value (e.g., 50)
-      if (a > 0) {
-        let scaleFactor = map(a, 10, 255, 0, 1);
+      if (a > 15) {
+        let scaleFactor = map(a, 20, 255, 0, 1);
 
         // Draw the circle only if alpha exceeds the threshold
         circle(
@@ -51,26 +49,33 @@ function drawHalftone() {
 }
 
 /* ---- p5 Functions ---- */
+
 function preload() {
-  packagingImage = loadImage("./assets/logoBlurNew.svg");
+  packagingImage = loadImage("./assets/wordmark.svg");
 }
 
 function setup() {
   createCanvas(w, h, SVG);
 
+  // Compute layout once image is loaded
+  if (packagingImage) {
+    centreImage();
+  }
+
   // SVG export button
   const exportLabel = document.getElementById("exportSVG");
   exportLabel.addEventListener("click", () => {
-    redraw();
-    save("Export.svg");
+    draw();
+    save("OmbreExport.svg");
   });
 
   // Pick image button
   const fileInput = document.querySelector("#getImgButton");
   fileInput.addEventListener("input", (e) => {
     if (!e.target.files.length) {
-      packagingImage = loadImage("./assets/LogoBlur2.svg", () => {
-        redraw();
+      packagingImage = loadImage("./assets/wordmark.svg", () => {
+        centreImage();
+        draw();
       });
       return;
     }
@@ -79,7 +84,8 @@ function setup() {
     reader.onloadend = () => {
       loadImage(reader.result, (img) => {
         packagingImage = img;
-        redraw();
+        centreImage();
+        draw();
       });
     };
     reader.readAsDataURL(e.target.files[0]);
@@ -88,26 +94,23 @@ function setup() {
   // Pixel grid control slider
   const slider = document.getElementById("sizeSlider");
   slider.addEventListener("input", () => {
-    circleScale = map(slider.value, 0, 100, defScale * 0.1, defScale * 8);
-    gridSpace = map(slider.value, 0, 100, defSpace * 2, defSpace * 8);
-    pixelSample = map(slider.value, 0, 100, defSample * 2, defSample * 9.35);
+    circleScale = map(slider.value, 0, 100, defScale * 1, defScale * 5);
+    gridSpace = map(slider.value, 0, 100, defSpace * 1, defSpace * 2);
 
     centreImage();
+    draw(); // Update view immediately
   });
+  draw();
 }
 
-let i = 0;
-let animationProgress = 0.2; // goes from 0 to 1
-let animationSpeed = 0.01; // lower = slower, smoother
-
 function draw() {
-  clear();
+  if (!packagingImage || !packagingImage.width) {
+    return; // Wait until image is loaded
+  }
 
-  if (!packagingImage) return;
-
+  background(backgroundColour);
   noStroke();
   fill(halftoneColour);
-
   drawHalftone();
 }
 
@@ -115,5 +118,5 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   w = window.innerWidth;
   h = window.innerHeight;
-  redraw();
+  draw();
 }
