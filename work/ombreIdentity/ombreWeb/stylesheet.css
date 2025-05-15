@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBlack.otf) format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBold.otf) format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProHeavy.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProMedium.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProRegular.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProBook.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProLight.otf) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/FilsonProThin.otf) format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OmbreSans";
+    src: url(font/OmbreSansVF.ttf) format("truetype");
+    font-style: normal;
+}
+
+:root {
+    --black: #0d0c1d;
+    --white: #f8eee6;
+    --orange: #ff6702;
+    --blue: #c3d5f2;
+    --lightBlue: #f0f3ff;
+    --darkWhite: #f1dac4;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    overflow: visible;
+
+    margin: 0px;
+
+    cursor: default;
+
+    background-color: var(--white);
+}
+
+h1 {
+    position: absolute;
+    bottom: 0px;
+
+    font-family: "OmbreSans", sans-serif;
+    font-weight: 900;
+    color: var(--black);
+
+    font-size: 28vw;
+    line-height: 80%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: "FilsonPro", sans-serif;
+    font-weight: 600;
+
+    text-decoration: none;
+    color: var(--black);
+
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a:first-of-type {
+    margin-right: auto;
+}
+
+nav {
+    position: absolute;
+
+    display: flex;
+
+    top: 20px;
+    left: 50px;
+
+    width: calc(100vw - 100px);
+    height: 10vh;
+
+    transition-duration: 100ms;
+    z-index: 5;
+
+    a {
+        display: flex;
+        background-color: var(--white);
+        padding: 10px;
+
+        border-radius: 50px;
+        transition-duration: 200ms;
+        width: 7vw;
+        justify-content: center;
+
+        img {
+            width: 4vw;
+        }
+    }
+}
+
+nav:hover {
+    a:hover {
+        background-color: var(--orange);
+        transition-duration: 500ms;
+        color: var(--white);
+    }
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.orangeBg {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    background-color: var(--orange);
+    height: 100vh;
+    z-index: 1;
+}
+
+.blackBg {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    height: 100vh;
+    z-index: 2;
+}
+
+.webPageContent {
+    width: 80vw;
+    font-family: "FilsonPro";
+    font-weight: 400;
+
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 10vw;
+
+    color: var(--white);
+
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    grid-column: 1 / span 5;
+
+    p {
+        grid-column: 1 / span 2;
+        color: var(--white);
+        line-height: 150%;
+        margin-top: 0vh;
+    }
+
+    h2 {
+        text-align: center;
+
+        font-size: 5vw;
+        color: var(--white);
+        grid-column: 1 / -1;
+    }
+
+    h3 {
+        grid-column: 1 / span 3;
+        font-size: 3vw;
+        margin-bottom: 4vh;
+    }
+
+    .imgDiv {
+        grid-column: 4 / span 2;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        border-radius: 15px;
+    }
+
+    .productImg {
+        position: absolute;
+
+        aspect-ratio: 1 / 1;
+        border-radius: 15px;
+        width: 25vw;
+        object-fit: cover;
+    }
+}
+
+.productBox {
+    display: flex;
+    position: absolute;
+
+    width: 25vw;
+    height: 50vh;
+    border-radius: 15px;
+
+    background-color: var(--white);
+    padding: 0.5vw;
+
+    z-index: 5;
+    transition-duration: 1000ms;
+
+    img {
+        justify-content: center;
+    }
+    h3 {
+        font-size: 1.3vw;
+        font-weight: 600;
+        color: var(--black);
+        margin-top: 45vh;
+        margin-left: 1vw;
+
+        z-index: 5;
+    }
+    p {
+    }
+}
+
+.productBox:hover {
+    transform: scale(105%);
+
+    transition-duration: 200ms;
+}
+
+.bottomPage {
+    grid-column: span 5;
+    height: 100vh;
+}
+
+#about {
+    position: absolute;
+    top: 300vh;
+}

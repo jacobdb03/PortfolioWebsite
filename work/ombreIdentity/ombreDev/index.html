@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Title Banner Stuff -->
+        <title>Jacob Bryant.</title>
+        <link rel="icon" type="image/x-icon" href="/assets/JLogo.ico" />
+
+        <!-- Meta Info -->
+        <meta charset="utf-8" />
+
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1"
+        />
+
+        <!-- ---- My CSS documents ---- -->
+        <link rel="stylesheet" href="./defaults/stylesheet.css" />
+
+        <!-- ---- p5 documents ---- -->
+
+        <script src="./defaults/p5.js" defer></script>
+
+        <script src="./code/09_customController.js" defer></script>
+    </head>
+
+    <body>
+        <!-- ---- GUI Elements for 08 + 09 ---- -->
+
+        <!-- <script
+            src="https://cdn.jsdelivr.net/npm/p5.capture@1.6.0/dist/p5.capture.umd.min.js"
+            defer
+        ></script>
+
+        <script src="defaults/p5CaptureOptions.js" defer></script>
+
+        <label for="animationSlider" class="defLabel sliderLabel"
+            ><input
+                type="range"
+                id="animationSlider"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+                style="width: 100%"
+            />
+        </label>
+
+        <label for="playPauseButton" class="defLabel playPauseLabel"
+            >Play/Pause
+            <input
+                id="playPauseButton"
+                name="playPauseButton"
+                type="checkbox"
+                checked="checked"
+        /></label> -->
+
+        <!-- ---- GUI Elements for 07 + 10 + 11 ---- -->
+
+        <div style="position: absolute; display: flex; width: 100vw">
+            <h1
+                style="
+                    flex-basis: 100%;
+                    text-align: center;
+                    font-size: 1vw;
+                    font-family: &quot;FilsonPro&quot;, sans-serif;
+                "
+            >
+                Import and export images using the buttons below. For results
+                with variable circle sizes: Import an SVG with varying alpha
+                values: e.g. A gradient that fades from 100% to 0% opacity.
+            </h1>
+        </div>
+
+        <script src="https://unpkg.com/p5.js-svg@1.6.0" defer></script>
+
+        <label for="getImgButton" class="defLabel pickImgLabel"
+            >Pick Img
+            <input
+                id="getImgButton"
+                name="getImgButton"
+                type="file"
+                style="display: none"
+                accept="image/*"
+        /></label>
+
+        <label class="defLabel playPauseLabel" id="exportLabel" for="exportSVG"
+            >Export SVG
+            <input id="exportSVG" type="button" style="display: none" />
+        </label>
+
+        <label for="sizeSlider" class="defLabel sliderLabel"
+            ><input
+                type="range"
+                id="sizeSlider"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+                style="width: 100%"
+            />
+        </label>
+
+        <!-- ---- Old Javascript Code ---- -->
+
+        <!-- --
+
+        <script src="./code/01_gridHalftone.js" defer></script>
+        <script src="./code/02_test.js" defer></script>
+        <script src="./code/03_logoHalftoneOld.js" defer></script>
+        <script src="./code/04_logoHalftoneScroll.js" defer></script>
+        <script src="./code/05_time_logomark.js" defer></script>
+        <script src="./code/06_time_wordmark.js" defer></script>
+        <script src="./code/07_fontDeveloper.js" defer></script>
+        <script src="./code/08_animationExperiments.js" defer></script>
+        <script src="./code/09_customController.js" defer></script>
+        <script src="./code/10_packagingDevelopment.js" defer></script>
+        <script src="./code/11_animationDraft1.js" defer></script>
+        <script src="./code/12_animationDraft2.js" defer></script>
+
+
+        -->
+    </body>
+</html>

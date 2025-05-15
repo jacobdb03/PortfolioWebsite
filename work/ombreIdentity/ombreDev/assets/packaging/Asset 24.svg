@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" width="1080" height="1080"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0" y1="540" x2="1080" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#f8eee6"/>
+      <stop offset=".26" stop-color="#f8eee6" stop-opacity=".98"/>
+      <stop offset=".36" stop-color="#f8eee6" stop-opacity=".93"/>
+      <stop offset=".47" stop-color="#f8eee6" stop-opacity=".85"/>
+      <stop offset=".58" stop-color="#f8eee6" stop-opacity=".73"/>
+      <stop offset=".7" stop-color="#f8eee6" stop-opacity=".58"/>
+      <stop offset=".81" stop-color="#f8eee6" stop-opacity=".39"/>
+      <stop offset=".92" stop-color="#f8eee6" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#f8eee6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-3">
+      <rect class="cls-2" x="0" width="1080" height="1080"/>
+    </g>
+  </g>
+</svg>

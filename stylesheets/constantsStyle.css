@@ -1,0 +1,633 @@
+/* ---- Class for body grid ---- */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body:not(.pageTease) {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 1.5%;
+
+    scroll-behavior: smooth;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: var(--white);
+
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: auto;
+
+    font-family: "Outfit", sans-serif;
+
+    color-scheme: light;
+
+    cursor: none;
+
+    /*outline checker for overflowing elements*/
+
+    /* * {
+        outline: 1px solid red !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }*/
+}
+
+body.addBlur > *:not(.expandableFooter):not(nav):not(.cursorClickBlob) {
+    transition: filter 1s ease;
+    filter: blur(3px);
+    pointer-events: none;
+}
+
+a {
+    cursor: none;
+}
+
+/* ---- Classes for nav bar design ---- */
+nav {
+    display: grid;
+
+    position: fixed;
+    z-index: 1;
+    top: 2em;
+    left: 0em;
+
+    height: 6em;
+    z-index: 10;
+
+    width: 90vw;
+    transform: translate(5vw);
+
+    /*Add some blur to the background*/
+
+    background-color: var(--blue);
+    border: 0.3em solid transparent;
+
+    box-sizing: border-box;
+
+    border-radius: 5em;
+
+    padding: 0em;
+    margin: 0em;
+
+    transition-duration: 0.3s;
+}
+
+nav:hover {
+    a {
+        background-color: transparent;
+
+        width: 4em;
+    }
+    a:hover {
+        font-weight: 900;
+
+        color: var(--orange);
+        background-color: transparent;
+        border: 0em solid var(--blue);
+    }
+}
+
+.navLinks {
+    display: flex;
+    flex-wrap: nowrap;
+
+    height: 5.5em;
+    align-items: center;
+
+    a {
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: right;
+
+        color: var(--white);
+
+        margin-left: 2em;
+        width: 4em;
+
+        transition-duration: 0.05s;
+    }
+
+    a:hover {
+        font-weight: 700;
+
+        transition-duration: 0.1s;
+    }
+
+    a:first-child {
+        justify-self: start;
+        margin-right: auto;
+        margin-left: 3em;
+        text-align: left;
+    }
+    a:last-child {
+        margin-right: 3em;
+    }
+
+    .navImg {
+        margin-top: 0.2em;
+    }
+
+    .navImg:hover img {
+        content: url("/assets/logoOrange.svg"); /* Swap the image */
+    }
+}
+
+nav.nav-shrink {
+    width: 50vw;
+    transform: translate(25vw);
+}
+
+nav.nav-expand {
+    width: 90vw;
+    transform: translate(5vw);
+}
+
+.expandableFooter {
+    opacity: 0;
+
+    position: absolute;
+    bottom: -2em;
+
+    pointer-events: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin: 5em;
+
+    transition-delay: 0s;
+
+    width: 82vw;
+
+    .footerLeft {
+        width: 50em;
+
+        margin-right: auto;
+    }
+
+    .footerRight {
+        width: 35em;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 3.5em;
+
+        p {
+            color: var(--grey);
+
+            line-height: 120%;
+            font-size: 1.5em;
+
+            padding: 0em;
+            margin: 0em;
+            margin-top: 1.5em;
+        }
+
+        a {
+            font-size: 4em;
+
+            line-height: 120%;
+
+            font-weight: 700;
+            color: var(--grey);
+
+            margin: 0em;
+            padding: 0em;
+
+            transition-duration: 0.05s;
+        }
+
+        a:hover {
+            font-weight: 900;
+            transition-duration: 0.1s;
+        }
+    }
+
+    .footerBottom {
+        position: absolute;
+        bottom: -8em;
+        margin-top: 0em;
+        width: 100%;
+
+        p {
+            color: var(--black);
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+}
+
+.expandedFooter {
+    height: 80vh;
+    border-radius: 2em;
+
+    margin: 5em;
+    margin-left: 0em;
+
+    transition-duration: 0.5s;
+
+    .expandableFooter {
+        opacity: 1;
+        pointer-events: auto;
+        transition-delay: 0.35s;
+        transition-duration: 0.5s;
+    }
+
+    .navLinks {
+        a {
+            margin-top: 3em;
+
+            font-size: 2.6em;
+            font-weight: 700;
+
+            color: var(--grey);
+
+            margin-left: 0em;
+            width: 6vw;
+
+            margin-left: 2em;
+
+            transition-duration: 0.05s;
+        }
+
+        a:hover {
+            font-weight: 900;
+
+            transition-duration: 0.1s;
+        }
+
+        img {
+            width: 5em;
+        }
+
+        a:last-child {
+            margin-right: 2em;
+        }
+    }
+}
+
+/* ---- Buttons  ---- */
+
+.defaultButton {
+    grid-column: 4 / span 1;
+
+    background-color: var(--white);
+    border: 0.3em solid var(--blue);
+    color: var(--blue);
+
+    border-radius: 5em;
+
+    font-size: 1.5em;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    padding: 1.2em;
+
+    transition-duration: 0.1s;
+}
+
+.defaultButton:hover {
+    /* What happens on hovering over navbar */
+
+    background-color: var(--orange);
+    border: 0.3em solid var(--orange);
+    color: var(--white);
+    font-weight: 700;
+
+    padding: 1.2em;
+
+    transition-duration: 0.2s;
+}
+
+/*---- Tag System ----*/
+
+.tag {
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    padding: 0.8em;
+
+    text-align: center;
+    align-self: center;
+
+    width: auto;
+    font-size: 120%;
+    height: 1em;
+    font-weight: 400;
+
+    margin-right: 1em;
+
+    margin-top: 1em;
+
+    margin-bottom: 1em;
+
+    color: var(--blue);
+    line-height: 100%;
+
+    z-index: 1;
+
+    a {
+        font-weight: 900;
+    }
+}
+
+.tagLink {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.tagLink:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+}
+
+.tagTitle {
+    padding: 0.5em;
+
+    text-align: left;
+    align-self: center;
+
+    width: 100%;
+    font-size: 180%;
+    font-weight: 100;
+    height: 1em;
+
+    margin-right: 5em;
+    margin-bottom: 0.5em;
+
+    color: var(--black);
+}
+
+/*---- Info box colourful border gradient ----*/
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+
+    box-shadow:
+        -15px -15px 20px rgba(255, 255, 255, 1),
+        4px 4px 20px rgba(21, 34, 41, 0.4);
+
+    border-radius: 5em;
+
+    padding: 0em;
+    padding-bottom: 7em;
+    padding-top: 5em;
+
+    grid-column: 2 / span 5;
+
+    align-self: center;
+
+    position: relative;
+
+    transition-duration: 1s;
+
+    h1 {
+        text-align: center;
+        font-size: 5em;
+    }
+    h2 {
+        color: var(--black);
+        background-color: transparent;
+        margin: 0em;
+        margin-top: 0em;
+        font-size: 2em;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        color: var(--black);
+
+        text-align: center;
+
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.infoBoxAnimate::before,
+.infoBoxAnimate::after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    inset: -1em;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--blue),
+        var(--orange),
+        var(--altBlue),
+        var(--blue),
+        var(--orange),
+        var(--altBlue),
+        var(--orange),
+        var(--blue)
+    );
+    border-radius: 5.6em;
+    animation: borderRotation 2s linear infinite;
+}
+
+.infoBoxAnimate:hover {
+    box-shadow:
+        -0px -0px 0px rgba(255, 255, 255, 1),
+        0px 0px 0px rgba(21, 34, 41, 0.4);
+
+    transition-duration: 0s;
+}
+
+.infoBoxAnimate:hover::before,
+.infoBoxAnimate:hover::after {
+    opacity: 1;
+    transition-duration: 1.5s;
+}
+
+.cursorClickBlob {
+    width: 20px;
+    height: 20px;
+    background: var(--blue);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:
+        transform 0.15s ease,
+        background-color 0.15s ease;
+    z-index: 10;
+}
+
+.cursorClickBlob.interactableAlt {
+    background: var(--white);
+}
+
+.cursorClickBlob.interactableLink {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: var(--orange);
+}
+
+/* ---- Thumbnail section ---- */
+
+.thumbnailFolder {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    grid-column: span 6;
+
+    border-radius: 2vw;
+
+    transition-duration: 0.1s;
+
+    padding: 1.5em;
+    padding-bottom: 0em;
+    margin-bottom: 2em;
+
+    user-select: none;
+}
+
+.thumbnailFolder:hover {
+    box-shadow:
+        -12px -12px 30px rgba(255, 255, 255, 1),
+        25px 25px 10px rgba(var(--altBlueRGB), 0.1);
+
+    transition-duration: 0.3s;
+
+    background-color: var(--white);
+}
+
+/*.thumbnailFolder:not(:hover) {
+    filter: blur(4px);
+}*/
+
+.comingSoon {
+    font-size: 3em;
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.thumbnailCaption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    align-items: center;
+
+    height: auto;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1.5em;
+
+    h3 {
+        transition-duration: 0.05s;
+        font-weight: 500;
+    }
+}
+
+.thumbnailCaptionSmall {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    align-items: center;
+
+    height: auto;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1.5em;
+
+    h3 {
+        transition-duration: 0.05s;
+        font-weight: 500;
+        font-size: 2em;
+    }
+    .tag p {
+        font-size: 1.8em;
+    }
+}
+
+.thumbnailFolder:hover .thumbnailCaption h3:not(.tag) {
+    transition-duration: 0.08s;
+    font-weight: 700;
+}
+
+.thumbnail {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailSmall {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 8 / 7;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailTall {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 9 / 10;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailLong {
+    border-radius: 1.5vw;
+    /*border: var(--borderWidth) solid var(--white);*/
+    box-sizing: border-box;
+    object-fit: cover;
+
+    width: 100%;
+    aspect-ratio: 39 / 16;
+
+    opacity: 1;
+
+    animation-timing-function: ease-in-out;
+    transition-duration: 0.75s;
+}
+
+.thumbnailFolder .fullWidth {
+    height: 100%;
+    max-height: 100%;
+}
