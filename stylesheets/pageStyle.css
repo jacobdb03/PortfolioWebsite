@@ -1,4 +1,14 @@
 /* ---- The normal page content html tags to design the content ---- */
+.blackBg {
+    html,
+    body {
+        background-color: var(--black);
+    }
+
+    p:not(.tag) {
+        color: var(--white);
+    }
+}
 
 h1 {
     font-weight: 700;

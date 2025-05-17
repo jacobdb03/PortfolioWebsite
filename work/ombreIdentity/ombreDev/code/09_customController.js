@@ -104,10 +104,6 @@ function setup() {
 }
 
 function draw() {
-  if (!packagingImage || !packagingImage.width) {
-    return; // Wait until image is loaded
-  }
-
   background(backgroundColour);
   noStroke();
   fill(halftoneColour);
