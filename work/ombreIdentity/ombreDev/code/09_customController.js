@@ -9,7 +9,7 @@ let defScale = 5;
 let circleScale = defScale;
 let defSpace = 10;
 let gridSpace = defSpace;
-let defSample = 10;
+let defSample = 12;
 let pixelSample = defSample;
 let centreX, centreY, rows, cols;
 let packagingImage;
